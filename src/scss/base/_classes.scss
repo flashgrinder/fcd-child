@@ -8,18 +8,24 @@
 	@include wrapper-full();
 }
 
+/* Debug */
+
+.debug {
+    @include debug(rgba(0, 0, 0, 0.5), 1px solid #ff0);
+}
+
 /* Hide */
 
 .hide {
     display: none !important;
 }
 
-.hide-medium {
-	@include medium(display, none !important);
-}
-
 .hide-tablet {
 	@include tablet(display, none !important);
+}
+
+.hide-tabletSM {
+	@include tabletSM(display, none !important);
 }
 
 .hide-mobile {
