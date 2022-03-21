@@ -10,9 +10,10 @@
 
 /* Debug */
 
-.debug {
-    @include debug(rgba(0, 0, 0, 0.5), 1px solid #ff0);
-}
+// .debug {
+//     @include debug(rgba(0, 0, 0, 0.5), 1px solid #ff0);
+//     z-index: 99999;
+// }
 
 /* Hide */
 
