@@ -488,6 +488,11 @@ img {
 
 /* Screen-entry */
 
+.screen-entry {
+  position: relative;
+  z-index: 9999;
+}
+
 /* Screen-brand */
 
 /* Footer */

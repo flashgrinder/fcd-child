@@ -1,25 +1,6 @@
 .horizontal-container {
     overscroll-behavior: none;
-    // width: 300%;
     height: 100vh;
     display: flex;
     flex-wrap: nowrap;
-    // display: flex;
-    // flex-wrap: wrap;
-    // flex-direction: column;
-    // height: 100vh;
 }
-
-// .bg-container {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     bottom: 0;
-//     right: 0;
-//     z-index: -1;
-//     user-select: none;
-//     cursor: grab;
-//     background: url('../img/main-bg.svg') no-repeat left center;
-//     background-size: cover;
-//     height: 100vh;
-// }
