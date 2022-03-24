@@ -1,5 +1,6 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Draggable } from "gsap/Draggable";
 
 function init() {
 
@@ -22,7 +23,7 @@ function init() {
     //     }
     // })
 
-    gsap.to(container, {
+   let horizontalScroll = gsap.to(container, {
         x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
         ease: "none",
         scrollTrigger: {
@@ -32,9 +33,10 @@ function init() {
           pin: true,
           scrub: 1,
         //   snap: 1 / (sections.length - 1),
-          end: () => "+=2500"
+          end: () => "+=" + container.offsetWidth
         }
     })
+
     // gsap.to(sections, {
     //     xPercent: -100 * (sections.length - 1),
     //     ease: "none",
