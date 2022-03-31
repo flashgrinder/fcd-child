@@ -1,11 +1,15 @@
 import gsap from 'gsap';
 import horizontalScroll from '../libs/modules/horizontal-scroll';
+import parallaxjs from '../libs/modules/parallax';
 
 document.addEventListener('DOMContentLoaded', function(e) {
 
     gsap.config({
-        nullTargetWarn: false
+        nullTargetWarn: true
     });
+
+    const horizintalScrollTrue = document.querySelector('.horizontal-container');
     
-    horizontalScroll.init();
+    horizintalScrollTrue ? horizontalScroll.init() : false;
+    parallaxjs.init();
 });
