@@ -1,0 +1,46 @@
+.button {
+    font-family: var(--font-helvetica-neue-cyr);
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 5px;
+    padding: 14px 35px;
+    max-width: 203px;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.15);
+    outline: var(--color-blue);
+    transition: background .250s ease-in-out, color .250s ease-in-out, border .250s ease-in-out;
+}
+
+.button--blue {
+    border: 1px solid transparent;
+}
+
+.button--blue {
+    color: var(--color-white);
+    background: var(--color-blue);
+}
+
+.button--blue:hover,
+.button--blue:focus,
+.button--blue:target {
+    color: var(--color-blue);
+    background: transparent;
+    border: 1px solid var(--color-blue);
+}
+
+.button--blue:active {
+    color: var(--color-white);
+    background: var(--color-blue);
+}
+
+.button--blue:disabled {
+    opacity: .45;
+}
