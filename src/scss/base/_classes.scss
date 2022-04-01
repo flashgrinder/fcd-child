@@ -66,7 +66,7 @@
 }
 
 .link:hover {
-    color: var(--color-orange);
+    color: var(--color-blue);
 }
 
 /* Title */
@@ -96,8 +96,8 @@
     &--white {
         color: var(--color-white);
 	}
-    &--black-gray {
-		color: var(--color-black-gray); 
+    &--dark {
+		color: var(--color-dark); 
 	}
 	&--w-light {
 		font-weight: 300;
@@ -128,8 +128,8 @@
     font-family: var(--font-helvetica-neue-cyr);
     font-style: normal;
     margin: 0;
-	&--black-gray {
-		color: var(--color-black-gray); 
+	&--dark {
+		color: var(--color-dark); 
 	}
 	&--white {
 		color: var(--color-white);

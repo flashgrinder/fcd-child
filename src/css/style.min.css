@@ -122,7 +122,7 @@ img {
 }
 
 .link:hover {
-  color: var(--color-orange);
+  color: var(--color-blue);
 }
 
 /* Title */
@@ -199,8 +199,8 @@ img {
   color: var(--color-white);
 }
 
-.title--black-gray {
-  color: var(--color-black-gray);
+.title--dark {
+  color: var(--color-dark);
 }
 
 .title--w-light {
@@ -236,8 +236,8 @@ img {
   font-style: italic;
 }
 
-.text--black-gray {
-  color: var(--color-black-gray);
+.text--dark {
+  color: var(--color-dark);
 }
 
 .text--white {
