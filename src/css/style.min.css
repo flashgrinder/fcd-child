@@ -373,6 +373,7 @@ img {
   box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.15);
   outline: var(--color-blue);
   transition: background 0.25s ease-in-out, color 0.25s ease-in-out, border 0.25s ease-in-out;
+  overflow: hidden;
 }
 
 .button--blue {
@@ -381,7 +382,24 @@ img {
 
 .button--blue {
   color: var(--color-white);
+}
+
+.button--blue::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
   background: var(--color-blue);
+  z-index: -1;
+  transition: width 0.25s;
+}
+
+.button--blue:hover::before,
+.button--blue:focus::before,
+.button--blue:target::before {
+  width: 0%;
 }
 
 .button--blue:hover,
