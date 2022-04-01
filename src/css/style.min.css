@@ -469,6 +469,18 @@ img {
   transform: translateY(-50%);
 }
 
+.page-404__img-404 {
+  display: block;
+}
+
+.page-404__title {
+  margin-top: 25px;
+}
+
+.page-404__action {
+  margin-top: 45px;
+}
+
 /* Footer */
 
 /* MEDIA QUERIES */
