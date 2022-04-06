@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function(e) {
     });
 
     const horizintalScrollTrue = document.querySelector('.horizontal-container');
+    const paralaxjsTrue = document.querySelector('.parallax-container');
     
     horizintalScrollTrue ? horizontalScroll.init() : false;
-    parallaxjs.init();
+    paralaxjsTrue ? parallaxjs.init() : false;
 });
