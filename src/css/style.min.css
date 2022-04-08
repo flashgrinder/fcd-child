@@ -106,10 +106,29 @@ img {
   }
 }
 
+@-webkit-keyframes rotate-clock {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-clock {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .a-screen-brand__layer--hand {
   transform-box: fill-box;
   transform-origin: bottom;
-  transform: rotate(0deg);
   -webkit-animation: wiggle-hand 1.5s ease-in-out infinite alternate backwards;
           animation: wiggle-hand 1.5s ease-in-out infinite alternate backwards;
 }
@@ -117,9 +136,29 @@ img {
 .a-screen-brand__layer--papper {
   transform-box: fill-box;
   transform-origin: top center;
-  transform: rotate(5deg);
   -webkit-animation: wiggle-papper 3s ease-in-out infinite alternate backwards;
           animation: wiggle-papper 3s ease-in-out infinite alternate backwards;
+}
+
+.a-screen-marketing__layer--big-clock-hand {
+  transform-box: fill-box;
+  transform-origin: 14%;
+  -webkit-animation: rotate-clock 8s linear infinite;
+          animation: rotate-clock 8s linear infinite;
+}
+
+.a-screen-marketing__layer--small-clock-hand {
+  transform-box: fill-box;
+  transform-origin: 5% 100%;
+  -webkit-animation: rotate-clock 12s linear infinite;
+          animation: rotate-clock 12s linear infinite;
+}
+
+.a-screen-hackerman__layer--had {
+  transform-box: fill-box;
+  transform-origin: 5% 100%;
+  -webkit-animation: wiggle-hand 0.3s ease-in-out infinite alternate backwards;
+          animation: wiggle-hand 0.3s ease-in-out infinite alternate backwards;
 }
 
 /* Base Classes */
