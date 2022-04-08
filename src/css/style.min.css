@@ -66,6 +66,62 @@ img {
 
 /* Animation */
 
+@-webkit-keyframes wiggle-hand {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes wiggle-hand {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+@-webkit-keyframes wiggle-papper {
+  0% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes wiggle-papper {
+  0% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+.a-screen-brand__layer--hand {
+  transform-box: fill-box;
+  transform-origin: bottom;
+  transform: rotate(0deg);
+  -webkit-animation: wiggle-hand 1.5s ease-in-out infinite alternate backwards;
+          animation: wiggle-hand 1.5s ease-in-out infinite alternate backwards;
+}
+
+.a-screen-brand__layer--papper {
+  transform-box: fill-box;
+  transform-origin: top center;
+  transform: rotate(5deg);
+  -webkit-animation: wiggle-papper 3s ease-in-out infinite alternate backwards;
+          animation: wiggle-papper 3s ease-in-out infinite alternate backwards;
+}
+
 /* Base Classes */
 
 /* Containers */

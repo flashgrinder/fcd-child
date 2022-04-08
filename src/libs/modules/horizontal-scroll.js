@@ -23,11 +23,11 @@ function init() {
         }
     })
 
-    const tl = gsap.timeline( {
+    const tlScreenEntry = gsap.timeline( {
         x: 0,
         ease: "none",
         scrollTrigger: {
-            trigger: ".screen",
+            trigger: ".js-screen-entry",
             start: "top 30%",
             // end: () => "+=2500" + sections.offsetWidth,
             end:"+=100%",
@@ -36,18 +36,44 @@ function init() {
         }
     });
 
-    tl.from(".js-screen-entry__layer--one", 1.5, {
-        x: -100
+    tlScreenEntry.from(".js-screen-entry__layer--one", 1.5, {
+        x: -140
     }, '-=1.5')
     .from(".js-screen-entry__layer--two", 2, {
-        x: -120,
-    }, '-=2')
-    .from(".js-screen-entry__layer--three", 2, {
         x: -160,
     }, '-=2')
-    .from(".js-screen-entry__layer--four", 1.4, {
+    .from(".js-screen-entry__layer--three", 2, {
         x: -180,
-    }, '-=1.4')
+    }, '-=2')
+    .from(".js-screen-entry__layer--four", 1.4, {
+        x: -200,
+    }, '-=1.4');
+
+    const tlScreenBrand = gsap.timeline( {
+        x: 0,
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".js-screen-brand",
+            start: "top 30%",
+            // end: () => "+=2500" + sections.offsetWidth,
+            end:"+=100%",
+            scrub: 1,
+            // snap: 1 / (sections.length - 1),
+        }
+    });
+
+    tlScreenBrand.from(".js-screen-brand__layer--one", 1.7, {
+        x: 220
+    }, '-=1.7')
+    .from(".js-screen-brand__layer--two", 1.5, {
+        x: 260,
+    }, '-=1.5')
+    .from(".js-screen-brand__layer--three", 1.3, {
+        x: 280,
+    }, '-=1.3')
+    .from(".js-screen-brand__layer--four", 1.2, {
+        x: 300,
+    }, '-=1');
 
 }
 
