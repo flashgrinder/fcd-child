@@ -106,7 +106,7 @@ img {
   }
 }
 
-@-webkit-keyframes rotate-clock {
+@-webkit-keyframes rotate {
   0% {
     transform: rotate(0deg);
   }
@@ -116,13 +116,53 @@ img {
   }
 }
 
-@keyframes rotate-clock {
+@keyframes rotate {
   0% {
     transform: rotate(0deg);
   }
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes flicker {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.85;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.85;
+  }
+}
+
+@-webkit-keyframes scale-music {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes scale-music {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
   }
 }
 
@@ -143,22 +183,76 @@ img {
 .a-screen-marketing__layer--big-clock-hand {
   transform-box: fill-box;
   transform-origin: 14%;
-  -webkit-animation: rotate-clock 8s linear infinite;
-          animation: rotate-clock 8s linear infinite;
+  -webkit-animation: rotate 8s linear infinite;
+          animation: rotate 8s linear infinite;
 }
 
 .a-screen-marketing__layer--small-clock-hand {
   transform-box: fill-box;
   transform-origin: 5% 100%;
-  -webkit-animation: rotate-clock 12s linear infinite;
-          animation: rotate-clock 12s linear infinite;
+  -webkit-animation: rotate 12s linear infinite;
+          animation: rotate 12s linear infinite;
 }
 
 .a-screen-hackerman__layer--had {
   transform-box: fill-box;
   transform-origin: 5% 100%;
-  -webkit-animation: wiggle-hand 0.3s ease-in-out infinite alternate backwards;
-          animation: wiggle-hand 0.3s ease-in-out infinite alternate backwards;
+  -webkit-animation: wiggle-hand 0.4s ease-in-out infinite alternate backwards;
+          animation: wiggle-hand 0.4s ease-in-out infinite alternate backwards;
+}
+
+.a-screen-hackerman__layer--column {
+  transform-box: fill-box;
+  transform-origin: center;
+  -webkit-animation: scale-music 0.5s ease-in infinite;
+          animation: scale-music 0.5s ease-in infinite;
+}
+
+.a-screen-it__layer--light-one {
+  -webkit-animation: flicker 0.5s ease infinite alternate;
+          animation: flicker 0.5s ease infinite alternate;
+}
+
+.a-screen-it__layer--light-two {
+  -webkit-animation: flicker 0.8s ease infinite alternate;
+          animation: flicker 0.8s ease infinite alternate;
+}
+
+.a-screen-it__layer--light-three {
+  -webkit-animation: flicker 1s ease infinite alternate;
+          animation: flicker 1s ease infinite alternate;
+}
+
+.a-screen-it__layer--light-four {
+  -webkit-animation: flicker 0.9s ease infinite alternate;
+          animation: flicker 0.9s ease infinite alternate;
+}
+
+.a-screen-it__layer--light-five {
+  -webkit-animation: flicker 0.4s ease infinite alternate;
+          animation: flicker 0.4s ease infinite alternate;
+}
+
+.a-screen-it__layer--light-six {
+  -webkit-animation: flicker 1.3s ease infinite alternate;
+          animation: flicker 1.3s ease infinite alternate;
+}
+
+.a-screen-it__layer--light-seven {
+  -webkit-animation: flicker 0.3s ease infinite alternate;
+          animation: flicker 0.3s ease infinite alternate;
+}
+
+.a-screen-it__layer--light-printer {
+  -webkit-animation: flicker 0.5s ease infinite alternate;
+          animation: flicker 0.5s ease infinite alternate;
+}
+
+.a-screen-it__layer--deathstar {
+  transform-box: fill-box;
+  transform-origin: center;
+  -webkit-animation: rotate 6s linear infinite;
+          animation: rotate 6s linear infinite;
 }
 
 /* Base Classes */
