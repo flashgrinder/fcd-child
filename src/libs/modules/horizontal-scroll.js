@@ -95,7 +95,6 @@ function init() {
 
     // Screen-marketing
     const tlScreenMarketing = gsap.timeline( {
-        // x: 0,
         ease: "ease",
         scrollTrigger: {
             trigger: ".js-screen-marketing",
@@ -113,6 +112,29 @@ function init() {
         x: -110,
     }, '-=1.5')
     .to(".js-screen-marketing__layer--three", 1.5, {
+        x: -130,
+    }, '-=1.5');
+
+    // Screen-it
+    const tlScreenIt = gsap.timeline( {
+        // x: 0,
+        ease: "ease",
+        scrollTrigger: {
+            trigger: ".js-screen-it",
+            containerAnimation: scrollTween,
+            start: "center 70%",
+            end: "center 10%",
+            scrub: true,
+        }
+    });
+
+    tlScreenIt.to(".js-screen-it__layer--one", 1.5, {
+        x: -70
+    }, '-=1.5')
+    .from(".js-screen-it__layer--two", 1.5, {
+        x: 100,
+    }, '-=1.5')
+    .to(".js-screen-it__layer--three", 1.5, {
         x: -130,
     }, '-=1.5');
 
