@@ -9,3 +9,13 @@
     height: 100%;
     object-fit: contain;
 }
+
+.screen__body {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+
+.screen__inner {
+    margin-top: 30%;
+}
