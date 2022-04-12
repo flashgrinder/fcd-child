@@ -186,6 +186,34 @@ img {
   }
 }
 
+@-webkit-keyframes change-color {
+  0% {
+    fill: #C8FCFF;
+  }
+
+  50% {
+    fill: red;
+  }
+
+  100% {
+    fill: green;
+  }
+}
+
+@keyframes change-color {
+  0% {
+    fill: #C8FCFF;
+  }
+
+  50% {
+    fill: red;
+  }
+
+  100% {
+    fill: green;
+  }
+}
+
 .a-screen-brand__layer--hand {
   transform-box: fill-box;
   transform-origin: bottom;
@@ -280,6 +308,25 @@ img {
   transform-origin: center;
   -webkit-animation: rotate 6s linear infinite;
           animation: rotate 6s linear infinite;
+}
+
+.a-screen-it__layer--had {
+  transform-box: fill-box;
+  transform-origin: 15% 50%;
+  -webkit-animation: wiggle-papper 2s ease-in-out infinite alternate backwards;
+          animation: wiggle-papper 2s ease-in-out infinite alternate backwards;
+}
+
+.a-screen-it__layer--eye {
+  transform-box: fill-box;
+  transform-origin: center;
+  -webkit-animation: move-eye 2s ease-in-out infinite alternate backwards;
+          animation: move-eye 2s ease-in-out infinite alternate backwards;
+}
+
+.a-screen-it__layer--monitor {
+  -webkit-animation: change-color 3s ease infinite alternate backwards;
+          animation: change-color 3s ease infinite alternate backwards;
 }
 
 /* Base Classes */
