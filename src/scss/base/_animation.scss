@@ -43,6 +43,15 @@
     }
 }
 
+@keyframes move-eye {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-2px);
+    }
+}
+
 .a-screen-brand__layer--hand {
     transform-box: fill-box;
     transform-origin: bottom;
@@ -65,6 +74,12 @@
     transform-box: fill-box;
     transform-origin: 5% 100%;
     animation: rotate 12s linear infinite;
+}
+
+.a-screen-marketing__layer--eye {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: move-eye 2s ease-in-out infinite alternate backwards;
 }
 
 .a-screen-hackerman__layer--had {
