@@ -717,6 +717,7 @@ img {
 
 .screen__inner {
   margin-top: 30%;
+  max-width: 600px;
 }
 
 /* Screen-entry */
