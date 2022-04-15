@@ -42,9 +42,9 @@ function init() {
     .from(".js-screen-entry__layer--three", 2, {
         x: -180,
     }, '-=2')
-    .from(".js-screen-entry__layer--four", 1.4, {
-        x: -200,
-    }, '-=1.4');
+    .from(".js-screen-entry__layer--four", 1.6, {
+        x: -70,
+    }, '-=1.6');
 
     // Screen-brand
     const tlScreenBrand = gsap.timeline( {

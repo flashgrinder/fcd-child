@@ -52,16 +52,80 @@
     }
 }
 
-@keyframes change-color {
+@keyframes change-color-monitor {
     0% {
         fill: #C8FCFF;
     }
-    50% {
+    100% {
         fill: red;
     }
-    100% {
-        fill: green;
+}
+
+@keyframes change-color-word {
+    0% {
+        fill: #596694;
     }
+    100% {
+        fill: #ffffff;
+    }
+}
+
+@keyframes flight-up {
+    0% {
+        transform: translateY(60px) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(30px) rotate(5deg);
+        opacity: 1;
+    }
+    75% {
+        transform: translateY(0px) rotate(-5deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px) rotate(-5deg);
+        opacity: 0;
+    }
+}
+
+@keyframes flicker-plate {
+    0% {
+        opacity: .35;
+    }
+    50% {
+        opacity: .45;
+    }
+    55% {
+        opacity: .35;
+    }
+    60% {
+        opacity: .45;
+    }
+    75% {
+        opacity: .35;
+    }
+    80% {
+        opacity: .35;
+    }
+    85% {
+        opacity: .45;
+    }
+    85% {
+        opacity: .35;
+    }
+    90% {
+        opacity: .45;
+    }
+    100% {
+        opacity: .35;
+    }
+}
+
+.a-screen-entry__layer--fairy-cat {
+    transform-box: fill-box;
+    transform-origin: left 50%;
+    animation: wiggle-hand 1.5s ease-in-out infinite alternate backwards;
 }
 
 .a-screen-brand__layer--hand {
@@ -79,13 +143,17 @@
 .a-screen-marketing__layer--big-clock-hand {
     transform-box: fill-box;
     transform-origin: 14%;
-    animation: rotate 8s linear infinite;
+    animation: rotate 14s linear infinite;
 }
 
 .a-screen-marketing__layer--small-clock-hand {
     transform-box: fill-box;
     transform-origin: 5% 100%;
-    animation: rotate 12s linear infinite;
+    animation: rotate 20s linear infinite;
+}
+
+.a-screen-marketing__layer--light {
+    animation: flicker .6s ease infinite alternate;
 }
 
 .a-screen-marketing__layer--eye {
@@ -94,16 +162,50 @@
     animation: move-eye 2s ease-in-out infinite alternate backwards;
 }
 
+.a-screen-marketing__layer--heart-one {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: flight-up 2s linear infinite forwards;
+}
+
+.a-screen-marketing__layer--add-friend {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: flight-up 4s linear infinite forwards;
+}
+
+.a-screen-marketing__layer--heart-two {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: flight-up 3s linear infinite forwards;
+}
+
+.a-screen-marketing__layer--message {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: flight-up 4s linear infinite forwards;
+}
+
+.a-screen-marketing__layer--heart-three {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: flight-up 3s linear infinite forwards;
+}
+
 .a-screen-hackerman__layer--had {
     transform-box: fill-box;
     transform-origin: 5% 100%;
-    animation: wiggle-hand .4s ease-in-out infinite alternate backwards;
+    animation: wiggle-hand .7s ease-in-out infinite alternate backwards;
 }
 
 .a-screen-hackerman__layer--column {
     transform-box: fill-box;
     transform-origin: center;
     animation: scale-music .5s ease-in infinite;
+}
+
+.a-screen-hackerman__layer--plate {
+    animation: flicker-plate 3s linear infinite forwards;
 }
 
 .a-screen-it__layer--light-one {
@@ -151,5 +253,9 @@
 }
 
 .a-screen-it__layer--monitor {
-    animation: change-color 3s ease infinite alternate backwards;
+    animation: change-color-monitor 2s ease infinite alternate backwards;
+}
+
+.a-screen-it__layer--word {
+    animation: change-color-word 2s ease infinite alternate backwards;
 }
