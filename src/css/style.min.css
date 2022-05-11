@@ -593,8 +593,26 @@ img {
   margin: 0;
 }
 
+.title--huge {
+  font-size: calc(45px + 20 * ((100vw - 320px) / 1120));
+}
+
+@media screen and (min-width: 1440px) {
+
+  .title--huge {
+    font-size: 65px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .title--huge {
+    font-size: 45px;
+  }
+}
+
 .title--big {
-  font-size: calc(16px + 29 * ((100vw - 320px) / 1120));
+  font-size: calc(35px + 10 * ((100vw - 320px) / 1120));
 }
 
 @media screen and (min-width: 1440px) {
@@ -607,30 +625,30 @@ img {
 @media screen and (max-width: 320px) {
 
   .title--big {
-    font-size: 16px;
+    font-size: 35px;
   }
 }
 
 .title--large {
-  font-size: calc(20px + 6 * ((100vw - 1024px) / 416));
+  font-size: calc(22px + 13 * ((100vw - 1024px) / 416));
 }
 
 @media screen and (min-width: 1440px) {
 
   .title--large {
-    font-size: 26px;
+    font-size: 35px;
   }
 }
 
 @media screen and (max-width: 1024px) {
 
   .title--large {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
 .title--medium {
-  font-size: calc(18px + 4 * ((100vw - 1024px) / 416));
+  font-size: calc(20px + 2 * ((100vw - 1024px) / 416));
 }
 
 @media screen and (min-width: 1440px) {
@@ -643,7 +661,7 @@ img {
 @media screen and (max-width: 1024px) {
 
   .title--medium {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -693,7 +711,6 @@ img {
   font-family: var(--font-helvetica-neue-cyr);
   font-style: normal;
   margin: 0;
-  font-style: italic;
 }
 
 .text--dark {
@@ -704,26 +721,8 @@ img {
   color: var(--color-white);
 }
 
-.text--big {
-  font-size: calc(20px + 10 * ((100vw - 320px) / 1120));
-}
-
-@media screen and (min-width: 1440px) {
-
-  .text--big {
-    font-size: 30px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-
-  .text--big {
-    font-size: 20px;
-  }
-}
-
 .text--large {
-  font-size: calc(14px + 8 * ((100vw - 320px) / 1120));
+  font-size: calc(18px + 4 * ((100vw - 320px) / 1120));
 }
 
 @media screen and (min-width: 1440px) {
@@ -736,12 +735,12 @@ img {
 @media screen and (max-width: 320px) {
 
   .text--large {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
 .text--normal {
-  font-size: calc(12px + 4 * ((100vw - 1024px) / 416));
+  font-size: calc(14px + 2 * ((100vw - 1024px) / 416));
 }
 
 @media screen and (min-width: 1440px) {
@@ -754,7 +753,7 @@ img {
 @media screen and (max-width: 1024px) {
 
   .text--normal {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -983,7 +982,20 @@ body::-webkit-scrollbar-thumb {
 
 .screen__inner {
   margin-top: 30%;
-  max-width: 600px;
+}
+
+.screen__heading {
+  max-width: 690px;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.screen__descr {
+  max-width: 500px;
+}
+
+.screen__btn {
+  margin-top: 45px;
 }
 
 /* Screen-entry */

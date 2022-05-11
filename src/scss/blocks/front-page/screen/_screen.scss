@@ -18,5 +18,18 @@
 
 .screen__inner {
     margin-top: 30%;
-    max-width: 600px;
+}
+
+.screen__heading {
+    max-width: 690px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.screen__descr {
+    max-width: 500px;
+}
+
+.screen__btn {
+    margin-top: 45px;
 }

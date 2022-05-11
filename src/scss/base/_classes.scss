@@ -75,16 +75,20 @@
     font-family: var(--font-helvetica-neue-cyr);
     font-style: normal;
     margin: 0;
+    &--huge {
+        font-size: responsive 45px 65px;
+        font-range: 320px 1440px;
+    }
     &--big {
-        font-size: responsive 16px 45px;
+        font-size: responsive 35px 45px;
         font-range: 320px 1440px;
     }
     &--large {
-        font-size: responsive 20px 26px;
+        font-size: responsive 22px 35px;
         font-range: 1024px 1440px;
     }
     &--medium {
-        font-size: responsive 18px 22px;
+        font-size: responsive 20px 22px;
         font-range: 1024px 1440px;
     }
     &--small {
@@ -134,16 +138,12 @@
 	&--white {
 		color: var(--color-white);
 	}
-	&--big {
-        font-size: responsive 20px 30px;
-        font-range: 320px 1440px;
-	}
 	&--large {
-        font-size: responsive 14px 22px;
+        font-size: responsive 18px 22px;
         font-range: 320px 1440px;
 	}
 	&--normal {
-        font-size: responsive 12px 16px;
+        font-size: responsive 14px 16px;
         font-range: 1024px 1440px;
 	}
 	&--small {
@@ -163,7 +163,7 @@
     }
 	&--w-black {
 		font-weight: 900;
-    }   font-style: italic;
+    }
     &--uppercase {
 		text-transform: uppercase;
 	}
