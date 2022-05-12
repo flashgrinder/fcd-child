@@ -758,11 +758,11 @@ img {
 }
 
 .text--small {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .text--tiny {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .text--w-light {
@@ -986,6 +986,7 @@ body::-webkit-scrollbar-thumb {
   padding: 25px 65px;
   background: rgba(32, 32, 32, 0.25);
   border-radius: 10px;
+  box-shadow: 10px 10px 25px -10px rgba(0, 0, 0, 0.15);
 }
 
 .screen__heading {
