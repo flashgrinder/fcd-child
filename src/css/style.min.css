@@ -575,6 +575,10 @@ img {
   background-color: var(--color-dark);
 }
 
+.bg--dark-blue {
+  background-color: var(--color-dark-blue);
+}
+
 /* Links */
 
 .link {
@@ -1055,7 +1059,6 @@ body::-webkit-scrollbar-thumb {
 
 .info-block {
   position: relative;
-  background: #13111B;
   padding: 150px 0;
   height: 100vh;
   display: flex;
