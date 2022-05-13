@@ -78,11 +78,15 @@
     border: 1px solid transparent;
     padding: 4px;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
 
-.link-secondary__arrow {
+.link-secondary__arrow-secondary {
+    display: block;
     fill: var(--color-blue);
-    transition: fill ease-out .150s;
+    transition: fill ease-out .150s, transform ease-out .150s;
+    margin-left: 10px;
 }
 
 .link-secondary:hover,
@@ -100,10 +104,11 @@
     opacity: .45;
 }
 
-.link-secondary:hover .link-secondary__arrow,
-.link-secondary:focus .link-secondary__arrow,
-.link-secondary:active {
+.link-secondary:hover .link-secondary__arrow-secondary,
+.link-secondary:focus .link-secondary__arrow-secondary,
+.link-secondary:active .link-secondary__arrow-secondary {
     fill: var(--color-white);
+    transform: translateX(5px);
 }
 
 /* Title */
