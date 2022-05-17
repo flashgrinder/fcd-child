@@ -184,6 +184,9 @@
 	&--blue {
 		color: var(--color-blue);
 	}
+	&--light-gray {
+		color: var(--color-light-gray);
+	}
 	&--large {
         font-size: responsive 18px 22px;
         font-range: 320px 1440px;

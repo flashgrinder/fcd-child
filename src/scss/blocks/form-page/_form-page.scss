@@ -1,0 +1,87 @@
+.form-page__inner {
+    padding: 65px 30px;
+    border-radius: 10px;
+}
+
+.form-page__info {
+    text-align: center;
+}
+
+.form-page__form,
+.form-page__protect {
+    max-width: 640px;
+    margin: 45px auto 0 auto;
+}
+
+.form-page__fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-page__field {
+    position: relative;
+    width: 100%;
+}
+
+.form-page__field-text {
+    position: absolute;
+    top: -24px;
+    left: 0;
+}
+
+.form-page__input {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(75px);
+    border-radius: 5px;
+    color: var(--color-white);
+    outline: none;
+    border: 1px solid transparent;
+    padding: 15px;
+    width: 100%;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.form-page__input:target,
+.form-page__input:focus {
+    border: 1px solid var(--color-blue);
+}
+
+.form-page__actions {
+    margin-left: 33px;
+}
+
+.form-page__protect {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.form-page__shield-protect {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.form-page .wpcf7-not-valid-tip {
+    color: red;
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    text-align: center;
+    max-width: fit-content;
+    padding: 2px 8px;
+    width: 100%;
+}
+
+.form-page .wpcf7-response-output {
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 15px;
+    max-width: max-content;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
