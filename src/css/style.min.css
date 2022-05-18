@@ -1331,10 +1331,10 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(300px, 636px) minmax(280px, 534px);
-  grid-template-columns: minmax(300px, 636px) minmax(280px, 534px);
+  -ms-grid-columns: minmax(300px, 1fr) minmax(280px, 400px);
+  grid-template-columns: minmax(300px, 1fr) minmax(280px, 400px);
   overflow: hidden;
-  padding: 65px 65px 65px 25px;
+  padding: 65px 25px;
   border-radius: 10px;
 }
 
