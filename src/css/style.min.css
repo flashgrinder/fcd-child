@@ -924,10 +924,14 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
 }
 
+/* Bitton small */
+
 .button--small {
   padding: 8px 15px;
   font-weight: 300;
 }
+
+/* Button dark */
 
 .button--dark {
   border: 1px solid transparent;
@@ -950,6 +954,8 @@ body::-webkit-scrollbar-thumb {
   color: var(--color-white);
   background: var(--color-blue);
 }
+
+/* Button primary */
 
 .button--primary {
   border: 1px solid transparent;
@@ -992,6 +998,8 @@ body::-webkit-scrollbar-thumb {
   opacity: 0.45;
 }
 
+/* Button primary form */
+
 .button--primary.button--form {
   background: var(--color-blue);
   border: 1px solid transparent;
@@ -1013,6 +1021,56 @@ body::-webkit-scrollbar-thumb {
 }
 
 .button--primary.button--form:disabled {
+  opacity: 0.45;
+}
+
+/* Button secondary */
+
+.button--secondary {
+  border: 1px solid var(--color-blue);
+  color: var(--color-white);
+  background: transparent;
+  transition: color 0.3s, border 0.3s, background 0.3s;
+}
+
+.button--secondary::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  right: 0;
+  background: var(--color-blue);
+  z-index: -1;
+  transition: width 0.25s;
+}
+
+.button--secondary:hover::before,
+.button--secondary:focus::before,
+.button--secondary:target::before {
+  width: 100%;
+}
+
+.button--secondary:hover {
+  background: var(--color-blue);
+  border: 1px solid var(--color-blue);
+}
+
+.button--secondary:focus,
+.button--secondary:target {
+  border: 1px solid var(--color-white);
+}
+
+.button--secondary:active::before {
+  background: linear-gradient(90deg, #0036C2 0%, #0029BB 98.44%);
+}
+
+.button--secondary:active {
+  border: 1px solid #0029BB;
+  background: linear-gradient(90deg, #0036C2 0%, #0029BB 98.44%);
+}
+
+.button--secondary:disabled {
   opacity: 0.45;
 }
 
