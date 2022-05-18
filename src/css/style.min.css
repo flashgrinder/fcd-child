@@ -929,12 +929,6 @@ body::-webkit-scrollbar-thumb {
   font-weight: 300;
 }
 
-.button--blue {
-  border: 1px solid transparent;
-  color: var(--color-white);
-  transition: color 0.3s, border 0.3s, background 0.3s;
-}
-
 .button--dark {
   border: 1px solid transparent;
   color: var(--color-light-gray);
@@ -946,7 +940,7 @@ body::-webkit-scrollbar-thumb {
 .button--dark:hover,
 .button--dark:focus,
 .button--dark:target,
-.button--blue:active {
+.button--dark:active {
   opacity: 1;
   color: var(--color-blue);
 }
@@ -957,7 +951,13 @@ body::-webkit-scrollbar-thumb {
   background: var(--color-blue);
 }
 
-.button--blue::before {
+.button--primary {
+  border: 1px solid transparent;
+  color: var(--color-white);
+  transition: color 0.3s, border 0.3s, background 0.3s;
+}
+
+.button--primary::before {
   content: "";
   position: absolute;
   height: 100%;
@@ -969,50 +969,50 @@ body::-webkit-scrollbar-thumb {
   transition: width 0.25s;
 }
 
-.button--blue:hover::before,
-.button--blue:focus::before,
-.button--blue:target::before {
+.button--primary:hover::before,
+.button--primary:focus::before,
+.button--primary:target::before {
   width: 0%;
 }
 
-.button--blue:hover,
-.button--blue:focus,
-.button--blue:target {
+.button--primary:hover,
+.button--primary:focus,
+.button--primary:target {
   color: var(--color-blue);
   background: var(--color-white);
   border: 1px solid var(--color-white);
 }
 
-.button--blue:active {
+.button--primary:active {
   color: var(--color-white);
   background: var(--color-white);
 }
 
-.button--blue:disabled {
+.button--primary:disabled {
   opacity: 0.45;
 }
 
-.button--blue.button--form {
+.button--primary.button--form {
   background: var(--color-blue);
   border: 1px solid transparent;
   color: var(--color-white);
   transition: color 0.3s, border 0.3s, background 0.3s;
 }
 
-.button--blue.button--form:hover,
-.button--blue.button--form:focus,
-.button--blue.button--form:target {
+.button--primary.button--form:hover,
+.button--primary.button--form:focus,
+.button--primary.button--form:target {
   color: var(--color-blue);
   background: var(--color-white);
   border: 1px solid var(--color-white);
 }
 
-.button--blue.button--form:active {
+.button--primary.button--form:active {
   color: var(--color-blue);
   background: var(--color-white);
 }
 
-.button--blue.button--form:disabled {
+.button--primary.button--form:disabled {
   opacity: 0.45;
 }
 
