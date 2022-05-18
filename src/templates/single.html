@@ -1,4 +1,6 @@
-{% include "partials/_header.html" %}
+{% extends "layouts/_default.html" %}
+
+{% block content %}
 
 <!-- Post -->
 <section class="post bg--dark-blue block-padding">
@@ -67,4 +69,4 @@
 
 {% include "template/_form-page.html" %}
 
-{% include "partials/_footer.html" %}
+{% endblock %}
