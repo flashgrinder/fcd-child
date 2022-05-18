@@ -15,6 +15,11 @@
     z-index: 10;
 }
 
+.info-block__text,
+.info-block__pic {
+    max-width: 570px;
+}
+
 .info-block__pic {
     margin-left: 20px;
 }
@@ -24,8 +29,12 @@
     max-height: 100%;
 }
 
-.info-block__btn {
+.info-block__actions {
     margin-top: 40px;
+}
+
+.info-block__btn ~ .info-block__btn {
+    margin-left: 25px;
 }
 
 .info-block__decor {
