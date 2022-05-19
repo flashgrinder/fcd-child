@@ -1,0 +1,26 @@
+.types-sites__items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 373px));
+    grid-gap: 20px;
+}
+
+.types-sites__card {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.types-sites__card-title {
+    margin-top: 15px;
+}
+
+.types-sites__card-descr {
+    margin-top: 5px;
+}
+
+.types-sites__card-action {
+    margin-top: 25px;
+}
+
+.types-sites__card-btn {
+    width: 100%;
+}

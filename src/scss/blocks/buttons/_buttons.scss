@@ -24,6 +24,25 @@
     font-weight: 300;
 }
 
+/* Button with icon */
+.button--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button__icon-white {
+    display: inline-block;
+    margin-left: 10px;
+    fill: var(--color-white);
+    transition: fill .300s ease-in-out, transform .300s ease-in-out;
+}
+
+.button--icon:hover .button__icon-white {
+    fill: var(--color-blue);
+    transform: translateX(5px);
+}
+
 /* Button dark */
 .button--dark {
     border: 1px solid transparent;

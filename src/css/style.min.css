@@ -769,6 +769,10 @@ img {
   margin: 0 0 15px;
 }
 
+.title--indent-45 {
+  margin: 0 0 45px;
+}
+
 /* Text */
 
 .text {
@@ -929,6 +933,26 @@ body::-webkit-scrollbar-thumb {
 .button--small {
   padding: 8px 15px;
   font-weight: 300;
+}
+
+/* Button with icon */
+
+.button--icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__icon-white {
+  display: inline-block;
+  margin-left: 10px;
+  fill: var(--color-white);
+  transition: fill 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.button--icon:hover .button__icon-white {
+  fill: var(--color-blue);
+  transform: translateX(5px);
 }
 
 /* Button dark */
@@ -1596,6 +1620,37 @@ body::-webkit-scrollbar-thumb {
   top: 50%;
   transform: translateY(-50%);
   color: rgba(255, 255, 255, 0.05);
+}
+
+/* Types-sites */
+
+.types-sites__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(200px, 373px) 20px minmax(200px, 373px) 20px minmax(200px, 373px);
+  grid-template-columns: repeat(3, minmax(200px, 373px));
+  grid-gap: 20px;
+}
+
+.types-sites__card {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.types-sites__card-title {
+  margin-top: 15px;
+}
+
+.types-sites__card-descr {
+  margin-top: 5px;
+}
+
+.types-sites__card-action {
+  margin-top: 25px;
+}
+
+.types-sites__card-btn {
+  width: 100%;
 }
 
 /* Wysiwyg */
