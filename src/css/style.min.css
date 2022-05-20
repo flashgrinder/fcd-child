@@ -1427,22 +1427,16 @@ body::-webkit-scrollbar-thumb {
   margin-top: 45px;
 }
 
+.popular-services__row ~ .popular-services__row {
+  margin-top: 25px;
+}
+
 .popular-services__item.button {
   opacity: 1;
 }
 
 .popular-services__item ~ .popular-services__item {
   margin-left: 25px;
-  margin-top: 25px;
-}
-
-.popular-services__item:nth-child(1),
-.popular-services__item:nth-child(2) {
-  margin-top: 0;
-}
-
-.popular-services__item:nth-child(2n+1) {
-  margin-left: 0;
 }
 
 .popular-services__pic {
