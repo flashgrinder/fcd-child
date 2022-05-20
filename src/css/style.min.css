@@ -1264,8 +1264,11 @@ body::-webkit-scrollbar-thumb {
 
 .info-block__inner {
   position: relative;
-  display: flex;
-  justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(400px, 570px) 30px minmax(400px, 570px);
+  grid-template-columns: repeat(2, minmax(400px, 570px));
+  grid-gap: 30px;
   align-items: center;
   z-index: 10;
 }

@@ -9,8 +9,9 @@
 
 .info-block__inner {
     position: relative;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 570px));
+    grid-gap: 30px;
     align-items: center;
     z-index: 10;
 }
