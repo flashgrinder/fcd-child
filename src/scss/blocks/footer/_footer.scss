@@ -1,0 +1,52 @@
+.footer {
+    position: relative;
+    background: #09080E26;
+    margin-top: -240px;
+    padding: 340px 0 180px;
+    // overflow: hidden;
+}
+
+.footer__decor {
+    position: absolute;
+    left: -10%;
+    bottom: -2%;
+    user-select: none;
+    pointer-events: none;
+}
+
+.footer__svg-decor {
+    display: block;
+}
+
+.footer__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__logo-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.footer__firm-name {
+    margin-left: 25px;
+}
+
+.footer__columns {
+    margin-top: 85px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-gap: 50px;
+    justify-content: space-between;
+}
+
+.footer__title-col {
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__menu-nav + .footer__title-col {
+    margin-top: 30px;
+}

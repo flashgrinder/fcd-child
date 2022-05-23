@@ -1,0 +1,32 @@
+.menu {
+    font-family: var(--font-helvetica-neue-cyr);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.menu__list {
+    margin: 0;
+    padding: 0;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+.menu__link {
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color ease-in-out .150s;
+}
+
+.menu__link:hover {
+    color: var(--color-blue);
+}
+
+.menu__item.footer__menu-item:first-child {
+    margin-top: 15px;
+}
+
+.menu__item.footer__menu-item ~ .menu__item.footer__menu-item  {
+    margin-top: 10px;
+}
