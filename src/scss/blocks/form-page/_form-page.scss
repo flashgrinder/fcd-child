@@ -1,10 +1,12 @@
 .form-page__inner {
+    position: relative;
     padding: 65px 30px;
     border-radius: 10px;
     background-image: url("../img/bg/elipses-bg.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    z-index: 1;
 }
 
 .form-page__info {
@@ -15,6 +17,10 @@
 .form-page__protect {
     max-width: 640px;
     margin: 45px auto 0 auto;
+}
+
+.form-page__form.invalid .form-page__input {
+    border: 1px solid #FF0000;
 }
 
 .form-page__fields {
@@ -67,11 +73,11 @@
 }
 
 .form-page .wpcf7-not-valid-tip {
-    color: red;
+    color: rgba(255, 0, 0, 0.45);
     position: absolute;
-    bottom: -18px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateY(-50%);
     font-size: 12px;
     text-align: center;
     max-width: fit-content;
