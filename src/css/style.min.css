@@ -1816,14 +1816,6 @@ body::-webkit-scrollbar-thumb {
   color: var(--color-blue);
 }
 
-.menu__item.footer__menu-item:first-child {
-  margin-top: 15px;
-}
-
-.menu__item.footer__menu-item ~ .menu__item.footer__menu-item {
-  margin-top: 10px;
-}
-
 /* Wysiwyg */
 
 .wysiwyg {
@@ -2084,6 +2076,14 @@ body::-webkit-scrollbar-thumb {
 
 .footer__menu-nav + .footer__title-col {
   margin-top: 30px;
+}
+
+.footer__menu-item.menu__item:first-child {
+  margin-top: 15px;
+}
+
+.footer__menu-item.menu__item ~ .footer__menu-item.menu__item {
+  margin-top: 10px;
 }
 
 /* MEDIA QUERIES */

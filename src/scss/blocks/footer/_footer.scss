@@ -3,7 +3,6 @@
     background: #09080E26;
     margin-top: -240px;
     padding: 340px 0 180px;
-    // overflow: hidden;
 }
 
 .footer__decor {
@@ -49,4 +48,12 @@
 
 .footer__menu-nav + .footer__title-col {
     margin-top: 30px;
+}
+
+.footer__menu-item.menu__item:first-child {
+    margin-top: 15px;
+}
+
+.footer__menu-item.menu__item ~ .footer__menu-item.menu__item  {
+    margin-top: 10px;
 }
