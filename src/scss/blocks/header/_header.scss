@@ -1,0 +1,32 @@
+.header {
+    position: absolute;
+    padding: 25px 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.header__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo-img {
+    display: block;
+}
+
+.header__menu-list.menu__list {
+    display: flex;
+}
+
+.header__menu-item.menu__item ~ .header__menu-item.menu__item {
+    margin-left: 25px;
+}
+
+.header__search {
+    cursor: pointer;
+}
+
+.header__search-icon {
+    display: block;
+}
