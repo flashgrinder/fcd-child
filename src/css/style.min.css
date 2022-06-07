@@ -40,12 +40,12 @@
 
 :root {
   --color-blue: #2360FE;
-  --color-dark: #092331;
-  --color-dark-blue: #13111B;
   --color-light-dark-blue: #1C1925;
   --color-dark-gray: #272237;
   --color-light-gray: #F0F6F7;
   --color-white: #FFFFFF;
+  --color-dark-blue: #221828;
+  --color-dark: #241B2A;
   --color-bg-primary: #1D1324;
   --color-accent-gradient: linear-gradient(90deg, #EB5733 0%, #E93873 100%);
   --color-accent-secondary: #E82F84;
@@ -585,8 +585,8 @@ img {
   background-color: var(--color-bg-primary);
 }
 
-.bg--light-dark-blue {
-  background-color: var(--color-light-dark-blue);
+.bg--dark-blue {
+  background-color: var(--color-dark-blue);
 }
 
 .block-padding {
@@ -958,7 +958,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .button--icon:hover .button__icon-white {
-  fill: var(--color-blue);
+  fill: var(--color-accent-secondary);
   transform: translateX(5px);
 }
 
@@ -967,7 +967,7 @@ body::-webkit-scrollbar-thumb {
 .button--dark {
   border: 1px solid transparent;
   color: var(--color-light-gray);
-  background: var(--color-dark-gray);
+  background: #241B2A;
   opacity: 0.55;
   transition: color 0.3s, background 0.3s, opacity 0.3s;
 }

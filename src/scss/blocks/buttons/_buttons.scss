@@ -39,7 +39,7 @@
 }
 
 .button--icon:hover .button__icon-white {
-    fill: var(--color-blue);
+    fill: var(--color-accent-secondary);
     transform: translateX(5px);
 }
 
@@ -47,7 +47,7 @@
 .button--dark {
     border: 1px solid transparent;
     color: var(--color-light-gray);
-    background: var(--color-dark-gray);
+    background: #241B2A;
     opacity: .55;
     transition: color .300s, background .300s, opacity .300s;
 }
