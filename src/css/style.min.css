@@ -590,7 +590,7 @@ img {
 }
 
 .block-padding {
-  padding: 50px 0;
+  padding: 75px 0;
 }
 
 /* Links */
@@ -977,13 +977,13 @@ body::-webkit-scrollbar-thumb {
 .button--dark:target,
 .button--dark:active {
   opacity: 1;
-  color: var(--color-blue);
+  color: var(--color-accent-secondary);
 }
 
 .button--dark.is-active {
   opacity: 1;
   color: var(--color-white);
-  background: var(--color-blue);
+  background: var(--color-accent-gradient);
 }
 
 /* Button primary */
