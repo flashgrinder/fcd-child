@@ -599,7 +599,7 @@ img {
   display: inline-block;
   font-size: calc(14px + 2 * ((100vw - 1024px) / 416));
   font-weight: 300;
-  color: var(--color-blue);
+  color: var(--color-accent-secondary);
   text-decoration: none;
   transition: color ease-out 0.15s, fill ease-out 0.15s;
   border: 1px solid transparent;
@@ -625,7 +625,7 @@ img {
 
 .link-secondary__arrow-secondary {
   display: block;
-  fill: var(--color-blue);
+  fill: var(--color-accent-secondary);
   transition: fill ease-out 0.15s, transform ease-out 0.15s;
   margin-left: 10px;
 }
@@ -1416,13 +1416,13 @@ body::-webkit-scrollbar-thumb {
 
 .news-list__cat {
   border-radius: 3px;
-  background: var(--color-dark-gray);
+  background: var(--color-dark);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .news-list__cat:hover {
-  color: var(--color-blue);
+  color: var(--color-accent-secondary);
 }
 
 .news-list__cat,
