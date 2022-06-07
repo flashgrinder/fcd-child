@@ -46,6 +46,7 @@
   --color-dark-gray: #272237;
   --color-light-gray: #F0F6F7;
   --color-white: #FFFFFF;
+  --color-bg-primary: #1D1324;
   --color-accent-gradient: linear-gradient(90deg, #EB5733 0%, #E93873 100%);
   --color-accent-secondary: #E82F84;
   --font-helvetica-neue-cyr: "HelveticaNeueCyr", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -580,8 +581,8 @@ img {
   background-color: var(--color-dark);
 }
 
-.bg--dark-blue {
-  background-color: var(--color-dark-blue);
+.bg--primary {
+  background-color: var(--color-bg-primary);
 }
 
 .bg--light-dark-blue {
