@@ -15,14 +15,6 @@
     display: block;
 }
 
-.header__menu-list.menu__list {
-    display: flex;
-}
-
-.header__menu-item.menu__item ~ .header__menu-item.menu__item {
-    margin-left: 25px;
-}
-
 .header__search {
     cursor: pointer;
 }
