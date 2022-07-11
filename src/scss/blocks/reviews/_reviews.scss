@@ -1,0 +1,14 @@
+.reviews__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, .33fr));
+    grid-gap: 20px;
+    @include tabletSM-block {
+        grid-template-columns: repeat(auto-fit, minmax(300px, .5fr));
+    }
+    @include mobile-block {
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    }
+    @include mobileXS-block {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}

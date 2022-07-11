@@ -34,13 +34,27 @@
 .button__icon-white {
     display: inline-block;
     margin-left: 10px;
+    transition: fill .150s ease-in-out, stroke .150s ease-in-out, transform .150s ease-in-out;
+}
+
+.button__icon-white-fill {
     fill: var(--color-white);
-    transition: fill .300s ease-in-out, transform .300s ease-in-out;
+}
+
+.button__icon-white-stroke {
+    stroke: var(--color-white);
 }
 
 .button--icon:hover .button__icon-white {
-    fill: var(--color-accent-secondary);
     transform: translateX(5px);
+}
+
+.button--icon:hover .button__icon-white-fill {
+    fill: var(--color-accent-secondary);
+}
+
+.button--icon:hover .button__icon-white-stroke {
+    stroke: var(--color-accent-secondary);
 }
 
 /* Button dark */
