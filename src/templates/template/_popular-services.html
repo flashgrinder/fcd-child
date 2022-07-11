@@ -4,7 +4,7 @@
         <div class="popular-services__inner bg--dark-blue">
             <div class="popular-services__info">
                 <h2 class="popular-services__heading title title--large title--white title--w-bold">
-                    {% if title == "Блог" or title == "Детальная новость" %}
+                    {% if title == "Блог" or title == "Детальная новость" or title == "Контакты" or title == "О компании" %}
                         Популярные услуги
                     {% elif title == "Создание сайтов" %}
                         Виды сайтов
@@ -235,7 +235,7 @@
                         </linearGradient>
                         </defs>
                     </svg>
-                {% elif title == "Создание сайтов" %}
+                {% elif title == "Создание сайтов" or title == "Контакты" or title == "О компании" %}
                     <svg class="popular-services__svg" width="453" height="238" viewBox="0 0 453 238" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M378.77 214.849H63.4614C60.1135 214.849 57.4004 212.127 57.4004 208.769V9.37274C57.4004 6.01451 60.1135 3.29297 63.4614 3.29297H378.77C382.118 3.29297 384.831 6.01451 384.831 9.37274V208.757C384.831 212.127 382.118 214.849 378.77 214.849Z" fill="#3E3C4B"/>
                         <path d="M379.389 214.849H64.0805C60.7327 214.849 58.0195 212.127 58.0195 208.769V9.37274C58.0195 6.01451 60.7327 3.29297 64.0805 3.29297H379.389C382.737 3.29297 385.45 6.01451 385.45 9.37274V208.757C385.45 212.127 382.737 214.849 379.389 214.849Z" fill="#302E3C"/>
