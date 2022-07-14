@@ -1,0 +1,141 @@
+{% set title = "Вакансии" %}
+
+{% extends "layouts/_default.html" %}
+
+{% block content %}
+
+{% include "template/_info-block.html" %}
+
+<!-- Vacancy -->
+<section id="vacancy" class="vacancy block-padding">
+    <div class="vacancy__body container">
+        <div class="vacancy__filters">
+            <a href="#" class="vacancy__btn-filter button button--dark button--small is-active">
+                Все
+            </a>
+            <a href="#" class="vacancy__btn-filter button button--dark button--small">
+                Из офиса
+            </a>
+            <a href="#" class="vacancy__btn-filter button button--dark button--small">
+                Удалённая работа
+            </a>
+            <a href="#" class="vacancy__btn-filter button button--dark button--small">
+                Без опыта
+            </a>
+            <a href="#" class="vacancy__btn-filter button button--dark button--small">
+                От 1 года
+            </a>
+            <a href="#" class="vacancy__btn-filter button button--dark button--small">
+                От 2 лет
+            </a>
+            <a href="#" class="vacancy__btn-filter button button--dark button--small">
+                Полный рабочий день
+            </a>
+            <a href="#" class="vacancy__btn-filter button button--dark button--small">
+                Сокращённый рабочий день
+            </a>
+        </div>
+        <div class="vacancy__list">
+            <article class="vacancy__item">
+                <div class="vacancy__info">
+                    <h3 class="vacancy__title title title--medium title--white title--w-bold">
+                        Системный администратор
+                    </h3>
+                    <div class="vacancy__descr text text--normal text--white title--w-light">
+                        Приятно, граждане, наблюдать, как сторонники тоталитаризма в науке, инициированные исключительно синтетически, своевременно верифицированы. Современные.
+                    </div>
+                    <div class="vacancy__tags">
+                        <a href="#" class="vacancy__tag button button--dark button--small">
+                            Без опыта
+                        </a>
+                        <a href="#" class="vacancy__tag button button--dark button--small">
+                            От 1 года
+                        </a>
+                        <a href="#" class="vacancy__tag button button--dark button--small">
+                            От 2 лет
+                        </a>
+                        <a href="#" class="vacancy__tag button button--dark button--small">
+                            Полный рабочий день
+                        </a>
+                    </div>
+                </div>
+                <div class="vacancy__action">
+                    <a href="#" class="vacancy__button button button--primary">
+                        Откликнуться
+                    </a>
+                </div>
+            </article>
+            <article class="vacancy__item">
+                <div class="vacancy__info">
+                    <h3 class="vacancy__title title title--medium title--white title--w-bold">
+                        СЕО специалист
+                    </h3>
+                    <div class="vacancy__descr text text--normal text--white title--w-light">
+                        Приятно, граждане, наблюдать, как сторонники тоталитаризма в науке, инициированные исключительно синтетически, своевременно верифицированы. Современные.
+                        Приятно, граждане, наблюдать, как сторонники тоталитаризма в науке, инициированные исключительно синтетически, своевременно верифицированы. Современные.
+                    </div>
+                    <div class="vacancy__tags">
+                        <a href="#" class="vacancy__tag button button--dark button--small">
+                            Без опыта
+                        </a>
+                        <a href="#" class="vacancy__tag button button--dark button--small">
+                            От 1 года
+                        </a>
+                        <a href="#" class="vacancy__tag button button--dark button--small">
+                            От 2 лет
+                        </a>
+                        <a href="#" class="vacancy__tag button button--dark button--small">
+                            Полный рабочий день
+                        </a>
+                    </div>
+                </div>
+                <div class="vacancy__action">
+                    <a href="#" class="vacancy__button button button--primary">
+                        Откликнуться
+                    </a>
+                </div>
+            </article>
+            <article class="vacancy__item">
+                <div class="vacancy__info">
+                    <h3 class="vacancy__title title title--medium title--white title--w-bold">
+                        Таргетолог
+                    </h3>
+                    <div class="vacancy__descr text text--normal text--white title--w-light">
+                        Приятно, граждане, наблюдать, как сторонники тоталитаризма в науке, инициированные исключительно синтетически, своевременно верифицированы. Современные.
+                    </div>
+                    <div class="vacancy__tags">
+                        <a href="#" class="vacancy__tag button button--dark button--small">
+                            Без опыта
+                        </a>
+                        <a href="#" class="vacancy__tag button button--dark button--small">
+                            От 1 года
+                        </a>
+                        <a href="#" class="vacancy__tag button button--dark button--small">
+                            От 2 лет
+                        </a>
+                        <a href="#" class="vacancy__tag button button--dark button--small">
+                            Полный рабочий день
+                        </a>
+                    </div>
+                </div>
+                <div class="vacancy__action">
+                    <a href="#" class="vacancy__button button button--primary">
+                        Откликнуться
+                    </a>
+                </div>
+            </article>
+        </div>
+        <div class="vacancy__content wysiwyg">
+            <p>
+                С учётом сложившейся международной обстановки, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение дальнейших направлений развития. Современные технологии достигли такого уровня, что сплочённость команды профессионалов предполагает независимые способы реализации модели развития. Повседневная практика показывает, что реализация намеченных плановых заданий способствует повышению качества системы массового.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- /. Vacancy -->
+
+{% include "template/_popular-services.html" %}
+
+{% include "template/_form-page.html" %}
+
+{% endblock %}

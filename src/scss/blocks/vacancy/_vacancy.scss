@@ -1,0 +1,54 @@
+.vacancy__filters {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    @include tabletSM-block {
+        overflow-x: auto;
+        touch-action: cross-slide-y;
+        -ms-overflow-style: none;
+    }
+}
+
+.vacancy__filters::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+.vacancy__btn-filter {
+    min-width: fit-content;
+}
+
+.vacancy__btn-filter ~ .vacancy__btn-filter {
+    margin-left: 15px;
+}
+
+.vacancy__item {
+    padding: 45px;
+    margin-top: 25px;
+    background: var(--color-dark-blue);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) minmax(180px, 200px);
+    grid-gap: 50px;
+}
+
+.vacancy__action {
+    align-self: center;
+    margin-left: auto;
+}
+
+.vacancy__descr {
+    margin-top: 25px;
+}
+
+.vacancy__tags {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    justify-content: start;
+    align-items: start;
+    grid-gap: 15px;
+}
+
+.vacancy__content {
+    margin-top: 45px;
+}
