@@ -2372,6 +2372,39 @@ body::-webkit-scrollbar-thumb {
   margin-top: 45px;
 }
 
+/* Cards-feature */
+
+.cards-feature {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 0.33333fr));
+  grid-gap: 20px;
+  margin-top: 45px;
+}
+
+.cards-feature__item {
+  padding: 25px 25px 15px 15px;
+  background: var(--color-dark-blue);
+  border-radius: 10px;
+}
+
+.cards-feature__heading {
+  display: flex;
+}
+
+.cards-feature__icon {
+  display: block;
+}
+
+.cards-feature__text {
+  margin-left: 10px;
+}
+
+.cards-feature__descr {
+  margin-top: 15px;
+  padding-left: 32px;
+}
+
 /* Footer */
 
 .footer {
@@ -2536,6 +2569,11 @@ body::-webkit-scrollbar-thumb {
 
   .reviews__items {
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  }
+
+  .cards-feature {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 

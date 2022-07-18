@@ -1,0 +1,32 @@
+.cards-feature {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, .33333fr));
+    grid-gap: 20px;
+    margin-top: 45px;
+    @include mobile-block {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cards-feature__item {
+    padding: 25px 25px 15px 15px;
+    background: var(--color-dark-blue);
+    border-radius: 10px;
+}
+
+.cards-feature__heading {
+    display: flex;
+}
+
+.cards-feature__icon {
+    display: block;
+}
+
+.cards-feature__text {
+    margin-left: 10px;
+}
+
+.cards-feature__descr {
+    margin-top: 15px;
+    padding-left: 32px;
+}
