@@ -1,0 +1,83 @@
+.tarifs__slider {
+    position: relative;
+}
+
+.tarifs__swiper-container.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.tarifs__swiper-wrapper {
+    position: relative;
+}
+
+.tarifs__slider-nav {
+    display: flex;
+    align-items: center;
+}
+
+.tarifs__slider-arrow {
+    position: absolute;
+    top: 52%;
+    transform: translateY(-51%);
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    background: var(--color-accent-secondary);
+    transition: background .150s ease-in-out;
+}
+
+.tarifs__slider-arrow-svg {
+    stroke: var(--color-white);
+    transition: stroke .150s ease-in-out;
+}
+
+.tarifs__slider-arrow:hover  {
+    background: var(--color-white);
+}
+
+.tarifs__slider-arrow:hover .tarifs__slider-arrow-svg {
+    stroke: var(--color-accent-secondary);
+}
+
+.tarifs__slider-arrow.swiper-button-disabled {
+    opacity: 0;
+}
+
+.tarifs__swiper-button-prev {
+    left: -50px;
+    right: auto;
+    padding: 13px 16px 13px 14px;
+    @include tablet-block {
+        left: -20px;
+    }
+    @include mobileXS-block {
+        left: 0;
+    }
+}
+
+.tarifs__swiper-button-next {
+    right: -50px;
+    left: auto;
+    padding: 13px 14px 13px 16px;
+    @include tablet-block {
+        right: -20px;
+    }
+    @include mobileXS-block {
+        right: 0;
+    }
+}
+
+/* На будущее для скрипта */
+.tarifs__swiper-wrapper.disabled {
+    transform: translate3d(0px, 0, 0) !important;
+}
+
+.tarifs__slider-nav.disabled {
+    display: none;
+}

@@ -238,6 +238,9 @@
 	&--light-gray {
 		color: var(--color-light-gray);
 	}
+	&--dark-gray {
+		color: var(--color-dark-gray);
+	}
 	&--large {
         font-size: responsive 18px 22px;
         font-range: 320px 1440px;
