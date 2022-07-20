@@ -1,7 +1,10 @@
 .tarif-card {
+    display: flex;
+    flex-direction: column;
     padding: 25px;
     background: var(--color-dark-blue);
     border-radius: 10px;
+    height: 100%;
 }
 
 .tarif-card__header {
@@ -48,6 +51,10 @@
 .tarif-card__check::before {
     content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMSAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgNy42Njc2NEw0LjYgMTEuMDAxTDEwIDEuMDAwOTgiIHN0cm9rZT0iI0U4MkY4NCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=');
     margin-right: 15px;
+}
+
+.tarif-card__footer {
+    margin-top: auto;
 }
 
 .tarif-card__action {
