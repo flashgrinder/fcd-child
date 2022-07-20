@@ -81,3 +81,31 @@
 .tarifs__slider-nav.disabled {
     display: none;
 }
+
+/* Tarifs tabs */
+.tarifs__tabs-buttons {
+    display: flex;
+}
+
+.tarifs__tabs-button {
+    font-family: var(--font-helvetica-neue-cyr);
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color-white);
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    transition: color .150s ease-in-out;
+}
+
+.tarifs__tabs-button:hover {
+    color: var(--color-accent-secondary);
+}
+
+.tarifs__tabs-button.is-active {
+    color: var(--color-accent-secondary);
+    border-bottom: 1px solid var(--color-accent-secondary);
+}
+
+.tarifs__tabs-wrapper {
+    margin-top: 25px;
+}

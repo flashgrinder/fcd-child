@@ -2,7 +2,8 @@ import gsap from 'gsap';
 import horizontalScroll from '../libs/modules/horizontal-scroll';
 import progressBar from '../libs/modules/progress-bar';
 import parallaxjs from '../libs/modules/parallax';
-import tarifsSliderStore from '../libs/modules/tarifs';
+import tarifsSlider from '../libs/modules/tarifs';
+import tabs from '../libs/modules/tabs';
 
 document.addEventListener('DOMContentLoaded', function(e) {
 
@@ -14,9 +15,11 @@ document.addEventListener('DOMContentLoaded', function(e) {
     const progressBarTrue = document.querySelector('.progress');
     const paralaxjsTrue = document.querySelector('.parallax-container');
     const tarifsSliderTrue = document.querySelector('.tarifs__slider');
+    const tabsTrue = document.querySelector('.tabs');
     
     horizintalScrollTrue ? horizontalScroll.init() : false;
     progressBarTrue ? progressBar.init() : false;
     paralaxjsTrue ? parallaxjs.init() : false;
-    tarifsSliderTrue ? tarifsSliderStore.init() : false;
+    tarifsSliderTrue ? tarifsSlider.init() : false;
+    tabsTrue ? tabs.init() : false;
 });

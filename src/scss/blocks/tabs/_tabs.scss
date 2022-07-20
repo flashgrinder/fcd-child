@@ -1,0 +1,16 @@
+.tabs__button {
+    cursor: pointer;
+}
+
+.tabs__content {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    transition: opacity .500s ease-in-out;
+}
+
+.tabs__content.is-open {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}

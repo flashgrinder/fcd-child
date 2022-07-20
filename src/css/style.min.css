@@ -2701,6 +2701,35 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 
+/* Tarifs tabs */
+
+.tarifs__tabs-buttons {
+  display: flex;
+}
+
+.tarifs__tabs-button {
+  font-family: var(--font-helvetica-neue-cyr);
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-white);
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease-in-out;
+}
+
+.tarifs__tabs-button:hover {
+  color: var(--color-accent-secondary);
+}
+
+.tarifs__tabs-button.is-active {
+  color: var(--color-accent-secondary);
+  border-bottom: 1px solid var(--color-accent-secondary);
+}
+
+.tarifs__tabs-wrapper {
+  margin-top: 25px;
+}
+
 /* Tarif-card */
 
 .tarif-card {
@@ -2758,6 +2787,25 @@ body::-webkit-scrollbar-thumb {
 .tarif-card__action {
   margin-top: 45px;
   text-align: center;
+}
+
+/* Tabs */
+
+.tabs__button {
+  cursor: pointer;
+}
+
+.tabs__content {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.tabs__content.is-open {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
 }
 
 /* Footer */
