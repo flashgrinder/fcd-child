@@ -2751,17 +2751,20 @@ body::-webkit-scrollbar-thumb {
 }
 
 .tarif-card__time,
-.tarif-card__num {
+.tarif-card__pretext {
   display: inline-block;
 }
 
-.tarif-card__time,
-.tarif-card__symbol {
+.tarif-card__time {
   margin-left: 15px;
 }
 
-.tarif-card__num {
+.tarif-card__symbol {
   margin-left: 10px;
+}
+
+.tarif-card__pretext {
+  margin-right: 10px;
 }
 
 .tarif-card__price {

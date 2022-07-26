@@ -4,7 +4,7 @@ function init() {
 
     Swiper.use([Navigation]);
 
-    const tarifsSliderStore = new Swiper(".tarifs__swiper-container--store", {
+    const tarifsSliderStore = new Swiper(".tarifs__swiper-container--default", {
         slidesPerView: 1,
         autoHeight: true,
         navigation: {
