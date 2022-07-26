@@ -1,0 +1,40 @@
+.pagination {
+    font-family: var(--font-helvetica-neue-cyr);
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 45px;
+}
+
+.pagination__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination .page-numbers {
+    padding: 5px 15px;
+    color: var(--color-white);
+    background: var(--color-dark-blue);
+    text-decoration: none;
+    border-radius: 3px;
+    transition: color .150s ease-in-out, background .150s ease-in-out;
+    @include mobileXS-block {
+        padding: 10px 20px;
+    }
+}
+
+.pagination .page-numbers ~ .page-numbers {
+    margin-left: 15px;
+    @include mobileXS-block {
+        margin-left: 10px;
+    }
+}
+
+.pagination .page-numbers.current {
+    color: var(--color-accent-secondary);
+}
+
+.pagination .page-numbers:hover {
+    color: var(--color-white);
+    background: var(--color-accent-secondary);
+}
