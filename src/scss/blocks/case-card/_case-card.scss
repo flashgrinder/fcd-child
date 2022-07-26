@@ -1,0 +1,28 @@
+.case-card {
+    position: relative;
+    border-radius: 10px;
+    background: var(--color-dark-blue);
+}
+
+.case-card__tags {
+    position: absolute;
+    padding: 15px;
+}
+
+.case-card__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.case-card__text {
+    padding: 25px 15px 15px;
+}
+
+.case-card__footer {
+    padding: 10px 15px 15px;
+}
+
+.case-card__button {
+    width: 100%;
+}

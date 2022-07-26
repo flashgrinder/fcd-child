@@ -1,0 +1,29 @@
+.cases__filters {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    @include tabletSM-block {
+        overflow-x: auto;
+        touch-action: cross-slide-y;
+        -ms-overflow-style: none;
+    }
+}
+
+.cases__filters::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+.cases__btn-filter {
+    min-width: fit-content;
+}
+
+.cases__btn-filter ~ .cases__btn-filter {
+    margin-left: 15px;
+}
+
+.cases__items {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 80px 20px;
+}

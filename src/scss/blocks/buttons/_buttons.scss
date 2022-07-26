@@ -24,6 +24,12 @@
     font-weight: 300;
 }
 
+/* Bitton tiny */
+.button--tiny {
+    padding: 5px 15px;
+    font-weight: 300;
+}
+
 /* Button with icon */
 .button--icon {
     display: flex;
@@ -77,7 +83,7 @@
 .button--dark.is-active {
     opacity: 1;
     color: var(--color-white);
-    background: var(--color-accent-gradient);
+    background: var(--color-accent-secondary);
 }
 
 /* Button primary */
