@@ -2,25 +2,29 @@
     position: relative;
     display: grid;
     grid-template-columns: minmax(300px, 1fr) minmax(280px, 400px);
+    align-items: center;
     overflow: hidden;
-    padding: 65px 25px;
+    padding: 35px 25px;
     border-radius: 10px;
+    @include mobileXS-block {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        padding: 35px 20px;
+    }
 }
 
 .popular-services__items {
     margin-top: 45px;
-}
-
-.popular-services__row ~ .popular-services__row {
-    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    grid-gap: 25px;
+    max-width: 540px;
 }
 
 .popular-services__item.button {
     opacity: 1;
-}
-
-.popular-services__item ~ .popular-services__item {
-    margin-left: 25px;
 }
 
 .popular-services__pic {
@@ -29,7 +33,7 @@
     z-index: 1;
 }
 
-.popular-services__svg {
+.popular-services__img {
     display: inline-block;
     max-width: 100%;
     height: 100%;
@@ -42,4 +46,5 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
     user-select: none;
+    @include mobileXS(top, 30%);
 }
