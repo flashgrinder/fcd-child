@@ -3248,6 +3248,15 @@ body::-webkit-scrollbar-thumb {
     padding-right: 10px;
   }
 
+  .info-block__btn {
+    width: 100%;
+  }
+
+  .info-block__btn ~ .info-block__btn {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
   .news-list__item {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;

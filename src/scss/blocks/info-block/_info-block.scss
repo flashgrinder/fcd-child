@@ -44,8 +44,16 @@
     margin-top: 40px;
 }
 
+.info-block__btn {
+    @include mobileXS(width, 100%);
+}
+
 .info-block__btn ~ .info-block__btn {
     margin-left: 25px;
+    @include mobileXS-block {
+        margin-left: 0;
+        margin-top: 15px;
+    }
 }
 
 .info-block__decor {
