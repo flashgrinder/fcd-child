@@ -1,6 +1,7 @@
 .team__items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(218px, 1fr));
+    grid-auto-rows: 1fr;
     grid-gap: 45px 20px;
 }
 
@@ -10,6 +11,7 @@
 
 .team__photo,
 .team__img {
+    display: inline-block;
     max-width: 275px;
     max-height: 275px;
     width: 100%;
@@ -38,6 +40,31 @@
 
 .team__position {
     margin-top: 15px;
+}
+
+.team__photo--link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team__photo--link:hover .team__svg-plus {
+    stroke: var(--color-accent-secondary);
+}
+
+.team__svg-wrapper {
+    display: flex;
+    background: var(--color-dark);
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+.team__svg-plus {
+    stroke: var(--color-white);
+    transition: stroke .150s ease-in-out;
 }
 
 .team__link {
