@@ -1,7 +1,7 @@
 .review-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 100%;
     padding: 25px;
     background: var(--color-dark-blue);
     border-radius: 10px;
@@ -9,6 +9,8 @@
 
 .review-card__header {
     display: flex;
+    display: grid;
+    grid-template-columns: minmax(70px, 70px) minmax(100px, 1fr);
 }
 
 .review-card__photo {
@@ -36,6 +38,7 @@
 
 .review-card__body {
     margin-top: 25px;
+    height: 100%;
 }
 
 .review-card__descr {
@@ -43,5 +46,5 @@
 }
 
 .review-card__footer {
-    margin: 45px auto 0;
+    margin: 45px 0 0;
 }
