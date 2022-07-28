@@ -166,19 +166,19 @@
     margin: 0;
     &--huge {
         font-size: responsive 45px 65px;
-        font-range: 320px 1440px;
+        font-range: 360px 1440px;
     }
     &--big {
         font-size: responsive 35px 45px;
-        font-range: 320px 1440px;
+        font-range: 360px 1440px;
     }
     &--large {
-        font-size: responsive 22px 35px;
-        font-range: 1024px 1440px;
+        font-size: responsive 30px 35px;
+        font-range: 360px 1440px;
     }
     &--medium {
         font-size: responsive 20px 22px;
-        font-range: 1024px 1440px;
+        font-range: 360px 1440px;
     }
     &--pre-medium {
         font-size: 18px;

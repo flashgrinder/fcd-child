@@ -721,7 +721,7 @@ img {
 }
 
 .title--huge {
-  font-size: calc(45px + 20 * ((100vw - 320px) / 1120));
+  font-size: calc(45px + 20 * ((100vw - 360px) / 1080));
 }
 
 @media screen and (min-width: 1440px){
@@ -731,7 +731,7 @@ img {
   }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 360px){
 
   .title--huge{
     font-size: 45px;
@@ -739,7 +739,7 @@ img {
 }
 
 .title--big {
-  font-size: calc(35px + 10 * ((100vw - 320px) / 1120));
+  font-size: calc(35px + 10 * ((100vw - 360px) / 1080));
 }
 
 @media screen and (min-width: 1440px){
@@ -749,7 +749,7 @@ img {
   }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 360px){
 
   .title--big{
     font-size: 35px;
@@ -757,7 +757,7 @@ img {
 }
 
 .title--large {
-  font-size: calc(22px + 13 * ((100vw - 1024px) / 416));
+  font-size: calc(30px + 5 * ((100vw - 360px) / 1080));
 }
 
 @media screen and (min-width: 1440px){
@@ -767,15 +767,15 @@ img {
   }
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 360px){
 
   .title--large{
-    font-size: 22px;
+    font-size: 30px;
   }
 }
 
 .title--medium {
-  font-size: calc(20px + 2 * ((100vw - 1024px) / 416));
+  font-size: calc(20px + 2 * ((100vw - 360px) / 1080));
 }
 
 @media screen and (min-width: 1440px){
@@ -785,7 +785,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 360px){
 
   .title--medium{
     font-size: 20px;
