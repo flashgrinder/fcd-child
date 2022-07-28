@@ -3148,6 +3148,11 @@ body::-webkit-scrollbar-thumb {
     display: none !important;
   }
 
+  .solutions__items {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
   .team__photo,
   .team__img {
     max-width: 100%;
@@ -3229,11 +3234,6 @@ body::-webkit-scrollbar-thumb {
 
   .types-sites__items {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  .solutions__items {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
   }
 
   .contacts__map {
