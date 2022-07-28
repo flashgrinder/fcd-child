@@ -3011,6 +3011,7 @@ body::-webkit-scrollbar-thumb {
 
 .footer__svg-decor {
   display: block;
+  max-width: 100%;
 }
 
 .footer__row {
