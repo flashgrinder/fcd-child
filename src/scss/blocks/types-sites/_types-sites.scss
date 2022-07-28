@@ -1,12 +1,33 @@
 .types-sites__items {
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 373px));
+    grid-template-columns: repeat(auto-fit, minmax(200px, .33333fr));
     grid-gap: 20px;
+    @include mobile-block {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    @include mobileXS-block {
+        grid-template-columns: 1fr;
+    }
 }
 
 .types-sites__card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     padding: 20px;
     border-radius: 10px;
+}
+
+.types-sites__img {
+    display: block;
+    width: 100%;
+}
+
+.types-sites__card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .types-sites__card-title {
