@@ -2631,6 +2631,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
+  grid-gap: 15px;
 }
 
 .vacancy__filters::-webkit-scrollbar {
@@ -2641,10 +2642,6 @@ body::-webkit-scrollbar-thumb {
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
-}
-
-.vacancy__btn-filter ~ .vacancy__btn-filter {
-  margin-left: 15px;
 }
 
 .vacancy__item {
@@ -2671,11 +2668,9 @@ body::-webkit-scrollbar-thumb {
 
 .vacancy__tags {
   margin-top: 45px;
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
-  justify-content: start;
-  align-items: start;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
   grid-gap: 15px;
 }
 
@@ -3299,6 +3294,24 @@ body::-webkit-scrollbar-thumb {
 
   .reviews__items {
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  }
+
+  .vacancy__item {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding: 25px;
+  }
+
+  .vacancy__action {
+    margin-left: 0;
+  }
+
+  .vacancy__button {
+    width: 100%;
+  }
+
+  .vacancy__tags {
+    margin-top: 25px;
   }
 }
 
