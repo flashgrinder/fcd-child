@@ -7,10 +7,18 @@
     background-position: center;
     background-size: cover;
     z-index: 1;
+    @include mobileXS-block {
+        padding: 65px 20px;
+        background-size: 160% 100%;
+    }
 }
 
 .form-page__info {
     text-align: center;
+}
+
+.form-page__descr {
+    @include mobileXS(padding, 0 15px);
 }
 
 .form-page__form,
@@ -26,6 +34,9 @@
 .form-page__fields {
     display: flex;
     justify-content: space-between;
+    @include mobileXS-block {
+        flex-direction: column;
+    }
 }
 
 .form-page__field {
@@ -59,6 +70,14 @@
 
 .form-page__actions {
     margin-left: 33px;
+    @include mobileXS-block {
+        margin-left: 0;
+        margin-top: 25px;
+    }
+}
+
+.form-page__btn {
+    @include mobile(width, 100%);
 }
 
 .form-page__protect {
@@ -83,6 +102,12 @@
     max-width: fit-content;
     padding: 2px 8px;
     width: 100%;
+    @include mobileXS-block {
+        top: auto;
+        bottom: -20px;
+        left: 0;
+        transform: translateY(0%);
+    }
 }
 
 .form-page .wpcf7-response-output {

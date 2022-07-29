@@ -3270,6 +3270,10 @@ body::-webkit-scrollbar-thumb {
     margin-top: 15px;
   }
 
+  .form-page__btn {
+    width: 100%;
+  }
+
   .types-sites__items {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
@@ -3359,6 +3363,31 @@ body::-webkit-scrollbar-thumb {
 
   .popular-services__decor {
     top: 30%;
+  }
+
+  .form-page__inner {
+    padding: 65px 20px;
+    background-size: 160% 100%;
+  }
+
+  .form-page__descr {
+    padding: 0 15px;
+  }
+
+  .form-page__fields {
+    flex-direction: column;
+  }
+
+  .form-page__actions {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+
+  .form-page .wpcf7-not-valid-tip {
+    top: auto;
+    bottom: -20px;
+    left: 0;
+    transform: translateY(0%);
   }
 
   .types-sites__items {
