@@ -21,6 +21,11 @@
 .cases-slider__slider-nav {
     display: flex;
     align-items: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 101;
+    transform: translateY(-50%);
 }
 
 .cases-slider__slider-arrow {
@@ -34,6 +39,9 @@
     border-radius: 3px;
     background: var(--color-dark-blue);
     transition: background .150s ease-in-out;
+    @include large-block {
+        background: var(--color-bg-primary);
+    }
 }
 
 .cases-slider__slider-arrow-svg {
@@ -57,10 +65,13 @@
     left: -50px;
     right: auto;
     padding: 13px 16px 13px 14px;
+    @include large-block {
+        left: 0px;
+    }
     @include tablet-block {
         left: -20px;
     }
-    @include mobileXS-block {
+    @include mobile-block {
         left: 0;
     }
 }
@@ -69,10 +80,13 @@
     right: -50px;
     left: auto;
     padding: 13px 14px 13px 16px;
+    @include large-block {
+        right: 0px;
+    }
     @include tablet-block {
         right: -20px;
     }
-    @include mobileXS-block {
+    @include mobile-block {
         right: 0;
     }
 }

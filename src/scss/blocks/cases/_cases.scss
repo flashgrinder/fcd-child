@@ -2,6 +2,7 @@
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    grid-gap: 15px;
     @include tabletSM-block {
         overflow-x: auto;
         touch-action: cross-slide-y;
@@ -15,10 +16,6 @@
 
 .cases__btn-filter {
     min-width: fit-content;
-}
-
-.cases__btn-filter ~ .cases__btn-filter {
-    margin-left: 15px;
 }
 
 .cases__items {
