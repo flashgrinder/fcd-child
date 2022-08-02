@@ -3271,8 +3271,14 @@ body::-webkit-scrollbar-thumb {
     display: none !important;
   }
 
+  .page__container {
+    padding-top: 76px;
+  }
+
   .header {
+    position: fixed;
     background: #13111B;
+    padding: 15px 0;
   }
 
   .header__search {
