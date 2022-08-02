@@ -3,6 +3,7 @@
     padding: 25px 0;
     width: 100%;
     z-index: 100;
+    @include tablet(background, #13111B);
 }
 
 .header__body {
@@ -17,8 +18,58 @@
 
 .header__search {
     cursor: pointer;
+    @include tablet-block {
+        margin-left: auto;
+        margin-right: 30px;
+    }
 }
 
 .header__search-icon {
     display: block;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    @include tablet-block {
+        position: absolute;
+        top: 100%;
+        height: calc(100vh - 0px);
+        left: 0;
+        margin-top: 0;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(50px);
+        width: 100%;
+        z-index: 101;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s ease-in-out;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.header__menu.menu {
+    @include tablet-block {
+        font-size: 22px;
+    }
+}
+
+.header__menu-list > .header__menu-item {
+    @include tablet(opacity, 0);
+}
+
+.header__menu-list {
+    @include tablet-block {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.header__menu-item.menu__item ~ .header__menu-item.menu__item {
+    @include tablet-block {
+        margin-left: 0;
+        margin-top: 30px;
+    }
 }

@@ -76,6 +76,70 @@ img {
 
 /* Animation */
 
+/* Burger-menu */
+
+@-webkit-keyframes rotate-burger-before {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes rotate-burger-before {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@-webkit-keyframes rotate-burger-after {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes rotate-burger-after {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+/* Rotate */
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @-webkit-keyframes wiggle-hand {
   0% {
     transform: rotate(0deg);
@@ -113,16 +177,6 @@ img {
 
   100% {
     transform: rotate(10deg);
-  }
-}
-
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
   }
 }
 
@@ -1456,6 +1510,75 @@ body::-webkit-scrollbar-thumb {
   display: block;
 }
 
+.header__inner {
+  display: flex;
+  align-items: center;
+}
+
+/* Burger-menu */
+
+.burger-menu {
+  width: 20px;
+  height: 16px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+}
+
+.burger-menu__line {
+  display: block;
+  position: relative;
+  width: 15px;
+  height: 2px;
+  background-color: var(--color-white);
+}
+
+.burger-menu__line,
+.burger-menu__line::before,
+.burger-menu__line::after {
+  border-radius: 50px;
+  transition: transform 0.2s ease-in-out, top 0.2s ease-in-out, background-color 0.1s ease-in-out;
+}
+
+.burger-menu__line::before,
+.burger-menu__line::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: var(--color-white);
+}
+
+.burger-menu__line::before {
+  bottom: 0;
+  right: 0;
+  top: 6px;
+  width: 15px;
+}
+
+.burger-menu__line::after {
+  top: 0;
+  right: 0;
+  top: -6px;
+  width: 20px;
+}
+
+.burger-menu.is-open .burger-menu__line {
+  background-color: transparent;
+}
+
+.burger-menu.is-open .burger-menu__line::before {
+  top: 0;
+  width: 20px;
+  -webkit-animation: rotate-burger-before 0.2s linear 0.2s forwards;
+          animation: rotate-burger-before 0.2s linear 0.2s forwards;
+}
+
+.burger-menu.is-open .burger-menu__line::after {
+  top: 0;
+  -webkit-animation: rotate-burger-after 0.2s linear 0.2s forwards;
+          animation: rotate-burger-after 0.2s linear 0.2s forwards;
+}
+
 /* Horizontal-container */
 
 .horizontal-container {
@@ -2181,7 +2304,11 @@ body::-webkit-scrollbar-thumb {
   color: var(--color-accent-secondary);
 }
 
-.menu__item.menu__item--submenu .menu__link::after {
+.menu__item.menu__item--submenu > .menu__link {
+  position: relative;
+}
+
+.menu__item.menu__item--submenu > .menu__link::after {
   content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xLjM1MzU1IDAuNjQ2NDQ3QzEuMTU4MjkgMC40NTExODQgMC44NDE3MDkgMC40NTExODQgMC42NDY0NDcgMC42NDY0NDdDMC40NTExODQgMC44NDE3MDkgMC40NTExODQgMS4xNTgyOSAwLjY0NjQ0NyAxLjM1MzU1TDEuMzUzNTUgMC42NDY0NDdaTTkuMzUzNTUgMS4zNTM1NUM5LjU0ODgyIDEuMTU4MjkgOS41NDg4MiAwLjg0MTcwOSA5LjM1MzU1IDAuNjQ2NDQ3QzkuMTU4MjkgMC40NTExODQgOC44NDE3MSAwLjQ1MTE4NCA4LjY0NjQ1IDAuNjQ2NDQ3TDkuMzUzNTUgMS4zNTM1NVpNMC42NDY0NDcgMS4zNTM1NUwzLjkzOTM0IDQuNjQ2NDVMNC42NDY0NSAzLjkzOTM0TDEuMzUzNTUgMC42NDY0NDdMMC42NDY0NDcgMS4zNTM1NVpNNi4wNjA2NiA0LjY0NjQ1TDkuMzUzNTUgMS4zNTM1NUw4LjY0NjQ1IDAuNjQ2NDQ3TDUuMzUzNTUgMy45MzkzNEw2LjA2MDY2IDQuNjQ2NDVaTTMuOTM5MzQgNC42NDY0NUM0LjUyNTEzIDUuMjMyMjMgNS40NzQ4NyA1LjIzMjIzIDYuMDYwNjYgNC42NDY0NUw1LjM1MzU1IDMuOTM5MzRDNS4xNTgyOSA0LjEzNDYgNC44NDE3MSA0LjEzNDYgNC42NDY0NSAzLjkzOTM0TDMuOTM5MzQgNC42NDY0NVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=");
   position: absolute;
   right: -15px;
@@ -3144,18 +3271,84 @@ body::-webkit-scrollbar-thumb {
     display: none !important;
   }
 
+  .header {
+    background: #13111B;
+  }
+
+  .header__search {
+    margin-left: auto;
+    margin-right: 30px;
+  }
+
+  .header__inner {
+    position: absolute;
+    top: 100%;
+    height: calc(100vh - 0px);
+    left: 0;
+    margin-top: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
+    width: 100%;
+    z-index: 101;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header__menu.menu {
+    font-size: 22px;
+  }
+
+  .header__menu-list > .header__menu-item {
+    opacity: 0;
+  }
+
+  .header__menu-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__menu-item.menu__item ~ .header__menu-item.menu__item {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .menu__item.menu__item--submenu > .menu__link::after {
+    margin-left: 15px;
+    right: auto;
+    transform: translateY(-58%);
+  }
+
   .menu__sub-menu {
     position: static;
     top: auto;
     left: auto;
     max-height: 0;
-    transition: visibility 0.2s ease-in, opacity 0.2s ease-in-out, max-height 0.2s ease-in-out;
+    transition: visibility 0.15s ease-in, opacity 0.2s ease-in-out, max-height 0.15s ease-in-out, padding 0.15s ease-in-out, margin-top 0.15s ease-in-out;
   }
 
   .menu__list > .menu__item:focus-within > .menu__sub-menu,
   .menu__list > .menu__item:focus > .menu__sub-menu,
   .menu__list > .menu__item:hover > .menu__sub-menu {
     max-height: 30em;
+    padding: 15px 10px;
+    margin-top: 10px;
+  }
+
+  .header__menu-list .menu__sub-menu > .menu__item ~ .menu-item {
+    margin-top: 20px;
+  }
+
+  .header__menu-list .menu__sub-menu > .menu__item {
+    text-align: center;
   }
 
   .menu__sub-menu > .menu__item {
@@ -3163,16 +3356,12 @@ body::-webkit-scrollbar-thumb {
     transition: margin-top 0.1s ease-in-out;
   }
 
-  .menu__list > .menu__item:focus-within > .menu__sub-menu .menu__item,
-  .menu__list > .menu__item:focus > .menu__sub-menu .menu__item,
-  .menu__list > .menu__item:hover > .menu__sub-menu .menu__item {
+  .menu__list > .menu__item > .menu__sub-menu .menu__item ~ .menu__item {
     margin-top: 20px;
   }
 
   .menu__sub-menu > .menu__item .menu__link {
-    color: var(--color-yellow);
     padding: 0;
-    background: transparent;
   }
 
   .contacts__items {

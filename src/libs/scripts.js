@@ -1,5 +1,6 @@
 import gsap from 'gsap';
 import horizontalScroll from '../libs/modules/horizontal-scroll';
+import burgerMenu from '../libs/modules/burger-menu.js';
 import progressBar from '../libs/modules/progress-bar';
 import parallaxjs from '../libs/modules/parallax';
 import tarifsSlider from '../libs/modules/tarifs';
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
     const tabsTrue = document.querySelector('.tabs');
     
     horizintalScrollTrue ? horizontalScroll.init() : false;
+    burgerMenu.init();
     progressBarTrue ? progressBar.init() : false;
     paralaxjsTrue ? parallaxjs.init() : false;
     tarifsSliderTrue ? tarifsSlider.init() : false;
