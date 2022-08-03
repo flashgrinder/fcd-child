@@ -1,0 +1,322 @@
+{
+    "key": "group_62ea38f4a61e6",
+    "title": "Настройки страницы",
+    "fields": [
+        {
+            "key": "field_62ea39178b5af",
+            "label": "Контентные блоки",
+            "name": "service-blocks",
+            "type": "flexible_content",
+            "instructions": "Добавьте\/удалите или перетаскивайте нужные блоки.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_62ea395f671cb": {
+                    "key": "layout_62ea395f671cb",
+                    "name": "service-block_editor",
+                    "label": "Текстовый редактор",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_62ea3abad2ca4": {
+                    "key": "layout_62ea3abad2ca4",
+                    "name": "service-block_reviews",
+                    "label": "Отзывы",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_62ea3b1eb591d": {
+                    "key": "layout_62ea3b1eb591d",
+                    "name": "service-block_popular-services",
+                    "label": "Популярные услуги",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62ea3b3ab591e",
+                            "label": "Заголовок блока",
+                            "name": "popular-services_title",
+                            "type": "text",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Популярные услуги",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_62ea3b6bb591f",
+                            "label": "Изображение",
+                            "name": "popular-services_img",
+                            "type": "image",
+                            "instructions": "Добавьте изображение блока(отображается справа).",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "full",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_62ea4d9258080",
+                            "label": "Популярные услуги",
+                            "name": "popular-services_item",
+                            "type": "post_object",
+                            "instructions": "Выберите услуги.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "services"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "multiple": 1,
+                            "return_format": "object",
+                            "ui": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_62ea4fc6cff65": {
+                    "key": "layout_62ea4fc6cff65",
+                    "name": "service-block_tarifs",
+                    "label": "Слайдер с тарифами",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62ea50c98faf6",
+                            "label": "Заголовок блока",
+                            "name": "tarifs-block_title",
+                            "type": "text",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Тарифы подключения Битрикс24",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_62ea52bc4fefa",
+                            "label": "Слайдер с тарифами",
+                            "name": "tarifs-slider",
+                            "type": "repeater",
+                            "instructions": "Добавьте тарифы.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_62ea558b6c0a2",
+                                    "label": "Тариф",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_62ea52f44fefb",
+                                    "label": "Название тарифа",
+                                    "name": "tarifs-slider_name",
+                                    "type": "text",
+                                    "instructions": "Укажите название тарифа",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Бесплатный",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_62ea53114fefc",
+                                    "label": "Цена",
+                                    "name": "tarifs-slider_price",
+                                    "type": "number",
+                                    "instructions": "Укажите цену тарифа",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": 0,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "min": "",
+                                    "max": "",
+                                    "step": ""
+                                },
+                                {
+                                    "key": "field_62ea534e4fefd",
+                                    "label": "Симов\/срок",
+                                    "name": "tarifs-slider_symbol",
+                                    "type": "text",
+                                    "instructions": "Укажите символ\/срок тарифа.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "₽",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_62ea53af4fefe",
+                                    "label": "Описание",
+                                    "name": "tarifs-slider_descr",
+                                    "type": "text",
+                                    "instructions": "Укажите короткое описание тарифа.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Короткое описание",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_62ea541a0b2d1",
+                                    "label": "Пункты",
+                                    "name": "tarifs-slider-checks",
+                                    "type": "repeater",
+                                    "instructions": "Добавьте пункты описывающие тариф.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "collapsed": "",
+                                    "min": 0,
+                                    "max": 0,
+                                    "layout": "table",
+                                    "button_label": "",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_62ea54eb0b2d2",
+                                            "label": "Пункт",
+                                            "name": "tarifs-slider-checks_item",
+                                            "type": "text",
+                                            "instructions": "Укажите описание пункта.",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "Пункт 1",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Добавить",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "services"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Параметры страницы single-services.php",
+    "show_in_rest": 0,
+    "modified": 1659524674
+}
