@@ -130,105 +130,61 @@
                 Отзывы
             </h2>
             <div class="reviews__items">
-                <!-- Review-card -->
-                <article class="review-card">
-                    <header class="review-card__header">
-                        <div class="review-card__photo">
-                            <img src="https://picsum.photos/300/300" alt="" class="review-card__img">
-                        </div>
-                        <div class="review-card__info">
-                            <h4 class="review-card__title title title--medium title--white title--w-light">
-                                Анна Кровякова
-                            </h4>
-                            <div class="review-card__position text text--small text--w-light">
-                                Управляющий партнёр FINCOM group
+            <?php
+
+                $args = array(
+                    'post_type' => 'reviews',
+                    'posts_per_page' => 3,
+                    'orderby'     => 'date',
+                    'order'       => 'DESC',
+                    'suppress_filters' => true
+                );
+
+                $wp_query = new WP_Query( $args );
+
+
+                if( have_posts() ) : 
+                    while( have_posts() ) : the_post(); ?>
+                    <!-- Review-card -->
+                    <article class="review-card">
+                        <header class="review-card__header">
+                            <div class="review-card__photo">
+                            <?php
+                                $default_attr = [
+                                    'class'	=> "review-card__img",
+                                    'alt'   => get_the_title()
+                                ];
+                                            
+                                echo get_the_post_thumbnail( $post->ID, 'large', $default_attr ) ?>
                             </div>
-                        </div>
-                    </header>
-                    <div class="review-card__body">
-                        <p class="review-card__descr text text--normal text--w-light">
-                            Задача организации, в особенности же курс на социально-ориентированный национальный проект способствует повышению качества экспериментов, поражающих по своей масштабности и грандиозности. Следует отметить, что синтетическое тестирование создаёт предпосылки
-                            для новых принципов формирования материально-технической и кадровой базы. Значимость этих проблем настолько очевидна, что укрепление и развитие внутренней структуры является качественно новой ступенью распределения внутренних
-                            резервов и ресурсов. Господа, высокотехнологичная концепция общественного уклада однозначно определяет каждого участника как способного принимать.
-                        </p>
-                    </div>
-                    <footer class="review-card__footer">
-                        <a href="" class="review-card__button button button--primary button--icon" target="_blank">
-                            Смотреть кейс
-                            <svg class="button__icon-white" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="button__icon-white-stroke" d="M8 1.5H3.5C2.39543 1.5 1.5 2.39543 1.5 3.5V12.5C1.5 13.6046 2.39543 14.5 3.5 14.5H12.5C13.6046 14.5 14.5 13.6046 14.5 12.5V8" stroke="white" stroke-linecap="round"/>
-                                <path class="button__icon-white-fill" d="M7.73483 7.73484C7.58839 7.88128 7.58839 8.11872 7.73483 8.26516C7.88128 8.41161 8.11872 8.41161 8.26517 8.26516L7.73483 7.73484ZM14.875 1.5C14.875 1.29289 14.7071 1.125 14.5 1.125H11.125C10.9179 1.125 10.75 1.29289 10.75 1.5C10.75 1.70711 10.9179 1.875 11.125 1.875H14.125V4.875C14.125 5.08211 14.2929 5.25 14.5 5.25C14.7071 5.25 14.875 5.08211 14.875 4.875V1.5ZM8.26517 8.26516L14.7652 1.76517L14.2348 1.23483L7.73483 7.73484L8.26517 8.26516Z"/>
-                            </svg>
-                        </a>
-                    </footer>
-                </article>
-                <!-- ./ Review-card -->
-                <!-- Review-card -->
-                <article class="review-card">
-                    <header class="review-card__header">
-                        <div class="review-card__photo">
-                            <img src="https://picsum.photos/300/300" alt="" class="review-card__img">
-                        </div>
-                        <div class="review-card__info">
-                            <h4 class="review-card__title title title--medium title--white title--w-light">
-                                Юлия Мальцева
-                            </h4>
-                            <div class="review-card__position text text--small text--w-light">
-                                Директор ТендерГрупп
+                            <div class="review-card__info">
+                                <h4 class="review-card__title title title--medium title--white title--w-light">
+                                    <?php the_title(); ?>
+                                </h4>
+                                <div class="review-card__position text text--small text--w-light">
+                                    <?php the_field('review_position'); ?>
+                                </div>
                             </div>
+                        </header>
+                        <div class="review-card__body">
+                            <p class="review-card__descr text text--normal text--w-light">
+                                <?php the_field('review_text'); ?>
+                            </p>
                         </div>
-                    </header>
-                    <div class="review-card__body">
-                        <p class="review-card__descr text text--normal text--w-light">
-                            С учётом сложившейся международной обстановки, высокое качество позиционных исследований требует от нас анализа экономической целесообразности принимаемых решений. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством
-                            простого факта: высококачественный прототип будущего проекта требует от нас анализа кластеризации усилий. В частности, синтетическое тестирование не даёт нам иного выбора, кроме определения кластеризации усилий. Банальные,
-                            но неопровержимые выводы, а также активно развивающиеся страны третьего мира набирают популярность среди определенных слоев населения, а значит, должны.
-                        </p>
-                    </div>
-                    <footer class="review-card__footer">
-                        <a href="" class="review-card__button button button--primary button--icon" target="_blank">
-                            Смотреть кейс
-                            <svg class="button__icon-white" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="button__icon-white-stroke" d="M8 1.5H3.5C2.39543 1.5 1.5 2.39543 1.5 3.5V12.5C1.5 13.6046 2.39543 14.5 3.5 14.5H12.5C13.6046 14.5 14.5 13.6046 14.5 12.5V8" stroke="white" stroke-linecap="round"/>
-                                <path class="button__icon-white-fill" d="M7.73483 7.73484C7.58839 7.88128 7.58839 8.11872 7.73483 8.26516C7.88128 8.41161 8.11872 8.41161 8.26517 8.26516L7.73483 7.73484ZM14.875 1.5C14.875 1.29289 14.7071 1.125 14.5 1.125H11.125C10.9179 1.125 10.75 1.29289 10.75 1.5C10.75 1.70711 10.9179 1.875 11.125 1.875H14.125V4.875C14.125 5.08211 14.2929 5.25 14.5 5.25C14.7071 5.25 14.875 5.08211 14.875 4.875V1.5ZM8.26517 8.26516L14.7652 1.76517L14.2348 1.23483L7.73483 7.73484L8.26517 8.26516Z"/>
-                            </svg>
-                        </a>
-                    </footer>
-                </article>
-                <!-- ./ Review-card -->
-                <!-- Review-card -->
-                <article class="review-card">
-                    <header class="review-card__header">
-                        <div class="review-card__photo">
-                            <img src="https://picsum.photos/300/300" alt="" class="review-card__img">
-                        </div>
-                        <div class="review-card__info">
-                            <h4 class="review-card__title title title--medium title--white title--w-light">
-                                Полина Кровякова
-                            </h4>
-                            <div class="review-card__position text text--small text--w-light">
-                                Менеджер проекта EcoFriends
-                            </div>
-                        </div>
-                    </header>
-                    <div class="review-card__body">
-                        <p class="review-card__descr text text--normal text--w-light">
-                            Господа, реализация намеченных плановых заданий, в своём классическом представлении, допускает внедрение системы массового участия. Внезапно, непосредственные участники технического прогресса описаны максимально подробно. Есть над чем задуматься: акционеры
-                            крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, диаграммы связей и по сей день остаются
-                            уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. В своём стремлении улучшить пользовательский опыт мы упускаем.
-                        </p>
-                    </div>
-                    <footer class="review-card__footer">
-                        <a href="" class="review-card__button button button--primary button--icon" target="_blank">
-                            Смотреть кейс
-                            <svg class="button__icon-white" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="button__icon-white-stroke" d="M8 1.5H3.5C2.39543 1.5 1.5 2.39543 1.5 3.5V12.5C1.5 13.6046 2.39543 14.5 3.5 14.5H12.5C13.6046 14.5 14.5 13.6046 14.5 12.5V8" stroke="white" stroke-linecap="round"/>
-                                <path class="button__icon-white-fill" d="M7.73483 7.73484C7.58839 7.88128 7.58839 8.11872 7.73483 8.26516C7.88128 8.41161 8.11872 8.41161 8.26517 8.26516L7.73483 7.73484ZM14.875 1.5C14.875 1.29289 14.7071 1.125 14.5 1.125H11.125C10.9179 1.125 10.75 1.29289 10.75 1.5C10.75 1.70711 10.9179 1.875 11.125 1.875H14.125V4.875C14.125 5.08211 14.2929 5.25 14.5 5.25C14.7071 5.25 14.875 5.08211 14.875 4.875V1.5ZM8.26517 8.26516L14.7652 1.76517L14.2348 1.23483L7.73483 7.73484L8.26517 8.26516Z"/>
-                            </svg>
-                        </a>
-                    </footer>
-                </article>
-                <!-- ./ Review-card -->
+                        <footer class="review-card__footer">
+                            <a href="<?php the_field('review_case'); ?>" class="review-card__button button button--primary button--icon" target="_blank">
+                                Смотреть кейс
+                                <svg class="button__icon-white" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="button__icon-white-stroke" d="M8 1.5H3.5C2.39543 1.5 1.5 2.39543 1.5 3.5V12.5C1.5 13.6046 2.39543 14.5 3.5 14.5H12.5C13.6046 14.5 14.5 13.6046 14.5 12.5V8" stroke="white" stroke-linecap="round"/>
+                                    <path class="button__icon-white-fill" d="M7.73483 7.73484C7.58839 7.88128 7.58839 8.11872 7.73483 8.26516C7.88128 8.41161 8.11872 8.41161 8.26517 8.26516L7.73483 7.73484ZM14.875 1.5C14.875 1.29289 14.7071 1.125 14.5 1.125H11.125C10.9179 1.125 10.75 1.29289 10.75 1.5C10.75 1.70711 10.9179 1.875 11.125 1.875H14.125V4.875C14.125 5.08211 14.2929 5.25 14.5 5.25C14.7071 5.25 14.875 5.08211 14.875 4.875V1.5ZM8.26517 8.26516L14.7652 1.76517L14.2348 1.23483L7.73483 7.73484L8.26517 8.26516Z"/>
+                                </svg>
+                            </a>
+                        </footer>
+                    </article>
+                    <!-- ./ Review-card -->
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
             </div>
         </div>
     </section>

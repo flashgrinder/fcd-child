@@ -12,3 +12,5 @@
     include_once(__DIR__ . '/inc/actions.php');
     /* Filters */
     include_once(__DIR__ . '/inc/filters.php');
+    /* Post type - Reviews */
+    include_once(__DIR__ . '/inc/post-type_reviews.php');
