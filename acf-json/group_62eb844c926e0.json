@@ -98,6 +98,27 @@
                 "operator": "==",
                 "value": "posts_page"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-contacts.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-about.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-content.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -109,5 +130,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1659602639
+    "modified": 1659616980
 }

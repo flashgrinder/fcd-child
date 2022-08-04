@@ -190,31 +190,35 @@
     </section>
     <!-- /.Reviews -->
 
+    <?php 
+        $popular_services_items = get_field('popular-services_items');
+
+        if( !empty( $popular_services_items ) ): ?>
     <!-- Popular-services -->
     <section class="popular-services block-padding">
         <div class="popular-services__body container">
             <div class="popular-services__inner bg--dark-blue">
                 <div class="popular-services__info">
                     <h2 class="popular-services__heading title title--large title--white title--w-bold">
-                        Популярные услуги
+                        <?php the_field('popular-services_title'); ?>
                     </h2>
                     <div class="popular-services__items">
-                        <a href="#" class="popular-services__item button button--dark button--small">
-                            Айдентика и фирменный стиль
-                        </a>
-                        <a href="#" class="popular-services__item button button--dark button--small">
-                            SEO оптимизация
-                        </a>
-                        <a href="#" class="popular-services__item button button--dark button--small">
-                            Маркетинг в социальных сетях 
-                        </a>
-                        <a href="#" class="popular-services__item button button--dark button--small">
-                            Техническая поддержка сайта
-                        </a>
+                    <?php if( $popular_services_items): ?>
+                        <?php foreach( $popular_services_items as $popular_service_item): ?>
+                            <a href="<?php echo get_permalink($popular_service_item->ID); ?>" class="popular-services__item button button--dark button--small">
+                                <?php echo get_the_title($popular_service_item->ID); ?>
+                            </a>
+                        <?php endforeach; ?>
+                    <?php endif;?>
                     </div>
                 </div>
                 <div class="popular-services__pic">
-                    <img src="img/popular-service/popular-service-img-2.svg" alt="" class="popular-service__img">
+                    <?php 
+                        $popular_services_img = get_field('popular-services_img');
+
+                        if( !empty( $popular_services_img ) ): ?>
+                        <img src="<?php echo esc_url($popular_services_img['url']); ?>" alt="<?php echo esc_attr($popular_services_img['alt']); ?>" class="popular-service__img">
+                    <?php endif; ?>
                 </div>
                 <div class="popular-services__decor">
                     <svg class="popular-services__svg" width="572" height="305" viewBox="0 0 572 305" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -693,5 +697,6 @@
         </div>
     </section>
     <!-- /. Popular-services -->
+    <?php endif; ?>
 
 <?php get_footer(); ?>
