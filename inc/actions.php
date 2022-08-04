@@ -85,3 +85,34 @@
         add_post_type_support('page', array('excerpt'));
     }
     add_action('init', 'page_excerpt');
+
+    /* Кастомный блок Solutions */
+    add_action('acf/init', 'my_acf_init_block_types');
+    function my_acf_init_block_types() {
+        
+        // check function exists
+        if( function_exists('acf_register_block_type') ) {
+            
+            // register a testimonial block
+            acf_register_block_type(array(
+                'name'				=> 'solutions',
+                'title'				=> __('Преимущества'),
+                'description'		=> __('Пользовательский блок.'),
+                'render_callback'	=> 'my_acf_block_render_callback',
+                'category'			=> 'formatting',
+                'icon'				=> 'groups',
+                'keywords'			=> array( 'solutions', 'quote' ),
+            ));
+        }
+    }
+
+    function my_acf_block_render_callback( $block ) {
+        
+        // convert name ("acf/testimonial") into path friendly slug ("testimonial")
+        $slug = str_replace('acf/', '', $block['name']);
+        
+        // include a template part from within the "template-parts/block" folder
+        if( file_exists( get_theme_file_path("/template-parts/block/content-{$slug}.php") ) ) {
+            include( get_theme_file_path("/template-parts/block/content-{$slug}.php") );
+        }
+    }
