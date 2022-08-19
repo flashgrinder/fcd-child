@@ -361,14 +361,18 @@
 
                                     if( $popular_services_item ): ?>
 
-                                    <?php foreach( $popular_services_item as $popular_service_item): ?>
+                                    <?php foreach( $popular_services_item as $popular_service_item): 
+                                        
+                                        $popular_service_permalink = get_permalink( $popular_service_item->ID );
+                                        $popular_service_title = get_the_title( $popular_service_item->ID );
+                                        
+                                        ?>
                                         <?php setup_postdata($popular_service_item); ?>
-                                            <a href="<?php the_permalink(); ?>" class="popular-services__item button button--dark button--small">
-                                                <?php the_title(); ?>
+                                            <a href="<?php echo esc_url( $popular_service_permalink ); ?>" class="popular-services__item button button--dark button--small">
+                                                <?php echo esc_html( $popular_service_title ); ?>
                                             </a>
                                     <?php endforeach; ?>
                                 <?php endif;?>
-                                <?php wp_reset_query(); ?>
                                 </div>
                             </div>
                             <div class="popular-services__pic">
