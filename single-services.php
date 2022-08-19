@@ -165,6 +165,118 @@
                 <!-- /. Tarifs -->
             <?php endif; ?>
 
+            <?php if( get_row_layout() == 'service-block_tarifs-tabs' ): ?>
+                <!-- Tarifs -->
+                <section class="tarifs block-padding">
+                    <div class="tarifs__body container">
+                        <h2 class="tarifs__heading title title--large title--white title--w-bold title--indent-45">
+                            <?php echo get_sub_field('tarifs-tabs_title'); ?>
+                        </h2>
+                        <div class="tarifs__tabs tabs">
+                            <?php if( have_rows('tarifs-tabs') ): ?>
+                                <div class="tarifs__tabs-buttons tabs__buttons">
+                                <?php while( have_rows('tarifs-tabs') ): the_row();
+
+                                    $tarifs_tabs_name = get_sub_field('tarifs-tabs_name');
+
+                                    ?>
+                                    <div class="tarifs__tabs-button tabs__button <?php if( get_row_index() == 1) echo 'is-active'; ?>" data-tab-trigger="<?php echo get_row_index(); ?>">
+                                        <?php echo $tarifs_tabs_name; ?>
+                                    </div>
+                                    <?php endwhile; ?>
+                                </div>
+                                <div class="tarifs__tabs-wrapper tabs__wrapper">
+                                <?php while( have_rows('tarifs-tabs') ): the_row(); ?>
+                                    <div class="tarifs__tabs-content tabs__content <?php if( get_row_index() == 1) echo 'is-open'; ?>" data-tab-content="<?php echo get_row_index(); ?>">
+                                        <div class="tarifs__slider">
+                                            <!-- Slider main container -->
+                                            <div class="tarifs__swiper-container tarifs__swiper-container--web swiper-container">
+                                                <!-- Additional required wrapper -->
+                                                <?php if( have_rows('tarifs-slider') ): ?>
+                                                <div class="tarifs__swiper-wrapper swiper-wrapper disableds">
+                                                    <?php while( have_rows('tarifs-slider') ): the_row();
+
+                                                        $tarifs_slider_name = get_sub_field('tarifs-slider_name');
+                                                        $tarifs_slider_price = get_sub_field('tarifs-slider_price');
+                                                        $tarifs_slider_symbol = get_sub_field('tarifs-slider_symbol');
+                                                        $tarifs_slider_descr = get_sub_field('tarifs-slider_descr');
+                                                        $tarifs_slider_item = get_sub_field('tarifs-slider_item');
+
+                                                        ?>
+                                                        <div class="tarifs__swiper-slide swiper-slide">
+                                                            <!-- Tarif-card -->
+                                                            <article class="tarif-card">
+                                                                <header class="tarif-card__header">
+                                                                    <div class="tarif-card__subtitle">
+                                                                        <span class="tarif-card__pretext text text--normal text--white text--w-light">
+                                                                            <?php echo $tarifs_slider_name; ?>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="tarif-card__price">
+                                                                        <span class="tarif-card__num title title--large title--white title--w-bold">
+                                                                            <?php echo $tarifs_slider_price; ?>
+                                                                        </span>
+                                                                        <span class="tarif-card__symbol text text--normal text--white text--w-light">
+                                                                            <?php echo $tarifs_slider_symbol; ?>
+                                                                        </span>
+                                                                    </div>
+                                                                </header>
+                                                                <div class="tarif-card__body">
+                                                                    <p class="tarif-card__descr text text--normal text--white text--w-light">
+                                                                        <?php echo $tarifs_slider_descr; ?>
+                                                                    </p>
+                                                                    <?php if( have_rows('tarifs-slider-checks') ): ?>
+                                                                    <ul class="tarif-card__checklist text text--normal text--white text--w-light">
+                                                                        <?php while( have_rows('tarifs-slider-checks') ): the_row();
+
+                                                                            $tarifs_slider_checks_item = get_sub_field('tarifs-slider-checks_item');
+
+                                                                            ?>
+                                                                            <li class="tarif-card__check">
+                                                                                <?php echo $tarifs_slider_checks_item; ?>
+                                                                            </li>
+                                                                        <?php endwhile; ?>
+                                                                    </ul>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                                <footer class="tarif-card__footer">
+                                                                    <div class="tarif-card__action">
+                                                                        <a href="javascript:;" class="tarif-card__button button button--primary">
+                                                                            Оставить заявку
+                                                                        </a>
+                                                                    </div>
+                                                                </footer>
+                                                            </article>
+                                                            <!-- /. Tarif-card -->
+                                                        </div>
+                                                    <?php endwhile; ?>
+                                                </div>
+                                                <?php endif; ?>
+                                            </div>
+                                            <!-- If we need navigation buttons -->
+                                            <div class="tarifs__slider-nav disableds">
+                                                <div class="tarifs__swiper-button-prev tarifs__slider-arrow">
+                                                    <svg class="tarifs__slider-arrow-svg" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6 1L1.82588 4.75671C1.3845 5.15395 1.3845 5.84605 1.82588 6.24329L6 10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="tarifs__swiper-button-next tarifs__slider-arrow">
+                                                    <svg class="tarifs__slider-arrow-svg" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L5.17412 4.75671C5.6155 5.15395 5.6155 5.84605 5.17412 6.24329L1 10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php endwhile; ?>
+                                </div>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </section>
+                <!-- /. Tarifs -->
+            <?php endif; ?>
+
             <?php if( get_row_layout() == 'service-block_reviews' ): ?>
                 <!-- Reviews -->
                 <section class="reviews block-padding">

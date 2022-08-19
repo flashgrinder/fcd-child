@@ -294,6 +294,231 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_62ff5352fa177": {
+                    "key": "layout_62ff5352fa177",
+                    "name": "service-block_tarifs-tabs",
+                    "label": "Слайдер с тарифами(Вкладки)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62ff5352fa178",
+                            "label": "Заголовок блока",
+                            "name": "tarifs-tabs_title",
+                            "type": "text",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Стоимость разработки сайта",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_62ff53c7fa17f",
+                            "label": "Вкладки",
+                            "name": "tarifs-tabs",
+                            "type": "repeater",
+                            "instructions": "Добавьте вкладку с слайдером.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Добавить вкладку",
+                            "sub_fields": [
+                                {
+                                    "key": "field_62ff5596fa180",
+                                    "label": "Название вкладки",
+                                    "name": "tarifs-tabs_name",
+                                    "type": "text",
+                                    "instructions": "Укажите имя вкладки.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Типовое решение",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_62ff5e25ca668",
+                                    "label": "Слайдер с тарифами",
+                                    "name": "tarifs-slider",
+                                    "type": "repeater",
+                                    "instructions": "Добавьте тарифы.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "collapsed": "",
+                                    "min": 0,
+                                    "max": 0,
+                                    "layout": "block",
+                                    "button_label": "",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_62ff5e26ca669",
+                                            "label": "Тариф",
+                                            "name": "",
+                                            "type": "accordion",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "open": 0,
+                                            "multi_expand": 0,
+                                            "endpoint": 0
+                                        },
+                                        {
+                                            "key": "field_62ff5e26ca66a",
+                                            "label": "Название тарифа",
+                                            "name": "tarifs-slider_name",
+                                            "type": "text",
+                                            "instructions": "Укажите название тарифа",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "Бесплатный",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_62ff5e26ca66b",
+                                            "label": "Цена",
+                                            "name": "tarifs-slider_price",
+                                            "type": "number",
+                                            "instructions": "Укажите цену тарифа",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": 0,
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "min": "",
+                                            "max": "",
+                                            "step": ""
+                                        },
+                                        {
+                                            "key": "field_62ff5e26ca66c",
+                                            "label": "Симов\/срок",
+                                            "name": "tarifs-slider_symbol",
+                                            "type": "text",
+                                            "instructions": "Укажите символ\/срок тарифа.",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "₽",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_62ff5e26ca66d",
+                                            "label": "Описание",
+                                            "name": "tarifs-slider_descr",
+                                            "type": "text",
+                                            "instructions": "Укажите короткое описание тарифа.",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "Короткое описание",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_62ff5e26ca66e",
+                                            "label": "Пункты",
+                                            "name": "tarifs-slider-checks",
+                                            "type": "repeater",
+                                            "instructions": "Добавьте пункты описывающие тариф.",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "collapsed": "",
+                                            "min": 0,
+                                            "max": 0,
+                                            "layout": "table",
+                                            "button_label": "",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_62ff5e26ca66f",
+                                                    "label": "Пункт",
+                                                    "name": "tarifs-slider-checks_item",
+                                                    "type": "text",
+                                                    "instructions": "Укажите описание пункта.",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "Пункт 1",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_62ff3cc64a953": {
                     "key": "layout_62ff3cc64a953",
                     "name": "service-block_types-sites",
@@ -463,5 +688,5 @@
     "active": true,
     "description": "Параметры страницы single-services.php",
     "show_in_rest": 0,
-    "modified": 1660895022
+    "modified": 1660903032
 }
