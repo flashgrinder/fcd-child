@@ -2,6 +2,7 @@
     position: relative;
     border-radius: 10px;
     background: var(--color-dark-blue);
+    height: 100%;
 }
 
 .case-card__tags {
@@ -13,6 +14,7 @@
     display: block;
     width: 100%;
     height: auto;
+    max-height: 321px;
 }
 
 .case-card__text {
@@ -20,6 +22,7 @@
 }
 
 .case-card__footer {
+    margin-top: auto;
     padding: 10px 15px 15px;
 }
 
