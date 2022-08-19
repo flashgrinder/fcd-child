@@ -663,6 +663,55 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_62ff718fd93f8": {
+                    "key": "layout_62ff718fd93f8",
+                    "name": "service-block_cases-slider",
+                    "label": "Слайдер с кейсами",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62ff725da41e4",
+                            "label": "Заголовок блока",
+                            "name": "cases-slider_title",
+                            "type": "text",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Кейсы",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_62ff71b5d93f9",
+                            "label": "Кейсы",
+                            "name": "cases-slider_items",
+                            "type": "post_object",
+                            "instructions": "Выберите кейсы.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": "",
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "multiple": 1,
+                            "return_format": "object",
+                            "ui": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Добавить",
@@ -688,5 +737,5 @@
     "active": true,
     "description": "Параметры страницы single-services.php",
     "show_in_rest": 0,
-    "modified": 1660903032
+    "modified": 1660908272
 }

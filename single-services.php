@@ -906,6 +906,95 @@
                 <!-- Types-sites -->
             <?php endif; ?>
 
+            <?php if( get_row_layout() == 'service-block_cases-slider' ): ?>
+                <!-- Cases-slider -->
+                <section class="cases-slider block-padding">
+                    <div class="cases-slider__body container">
+                        <h2 class="cases-slider__heading title title--large title--white title--w-bold title--indent-45">
+                            <?php echo get_sub_field('cases-slider_title'); ?>
+                        </h2>
+                        <div class="cases-slider__inner">
+                            <!-- Slider main container -->
+                            <div class="cases-slider__swiper-container swiper-container">
+                                <!-- Additional required wrapper -->
+                                <div class="cases-slider__swiper-wrapper swiper-wrapper disableds">
+                                    <!-- Slides -->
+                                    <?php
+                                        $cases_slider_items = get_sub_field('cases-slider_items');
+
+                                        if( $cases_slider_items ): ?>
+
+                                        <?php foreach( $cases_slider_items as $cases_slider_item): 
+                                            
+                                            $case_permalink = get_permalink( $cases_slider_item->ID );
+                                            $case_title = get_the_title( $cases_slider_item->ID );
+                                            
+                                            ?>
+                                            <div class="cases-slider__swiper-slide swiper-slide">
+                                                <!-- Case-card -->
+                                                <article class="case-card">
+                                                    <header class="case-card__header">
+                                                        <div class="case-card__tags">
+                                                            <?php 
+                                                                $categories = get_the_category($cases_slider_item->ID);
+                                                                
+                                                                if($categories){
+                                                                    foreach($categories as $category) {
+                                                                        echo '<a href="'. get_category_link($category->term_id) . '" class="case-card__tag button button--dark button--tiny">' . $category->cat_name . '</a>';
+                                                                    }
+                                                                }
+                                                            ?>
+                                                        </div>
+                                                    </header>
+                                                    <div class="case-card__body">
+                                                        <div class="case-card__pic">
+                                                        <?php
+                                                            $default_attr = [
+                                                                'class'	=> "case-card__img",
+                                                                'alt'   => get_the_title()
+                                                            ];
+                                                                        
+                                                            echo get_the_post_thumbnail( $cases_slider_item->ID, 'large', $default_attr ) ?>
+                                                        </div>
+                                                        <div class="case-card__text">
+                                                            <h2 class="case-card__title title title--medium title--white title--w-light">
+                                                                <?php echo esc_html( $case_title ); ?>
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                    <footer class="case-card__footer">
+                                                        <div class="case-card__action">
+                                                            <a href="<?php echo esc_url( $case_permalink ); ?>" class="case-card__button button button--primary">
+                                                                Посмотреть кейс
+                                                            </a>
+                                                        </div>
+                                                    </footer>
+                                                </article>
+                                                <!-- /. Case-card -->
+                                            </div>
+                                        <?php endforeach; ?>
+                                    <?php endif;?>
+                                </div>
+                            </div>
+                            <!-- If we need navigation buttons -->
+                            <div class="cases-slider__slider-nav disableds">
+                                <div class="cases-slider__swiper-button-prev cases-slider__slider-arrow">
+                                    <svg class="cases-slider__slider-arrow-svg" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 1L1.82588 4.75671C1.3845 5.15395 1.3845 5.84605 1.82588 6.24329L6 10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="cases-slider__swiper-button-next cases-slider__slider-arrow">
+                                    <svg class="cases-slider__slider-arrow-svg" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L5.17412 4.75671C5.6155 5.15395 5.6155 5.84605 5.17412 6.24329L1 10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /. Cases-slider -->
+            <?php endif; ?>
+
         <?php endwhile ?>
     <?php endif ?>
 
