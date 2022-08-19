@@ -293,6 +293,151 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_62ff3cc64a953": {
+                    "key": "layout_62ff3cc64a953",
+                    "name": "service-block_types-sites",
+                    "label": "Типы сайтов",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62ff3d4c4a954",
+                            "label": "Заголовок блока",
+                            "name": "types-sites_title",
+                            "type": "text",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Другие виды сайтов",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_62ff3da14a955",
+                            "label": "Типы сайтов",
+                            "name": "types-sites",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_62ff3dca4a956",
+                                    "label": "Тип сайта",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_62ff3e024a957",
+                                    "label": "Изображение карточки",
+                                    "name": "type-site_img",
+                                    "type": "image",
+                                    "instructions": "Укажите изображение карточки.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "large",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_62ff3e274a958",
+                                    "label": "Заголовок карточки",
+                                    "name": "type-site_title",
+                                    "type": "text",
+                                    "instructions": "Укажите заголовок карточки.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Заголовок",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_62ff3e624a959",
+                                    "label": "Описание карточки",
+                                    "name": "type-site_descr",
+                                    "type": "textarea",
+                                    "instructions": "Укажите короткое описание.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Короткое описание",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": "br"
+                                },
+                                {
+                                    "key": "field_62ff3e964a95a",
+                                    "label": "Ссылка карточки",
+                                    "name": "type-site_link",
+                                    "type": "url",
+                                    "instructions": "Укажите ссылку.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Добавить",
@@ -318,5 +463,5 @@
     "active": true,
     "description": "Параметры страницы single-services.php",
     "show_in_rest": 0,
-    "modified": 1659524674
+    "modified": 1660895022
 }

@@ -746,6 +746,54 @@
                 <!-- /. Popular-services -->
             <?php endif; ?>
 
+            <?php if( get_row_layout() == 'service-block_types-sites' ): ?>
+                <!-- Types-sites -->
+                <section class="types-sites block-padding">
+                    <div class="types-sites__body container">
+                        <h2 class="types-sites__heading title title--large title--white title--w-bold title--indent-45">
+                            <?php echo get_sub_field('types-sites_title'); ?>
+                        </h2>
+                        <?php if( have_rows('types-sites') ): ?>
+                        <div class="types-sites__items">
+                            <?php while( have_rows('types-sites') ): the_row();
+
+                                $type_site_img = get_sub_field('type-site_img');
+                                $type_site_title = get_sub_field('type-site_title');
+                                $type_site_descr = get_sub_field('type-site_descr');
+                                $type_site_link = get_sub_field('type-site_link');
+
+                                ?>
+                                <article class="types-sites__card bg--dark-blue">
+                                    <picture class="types-sites__pic">
+                                    <?php if( !empty( $type_site_img ) ): ?>
+                                            <img src="<?php echo esc_url($type_site_img['url']); ?>" alt="<?php echo esc_attr($type_site_img['alt']); ?>" class="types-sites__img">
+                                        <?php endif; ?>
+                                    </picture>
+                                    <div class="types-sites__card-info">
+                                        <h3 class="types-sites__card-title title title--medium title--white title--w-light">
+                                            <?php echo $type_site_title; ?>
+                                        </h3>
+                                        <p class="types-sites__card-descr text text--small text--white text--w-light">
+                                            <?php echo $type_site_descr; ?>
+                                        </p>
+                                        <div class="types-sites__card-action">
+                                            <a href="<?php echo $type_site_link; ?>" class="types-sites__card-btn button button--primary button--icon">
+                                                Перейти
+                                                <svg class="button__icon-white" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path class="button__icon-white-fill" d="M1.5 5.25C1.08579 5.25 0.75 5.58579 0.75 6C0.75 6.41421 1.08579 6.75 1.5 6.75V5.25ZM17.0303 6.53033C17.3232 6.23744 17.3232 5.76256 17.0303 5.46967L12.2574 0.696699C11.9645 0.403806 11.4896 0.403806 11.1967 0.696699C10.9038 0.989593 10.9038 1.46447 11.1967 1.75736L15.4393 6L11.1967 10.2426C10.9038 10.5355 10.9038 11.0104 11.1967 11.3033C11.4896 11.5962 11.9645 11.5962 12.2574 11.3033L17.0303 6.53033ZM1.5 6.75H16.5V5.25H1.5V6.75Z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            <?php endwhile; ?>
+                        </div>
+                        <?php endif; ?>
+                    </div>
+                </section>
+                <!-- Types-sites -->
+            <?php endif; ?>
+
         <?php endwhile ?>
     <?php endif ?>
 
