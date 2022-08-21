@@ -3155,11 +3155,22 @@ body::-webkit-scrollbar-thumb {
   padding: 15px;
 }
 
+.case-card__tag.button--dark {
+  color: var(--color-accent-secondary);
+  opacity: 1;
+}
+
+.case-card__tag.button--dark:hover {
+  color: var(--color-dark-gray);
+  opacity: 1;
+}
+
 .case-card__img {
   display: block;
   width: 100%;
-  height: auto;
   max-height: 321px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .case-card__text {
