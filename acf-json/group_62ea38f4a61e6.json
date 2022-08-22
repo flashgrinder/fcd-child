@@ -190,6 +190,25 @@
                                     "maxlength": ""
                                 },
                                 {
+                                    "key": "field_630339a170a63",
+                                    "label": "Текст до цены",
+                                    "name": "tarifs-slider_beforetext",
+                                    "type": "text",
+                                    "instructions": "Укажите текст до цены.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "От",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
                                     "key": "field_62ea53114fefc",
                                     "label": "Цена",
                                     "name": "tarifs-slider_price",
@@ -212,7 +231,7 @@
                                 },
                                 {
                                     "key": "field_62ea534e4fefd",
-                                    "label": "Симов\/срок",
+                                    "label": "Символ\/срок\/текст",
                                     "name": "tarifs-slider_symbol",
                                     "type": "text",
                                     "instructions": "Укажите символ\/срок тарифа.",
@@ -394,6 +413,25 @@
                                             "endpoint": 0
                                         },
                                         {
+                                            "key": "field_63033a3070a64",
+                                            "label": "Текст до цены",
+                                            "name": "tarifs-slider_beforetext",
+                                            "type": "text",
+                                            "instructions": "Укажите текст до цены.",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "От",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
                                             "key": "field_62ff5e26ca66a",
                                             "label": "Название тарифа",
                                             "name": "tarifs-slider_name",
@@ -435,7 +473,7 @@
                                         },
                                         {
                                             "key": "field_62ff5e26ca66c",
-                                            "label": "Симов\/срок",
+                                            "label": "Символ\/срок\/текст",
                                             "name": "tarifs-slider_symbol",
                                             "type": "text",
                                             "instructions": "Укажите символ\/срок тарифа.",
@@ -737,5 +775,5 @@
     "active": true,
     "description": "Параметры страницы single-services.php",
     "show_in_rest": 0,
-    "modified": 1660908272
+    "modified": 1661155978
 }

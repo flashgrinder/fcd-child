@@ -90,6 +90,7 @@
                                     <?php while( have_rows('tarifs-slider') ): the_row();
 
                                         $tarifs_slider_name = get_sub_field('tarifs-slider_name');
+                                        $tarifs_slider_beforetext = get_sub_field('tarifs-slider_beforetext');
                                         $tarifs_slider_price = get_sub_field('tarifs-slider_price');
                                         $tarifs_slider_symbol = get_sub_field('tarifs-slider_symbol');
                                         $tarifs_slider_descr = get_sub_field('tarifs-slider_descr');
@@ -106,6 +107,11 @@
                                                         </span>
                                                     </div>
                                                     <div class="tarif-card__price">
+                                                        <?php if( !empty( $tarifs_slider_beforetext ) ): ?>
+                                                        <span class="tarif-card__pretext text text--normal text--white text--w-light">
+                                                            <?php echo $tarifs_slider_beforetext; ?>
+                                                        </span>
+                                                        <?php endif ?>
                                                         <span class="tarif-card__num title title--large title--white title--w-bold">
                                                             <?php echo $tarifs_slider_price; ?>
                                                         </span>
@@ -197,6 +203,7 @@
                                                     <?php while( have_rows('tarifs-slider') ): the_row();
 
                                                         $tarifs_slider_name = get_sub_field('tarifs-slider_name');
+                                                        $tarifs_slider_beforetext = get_sub_field('tarifs-slider_beforetext');
                                                         $tarifs_slider_price = get_sub_field('tarifs-slider_price');
                                                         $tarifs_slider_symbol = get_sub_field('tarifs-slider_symbol');
                                                         $tarifs_slider_descr = get_sub_field('tarifs-slider_descr');
@@ -213,6 +220,11 @@
                                                                         </span>
                                                                     </div>
                                                                     <div class="tarif-card__price">
+                                                                        <?php if( !empty( $tarifs_slider_beforetext ) ): ?>
+                                                                        <span class="tarif-card__pretext text text--normal text--white text--w-light">
+                                                                            <?php echo $tarifs_slider_beforetext; ?>
+                                                                        </span>
+                                                                        <?php endif ?>
                                                                         <span class="tarif-card__num title title--large title--white title--w-bold">
                                                                             <?php echo $tarifs_slider_price; ?>
                                                                         </span>
