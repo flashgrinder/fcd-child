@@ -16,5 +16,7 @@
     include_once(__DIR__ . '/inc/post-type_reviews.php');
     /* Post type - Services */
     include_once(__DIR__ . '/inc/post-type_services.php');
+    /* Post type - Cases */
+    include_once(__DIR__ . '/inc/post-type_cases.php');
     /* Custom Functions */
     include_once(__DIR__ . '/inc/custom-functions.php');
