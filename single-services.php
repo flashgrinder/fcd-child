@@ -95,11 +95,13 @@
                                         $tarifs_slider_symbol = get_sub_field('tarifs-slider_symbol');
                                         $tarifs_slider_descr = get_sub_field('tarifs-slider_descr');
                                         $tarifs_slider_item = get_sub_field('tarifs-slider_item');
+                                        $tarifs_slider_alert = get_sub_field('tarifs-slider_alert');
+                                        $tarifs_slider_accent = get_sub_field('tarifs-slider_accent');
 
                                         ?>
                                         <div class="tarifs__swiper-slide swiper-slide">
                                             <!-- Tarif-card -->
-                                            <article class="tarif-card">
+                                            <article class="tarif-card <?php foreach( $tarifs_slider_accent as $tarif_accent ) { echo $tarif_accent; } ?>">
                                                 <header class="tarif-card__header">
                                                     <div class="tarif-card__subtitle">
                                                         <span class="tarif-card__pretext text text--normal text--white text--w-light">
@@ -136,6 +138,22 @@
                                                             </li>
                                                         <?php endwhile; ?>
                                                     </ul>
+                                                    <?php endif; ?>
+                                                    <?php if( $tarifs_slider_alert ): ?>
+                                                        <div class="tarif-card__alert">
+                                                            <div class="tarif-card__alert-icon">
+                                                                <svg class="tarif-card__alert-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <g opacity="0.35">
+                                                                    <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <path d="M10 6H10.0083" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <path d="M9 9H10V14H11" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                            <span class="tarif-card__alert-text text text--normal text--white text--w-light">
+                                                                <?php echo $tarifs_slider_alert; ?>
+                                                            </span>
+                                                        </div>
                                                     <?php endif; ?>
                                                 </div>
                                                 <footer class="tarif-card__footer">
@@ -208,11 +226,13 @@
                                                         $tarifs_slider_symbol = get_sub_field('tarifs-slider_symbol');
                                                         $tarifs_slider_descr = get_sub_field('tarifs-slider_descr');
                                                         $tarifs_slider_item = get_sub_field('tarifs-slider_item');
+                                                        $tarifs_slider_alert = get_sub_field('tarifs-slider_alert');
+                                                        $tarifs_slider_accent = get_sub_field('tarifs-slider_accent');
 
                                                         ?>
                                                         <div class="tarifs__swiper-slide swiper-slide">
                                                             <!-- Tarif-card -->
-                                                            <article class="tarif-card">
+                                                            <article class="tarif-card <?php foreach( $tarifs_slider_accent as $tarif_accent ) { echo $tarif_accent; } ?>">
                                                                 <header class="tarif-card__header">
                                                                     <div class="tarif-card__subtitle">
                                                                         <span class="tarif-card__pretext text text--normal text--white text--w-light">
@@ -238,17 +258,33 @@
                                                                         <?php echo $tarifs_slider_descr; ?>
                                                                     </p>
                                                                     <?php if( have_rows('tarifs-slider-checks') ): ?>
-                                                                    <ul class="tarif-card__checklist text text--normal text--white text--w-light">
-                                                                        <?php while( have_rows('tarifs-slider-checks') ): the_row();
+                                                                        <ul class="tarif-card__checklist text text--normal text--white text--w-light">
+                                                                            <?php while( have_rows('tarifs-slider-checks') ): the_row();
 
-                                                                            $tarifs_slider_checks_item = get_sub_field('tarifs-slider-checks_item');
+                                                                                $tarifs_slider_checks_item = get_sub_field('tarifs-slider-checks_item');
 
-                                                                            ?>
-                                                                            <li class="tarif-card__check">
-                                                                                <?php echo $tarifs_slider_checks_item; ?>
-                                                                            </li>
-                                                                        <?php endwhile; ?>
-                                                                    </ul>
+                                                                                ?>
+                                                                                <li class="tarif-card__check">
+                                                                                    <?php echo $tarifs_slider_checks_item; ?>
+                                                                                </li>
+                                                                            <?php endwhile; ?>
+                                                                        </ul>
+                                                                    <?php endif; ?>
+                                                                    <?php if( $tarifs_slider_alert ): ?>
+                                                                        <div class="tarif-card__alert">
+                                                                            <div class="tarif-card__alert-icon">
+                                                                                <svg class="tarif-card__alert-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <g opacity="0.35">
+                                                                                    <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                    <path d="M10 6H10.0083" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                    <path d="M9 9H10V14H11" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                    </g>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <span class="tarif-card__alert-text text text--normal text--white text--w-light">
+                                                                                <?php echo $tarifs_slider_alert; ?>
+                                                                            </span>
+                                                                        </div>
                                                                     <?php endif; ?>
                                                                 </div>
                                                                 <footer class="tarif-card__footer">

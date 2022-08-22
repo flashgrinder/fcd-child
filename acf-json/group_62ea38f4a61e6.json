@@ -306,6 +306,48 @@
                                             "maxlength": ""
                                         }
                                     ]
+                                },
+                                {
+                                    "key": "field_630366c78e4db",
+                                    "label": "Предупреждение",
+                                    "name": "tarifs-slider_alert",
+                                    "type": "text",
+                                    "instructions": "Укажите предупреждающий текст. (Справа иконка восклицательного знака, текст серый)",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "В тариф не входит что-то",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_63036a4a053e9",
+                                    "label": "Акцент на тариф",
+                                    "name": "tarifs-slider_accent",
+                                    "type": "checkbox",
+                                    "instructions": "Поставьте галочку, что бы указать акцент на тариф. Появится иконка с огоньком.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "tarif-card--fire": "Установить акцент"
+                                    },
+                                    "allow_custom": 0,
+                                    "default_value": [],
+                                    "layout": "horizontal",
+                                    "toggle": 0,
+                                    "return_format": "value",
+                                    "save_custom": 0
                                 }
                             ]
                         }
@@ -548,6 +590,48 @@
                                                     "maxlength": ""
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "key": "field_630364e18e4da",
+                                            "label": "Предупреждение",
+                                            "name": "tarifs-slider_alert",
+                                            "type": "text",
+                                            "instructions": "Укажите предупреждающий текст. (Справа иконка восклицательного знака, текст серый)",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "В тариф не входит что-то",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_63036ae5053ea",
+                                            "label": "Акцент на тариф",
+                                            "name": "tarifs-slider_accent",
+                                            "type": "checkbox",
+                                            "instructions": "Поставьте галочку, что бы указать акцент на тариф. Появится иконка с огоньком.",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "choices": {
+                                                "tarif-card--fire": "Установить акцент"
+                                            },
+                                            "allow_custom": 0,
+                                            "default_value": [],
+                                            "layout": "horizontal",
+                                            "toggle": 0,
+                                            "return_format": "value",
+                                            "save_custom": 0
                                         }
                                     ]
                                 }
@@ -775,5 +859,5 @@
     "active": true,
     "description": "Параметры страницы single-services.php",
     "show_in_rest": 0,
-    "modified": 1661155978
+    "modified": 1661168704
 }
