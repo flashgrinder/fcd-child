@@ -444,6 +444,36 @@
                 <!-- /. Tarifs -->
             <?php endif; ?>
 
+            <?php if( get_row_layout() == 'service-block_partners' ): ?>
+                <!-- Partners -->
+                <section class="partners block-padding">
+                    <div class="partners__body container">
+                        <h2 class="partners__heading title title--large title--white title--w-bold title--indent-45">
+                            <?php echo get_sub_field('partners_title'); ?>
+                        </h2>
+                    </div>
+                    <div class="partners__outer container-page">
+                        <div class="partners__wrapper-items partners__slider swiper-container">
+                            <?php if( have_rows('partners') ): ?>
+                                <div class="partners__items swiper-wrapper">
+                                    <?php while( have_rows('partners') ): the_row(); 
+                                    
+                                        $partners_link = get_sub_field('partners_link');
+                                        $partners_logo = get_sub_field('partners_logo-img');
+                                    
+                                    ?>
+                                        <a href="<?php echo $partners_link; ?>" class="partners__item swiper-slide" target="_blank">
+                                            <img src="<?php echo esc_url($partners_logo['url']); ?>" alt="<?php echo esc_attr($partners_logo['alt']); ?>" class="partners__logo">
+                                        </a>
+                                    <?php endwhile; ?>
+                                </div>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </section>
+                <!-- /. Partners -->
+            <?php endif; ?>
+
             <?php if( get_row_layout() == 'service-block_reviews' ): ?>
                 <!-- Reviews -->
                 <section class="reviews block-padding">

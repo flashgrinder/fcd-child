@@ -1,0 +1,36 @@
+.partners__outer {
+    overflow: hidden;
+}
+
+.partners__items {
+    display: flex;
+    align-items: center;
+}
+
+.partners__items.swiper-wrapper {
+    transition-timing-function: linear;
+}
+
+.partners__item.swiper-slide {
+    height: 100%;
+    opacity: .45;
+    transition: opacity .150s ease-in-out;
+}
+
+.partners__item.swiper-slide:hover {
+    opacity: 1;
+}
+
+.partners__item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 25px 20px;
+    background: var(--color-dark-blue);
+}
+
+.partners__logo {
+    display: block;
+    max-height: 100px;
+}

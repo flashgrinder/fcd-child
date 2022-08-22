@@ -1082,6 +1082,113 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_6303ae082e902": {
+                    "key": "layout_6303ae082e902",
+                    "name": "service-block_partners",
+                    "label": "Слайдер с партнёрами\/клиентами",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6303af0162f17",
+                            "label": "Заголовок блока",
+                            "name": "partners_title",
+                            "type": "textarea",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Нам доверяют",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_6303ae182e903",
+                            "label": "Партнёры\/Клиенты",
+                            "name": "partners",
+                            "type": "repeater",
+                            "instructions": "Добавьте партнёров\/клиентов и ссылки на них.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 3,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6303aeca2e906",
+                                    "label": "Партнёр",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_6303ae762e904",
+                                    "label": "Ссылка",
+                                    "name": "partners_link",
+                                    "type": "url",
+                                    "instructions": "Укажите ссылку.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_6303aea42e905",
+                                    "label": "Логотип",
+                                    "name": "partners_logo-img",
+                                    "type": "image",
+                                    "instructions": "Добавьте логотип.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "full",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Добавить",
@@ -1107,5 +1214,5 @@
     "active": true,
     "description": "Параметры страницы single-services.php",
     "show_in_rest": 0,
-    "modified": 1661180940
+    "modified": 1661185866
 }
