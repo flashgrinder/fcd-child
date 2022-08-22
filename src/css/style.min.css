@@ -2924,10 +2924,29 @@ body::-webkit-scrollbar-thumb {
   background: var(--color-dark-blue);
   border-radius: 10px;
   height: 100%;
+  overflow: hidden;
 }
 
 .tarif-card--fire {
   position: relative;
+}
+
+.tarif-card.tarif-card--service {
+  padding: 0;
+}
+
+.tarif-card.tarif-card--service .tarif-card__header {
+  padding: 25px 25px 20px;
+  background: var(--color-accent-gradient);
+  border-bottom: none;
+}
+
+.tarif-card.tarif-card--service .tarif-card__body {
+  padding: 0 25px 0;
+}
+
+.tarif-card.tarif-card--service .tarif-card__footer {
+  padding: 0 25px 25px;
 }
 
 .tarif-card--fire::before {
