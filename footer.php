@@ -10,13 +10,14 @@
                             Оставьте номер телефона, мы перезвоним и обсудим проект
                         </p>
                     </div>
-                    <form method="post" class="form-page__form invalid">
+                    <form method="post" class="form-page__form invalid" action="">
                         <div class="form-page__fields">
                             <div class="form-page__field">
                                 <p class="form-page__field-text text text--small text--light-gray text--w-light">
                                     Введите номер телефона
                                 </p>
-                                <input type="tel" class="form-page__input" placeholder="+7 (999) - 888 - 77 - 66">
+                                <input type="tel" name="phone" class="form-page__input" placeholder="+7 (999) - 888 - 77 - 66">
+                                <input type="hidden" name="action" value="truephone">
                                 <span class="wpcf7-not-valid-tip" aria-hidden="true">Поле обязательно для заполнения.</span>
                             </div>
                             <div class="form-page__actions">

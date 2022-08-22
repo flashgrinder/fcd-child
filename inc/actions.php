@@ -8,6 +8,12 @@
         wp_enqueue_script( 'jquery' );
         wp_enqueue_script( 'scripts', get_stylesheet_directory_uri() . '/assets/js/scripts.min.js', [], time(), true );
 
+        wp_register_script( 'ajax', get_stylesheet_directory_uri() . '/inc/ajax.js', ['jquery'], time(), true );
+
+        wp_localize_script( 'ajax', 'gosha', ['ajax_url' => admin_url('admin-ajax.php')] );
+        
+        wp_enqueue_script( 'ajax' );
+
     } );
 
     add_action( 'after_setup_theme', function(){
@@ -115,4 +121,14 @@
         if( file_exists( get_theme_file_path("/template-parts/block/content-{$slug}.php") ) ) {
             include( get_theme_file_path("/template-parts/block/content-{$slug}.php") );
         }
+    }
+
+    add_action('wp_ajax_truephone', 'true_ajax');
+    add_action('wp_ajax_nopriv_truephone', 'true_ajax');
+
+    function true_ajax() {
+
+        echo 'Привет';
+        die;
+
     }
