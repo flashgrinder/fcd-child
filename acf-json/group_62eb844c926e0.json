@@ -119,6 +119,13 @@
                 "operator": "==",
                 "value": "page-content.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-vacancies.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -130,5 +137,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1659616980
+    "modified": 1661152539
 }

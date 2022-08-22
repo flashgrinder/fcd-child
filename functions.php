@@ -18,5 +18,9 @@
     include_once(__DIR__ . '/inc/post-type_services.php');
     /* Post type - Cases */
     include_once(__DIR__ . '/inc/post-type_cases.php');
+    /* Post type - Vacancies */
+    include_once(__DIR__ . '/inc/post-type_vacancies.php');
+    /* Taxanomies */
+    include_once(__DIR__ . '/inc/taxanomies.php');
     /* Custom Functions */
     include_once(__DIR__ . '/inc/custom-functions.php');
