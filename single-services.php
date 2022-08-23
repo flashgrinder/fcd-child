@@ -1257,9 +1257,11 @@
                                         <h3 class="stages__title title title--pre-medium title--white title--w-light">
                                             <?php echo $stages_card_title; ?>
                                         </h3>
-                                        <div class="stages__descr text text--normal text--white text--w-light">
-                                            <?php echo $stages_card_descr; ?>
-                                        </div>
+                                        <?php if( !empty( $stages_card_descr ) ): ?>
+                                            <div class="stages__descr text text--normal text--white text--w-light">
+                                                <?php echo $stages_card_descr; ?>
+                                            </div>
+                                        <?php endif; ?>
                                     </article>
                                 <?php endwhile; ?>
                             </div>
