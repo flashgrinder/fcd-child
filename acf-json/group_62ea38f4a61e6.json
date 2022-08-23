@@ -1189,6 +1189,184 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_6304b5162d2a7": {
+                    "key": "layout_6304b5162d2a7",
+                    "name": "service-block_benefits",
+                    "label": "Преимущества",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6304b5162d2a8",
+                            "label": "Заголовок блока",
+                            "name": "benefits_title",
+                            "type": "textarea",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Почему мы?",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_6304b7fa2d2ae",
+                            "label": "Колонки",
+                            "name": "benefits_col",
+                            "type": "radio",
+                            "instructions": "Выберите количество колонок.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "benefits__items--four": "Четыре колонки",
+                                "benefits__items--three": "Три колонки"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "benefits__items--four : Четыре колонки",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_6304b5162d2a9",
+                            "label": "Преимущества",
+                            "name": "benefits",
+                            "type": "repeater",
+                            "instructions": "Добавьте rкарточки преимуществ.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6304b5162d2aa",
+                                    "label": "Преимущество",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_6304b5162d2ac",
+                                    "label": "Иконка",
+                                    "name": "benefits-card_img",
+                                    "type": "image",
+                                    "instructions": "Добавьте изображение.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "full",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_6304bb299e097",
+                                    "label": "Выравнивание заголовка",
+                                    "name": "benefits-card_title-position",
+                                    "type": "radio",
+                                    "instructions": "Выберите выравнивание заголовка.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "left": "По левому краю",
+                                        "center": "По центру",
+                                        "right": "По правому краю"
+                                    },
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "default_value": "left : По левому краю",
+                                    "layout": "horizontal",
+                                    "return_format": "value",
+                                    "save_other_choice": 0
+                                },
+                                {
+                                    "key": "field_6304b5162d2ab",
+                                    "label": "Заголовок",
+                                    "name": "benefits-card_title",
+                                    "type": "textarea",
+                                    "instructions": "Укажите заголовок карточки.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": ""
+                                },
+                                {
+                                    "key": "field_6304b7252d2ad",
+                                    "label": "Описание",
+                                    "name": "benefits-card_descr",
+                                    "type": "textarea",
+                                    "instructions": "Укажите описание.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": "br"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Добавить",
@@ -1214,5 +1392,5 @@
     "active": true,
     "description": "Параметры страницы single-services.php",
     "show_in_rest": 0,
-    "modified": 1661185866
+    "modified": 1661254683
 }

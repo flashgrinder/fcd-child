@@ -1196,6 +1196,47 @@
                 <!-- /. Cases-slider -->
             <?php endif; ?>
 
+            <?php if( get_row_layout() == 'service-block_benefits' ): ?>
+                <!-- Benefits -->
+                <section class="benefits block-padding">
+                    <div class="benefits__body container">
+                        <h2 class="benefits__heading title title--large title--white title--w-bold title--indent-45">
+                            <?php echo get_sub_field('benefits_title'); ?>
+                        </h2>
+                        <?php $benefits_col = get_sub_field('benefits_col'); ?>
+                        <?php if( have_rows('benefits') ): ?>
+                            <div class="benefits__items <?php echo $benefits_col; ?>">
+                                <?php while( have_rows('benefits') ): the_row(); 
+                                    
+                                    $benefits_card_img = get_sub_field('benefits-card_img');
+                                    $benefits_card_title_position = get_sub_field('benefits-card_title-position');
+                                    $benefits_card_title = get_sub_field('benefits-card_title');
+                                    $benefits_card_descr = get_sub_field('benefits-card_descr');
+                                
+                                ?>
+                                    <div class="benefits__item">
+                                        <div class="benefits__icon">
+                                            <img src="<?php echo esc_url($benefits_card_img['url']); ?>" alt="<?php echo esc_attr($benefits_card_img['alt']); ?>" class="benefits__icon-img">
+                                        </div>
+                                        <div class="benefits__text">
+                                            <h3 class="benefits__title title title--pre-medium title--white title--w-light <?php echo $benefits_card_title_position; ?>">
+                                                <?php echo $benefits_card_title; ?>
+                                            </h3>
+                                            <?php if( !empty( $benefits_card_descr ) ): ?>
+                                                <p class="benefits__descr text text--normal text--white text--w-light">
+                                                    <?php echo $benefits_card_descr ?>
+                                                </p>
+                                            <?php endif; ?>
+                                        </div>
+                                    </div>
+                                <?php endwhile; ?>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+                </section>
+                <!-- /. Benefits -->
+            <?php endif; ?>
+
         <?php endwhile ?>
     <?php endif ?>
 
