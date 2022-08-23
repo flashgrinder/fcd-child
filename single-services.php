@@ -1237,6 +1237,38 @@
                 <!-- /. Benefits -->
             <?php endif; ?>
 
+            <?php if( get_row_layout() == 'service-block_stages' ): ?>
+                <!-- Stages -->
+                <section class="stages block-padding">
+                    <div class="stages__body container">
+                        <h2 class="stages__heading title title--large title--white title--w-bold title--indent-45">
+                            <?php echo get_sub_field('stages_title'); ?>
+                        </h2>
+                        <?php $stages_col = get_sub_field('stages_col'); ?>
+                        <?php if( have_rows('stages') ): ?>
+                            <div class="stages__items <?php echo $stages_col; ?>">
+                            <?php while( have_rows('stages') ): the_row(); 
+                                    
+                                    $stages_card_title = get_sub_field('stages-card_title');
+                                    $stages_card_descr = get_sub_field('stages-card_descr');
+                                
+                                ?>
+                                    <article class="stages__item" data-num="<?php echo get_row_index(); ?>">
+                                        <h3 class="stages__title title title--pre-medium title--white title--w-light">
+                                            <?php echo $stages_card_title; ?>
+                                        </h3>
+                                        <div class="stages__descr text text--normal text--white text--w-light">
+                                            <?php echo $stages_card_descr; ?>
+                                        </div>
+                                    </article>
+                                <?php endwhile; ?>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+                </section>
+                <!-- /. Stages -->
+            <?php endif; ?>
+
         <?php endwhile ?>
     <?php endif ?>
 

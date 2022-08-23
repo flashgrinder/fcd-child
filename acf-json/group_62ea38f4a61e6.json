@@ -1341,7 +1341,7 @@
                                     "placeholder": "",
                                     "maxlength": "",
                                     "rows": "",
-                                    "new_lines": ""
+                                    "new_lines": "br"
                                 },
                                 {
                                     "key": "field_6304b7252d2ad",
@@ -1357,6 +1357,135 @@
                                         "id": ""
                                     },
                                     "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": "br"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6304d8c931b28": {
+                    "key": "layout_6304d8c931b28",
+                    "name": "service-block_stages",
+                    "label": "Этапы",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6304d8c931b29",
+                            "label": "Заголовок блока",
+                            "name": "stages_title",
+                            "type": "textarea",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Этапы работы",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_6304d8c931b2a",
+                            "label": "Колонки",
+                            "name": "stages_col",
+                            "type": "radio",
+                            "instructions": "Выберите количество колонок.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "stages__items--four": "Четыре колонки",
+                                "stages__items--three": "Три колонки"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "stages__items--three : Три колонки",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_6304d8c931b2b",
+                            "label": "Этапы",
+                            "name": "stages",
+                            "type": "repeater",
+                            "instructions": "Добавьте этапы.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6304d8c931b2c",
+                                    "label": "Этап",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_6304d8c931b2f",
+                                    "label": "Заголовок",
+                                    "name": "stages-card_title",
+                                    "type": "textarea",
+                                    "instructions": "Укажите заголовок этапа.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Заголовок",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": "br"
+                                },
+                                {
+                                    "key": "field_6304d8c931b30",
+                                    "label": "Описание",
+                                    "name": "stages-card_descr",
+                                    "type": "textarea",
+                                    "instructions": "Укажите описание.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Какое то описание",
                                     "placeholder": "",
                                     "maxlength": "",
                                     "rows": "",
@@ -1392,5 +1521,5 @@
     "active": true,
     "description": "Параметры страницы single-services.php",
     "show_in_rest": 0,
-    "modified": 1661254683
+    "modified": 1661262284
 }
