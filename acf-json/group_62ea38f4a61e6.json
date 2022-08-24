@@ -1601,6 +1601,173 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_63062d31f6cee": {
+                    "key": "layout_63062d31f6cee",
+                    "name": "service-block_action",
+                    "label": "Баннер(Акция)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63062d6cf6cf4",
+                            "label": "Время акции",
+                            "name": "action_date",
+                            "type": "textarea",
+                            "instructions": "Укажите время проведения акции.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Cпециальное предложение | август - ноябрь 2022",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_63062e31f6cf5",
+                            "label": "Маленький заголовок",
+                            "name": "action_small-title",
+                            "type": "textarea",
+                            "instructions": "Укажите маленький заголовок.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "2 месяца технической поддержки сайта",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_63062e75f6cf6",
+                            "label": "Большой заголовок",
+                            "name": "action_big-title",
+                            "type": "textarea",
+                            "instructions": "Укажите большой заголовок заголовок.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "В ПОДАРОК",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_63063043f6cfb",
+                            "label": "Планка с ценой",
+                            "name": "action_plunk-sale",
+                            "type": "text",
+                            "instructions": "Укажите центу или короткий текст, который будет отображаться справа от большого заголовка. Текст будет перечёркнут.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "от 20 990 ₽",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_63062f53f6cf7",
+                            "label": "Текст после большого заголовка",
+                            "name": "action_after-text",
+                            "type": "textarea",
+                            "instructions": "Укажите текст после большого заголовка.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "при заказе разработки интернет-магазина под ключ",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_63062facf6cf9",
+                            "label": "Название кнопки",
+                            "name": "action_name-btn",
+                            "type": "textarea",
+                            "instructions": "Укажите название кнопки.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Получить скидку",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_63062fe2f6cfa",
+                            "label": "Текст справа от кнопки",
+                            "name": "action_rignt-btn-text",
+                            "type": "text",
+                            "instructions": "Укажите название кнопки.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Хочу подарок",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_6306312a61f34",
+                            "label": "Изображение",
+                            "name": "action_img",
+                            "type": "image",
+                            "instructions": "Добавьте изображение баннера.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "full",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Добавить",
@@ -1626,5 +1793,5 @@
     "active": true,
     "description": "Параметры страницы single-services.php",
     "show_in_rest": 0,
-    "modified": 1661332604
+    "modified": 1661350236
 }

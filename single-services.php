@@ -1307,6 +1307,61 @@
                 <!-- /. Accardion -->
             <?php endif; ?>
 
+            <?php if( get_row_layout() == 'service-block_action' ): ?>
+                <!-- Action -->
+                <section class="action block-padding">
+                    <div class="action__body container">
+                        <article class="action__item action__item--bg-gradient">
+                            <div class="action__inner">
+                                <?php
+                                
+                                    $action_date = get_sub_field('action_date');
+                                    $action_small_title = get_sub_field('action_small-title');
+                                    $action_big_title = get_sub_field('action_big-title');
+                                    $action_plunk_sale = get_sub_field('action_plunk-sale');
+                                    $action_after_title = get_sub_field('action_after-title');
+                                    $action_name_btn = get_sub_field('action_name-btn');
+                                    $action_rignt_btn_text = get_sub_field('action_right-btn-text');
+                                    $action_img = get_sub_field('action_img');
+                                
+                                ?>
+                                <div class="action__wrapper">
+                                    <div class="action__date-act text text--small text--white text--w-light">
+                                        <?php echo $action_date; ?>
+                                    </div>
+                                    <div class="action__name title title--big title--white title--w-medium">
+                                        <?php echo $action_small_title; ?>
+                                    </div>
+                                    <div class="action__price title title--huge title--white title--w-medium">
+                                        <?php echo $action_big_title; ?>
+                                        <?php if( !empty($action_plunk_sale)): ?>
+                                            <span class="action__plunk-sale text text--w-medium">
+                                                <?php echo $action_plunk_sale; ?>
+                                            </span>
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="action__small-text text text--normal text--white text--w-light">
+                                        <?php echo $action_small_title; ?>
+                                    </div>
+                                    <div class="action__act-btn">
+                                        <a href="#modal" class="action__button button button--white">
+                                            <?php echo $action_name_btn; ?>
+                                        </a>
+                                        <div class="action__left-text text text--normal text--white text--w-light">
+                                            <?php echo $action_rignt_btn_text; ?>
+                                        </div>
+                                    </div>
+                                </div>
+                                <picture class="action__picture">
+                                    <img src="<?php echo esc_url($action_img['url']); ?>" alt="<?php echo esc_attr($action_img['alt']); ?>" class="action__img">
+                                </picture>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <!-- /. Action -->
+            <?php endif; ?>
+
         <?php endwhile ?>
     <?php endif ?>
 
