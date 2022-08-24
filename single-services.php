@@ -342,7 +342,7 @@
 
                                         $tarifs_slider_name = get_sub_field('tarifs-slider_name');
                                         $tarifs_slider_beforetext = get_sub_field('tarifs-slider_beforetext');
-                                        $tarifs_slider_price = get_sub_field('tarifs-slider_title');
+                                        $tarifs_slider_title = get_sub_field('tarifs-slider_title');
                                         $tarifs_slider_descr = get_sub_field('tarifs-slider_descr');
                                         $tarifs_slider_item = get_sub_field('tarifs-slider_item');
                                         $tarifs_slider_alert = get_sub_field('tarifs-slider_alert');

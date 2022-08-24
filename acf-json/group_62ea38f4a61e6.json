@@ -212,7 +212,7 @@
                                     "key": "field_62ea53114fefc",
                                     "label": "Цена",
                                     "name": "tarifs-slider_price",
-                                    "type": "number",
+                                    "type": "text",
                                     "instructions": "Укажите цену тарифа",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -225,9 +225,7 @@
                                     "placeholder": "",
                                     "prepend": "",
                                     "append": "",
-                                    "min": "",
-                                    "max": "",
-                                    "step": ""
+                                    "maxlength": ""
                                 },
                                 {
                                     "key": "field_62ea534e4fefd",
@@ -457,9 +455,9 @@
                                 {
                                     "key": "field_6303997d08638",
                                     "label": "Название слайда",
-                                    "name": "tarifs-slider_price",
-                                    "type": "number",
-                                    "instructions": "Укажите цену тарифа",
+                                    "name": "tarifs-slider_title",
+                                    "type": "textarea",
+                                    "instructions": "Укажите название услуги.",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -467,13 +465,11 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": 0,
+                                    "default_value": "Название услуги",
                                     "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "min": "",
-                                    "max": "",
-                                    "step": ""
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": ""
                                 },
                                 {
                                     "key": "field_6303997d0863a",
@@ -744,7 +740,7 @@
                                             "key": "field_62ff5e26ca66b",
                                             "label": "Цена",
                                             "name": "tarifs-slider_price",
-                                            "type": "number",
+                                            "type": "text",
                                             "instructions": "Укажите цену тарифа",
                                             "required": 0,
                                             "conditional_logic": 0,
@@ -757,9 +753,7 @@
                                             "placeholder": "",
                                             "prepend": "",
                                             "append": "",
-                                            "min": "",
-                                            "max": "",
-                                            "step": ""
+                                            "maxlength": ""
                                         },
                                         {
                                             "key": "field_62ff5e26ca66c",
@@ -1793,5 +1787,5 @@
     "active": true,
     "description": "Параметры страницы single-services.php",
     "show_in_rest": 0,
-    "modified": 1661350550
+    "modified": 1661351009
 }
