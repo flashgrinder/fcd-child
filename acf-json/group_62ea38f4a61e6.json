@@ -1496,6 +1496,111 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_6305e9f752a3f": {
+                    "key": "layout_6305e9f752a3f",
+                    "name": "service-block_accordion",
+                    "label": "Аккордеон",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6305e9f752a40",
+                            "label": "Заголовок блока",
+                            "name": "accordion-block_title",
+                            "type": "textarea",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Популярные вопросы",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_6305e9f752a42",
+                            "label": "Аккордеон",
+                            "name": "accordion",
+                            "type": "repeater",
+                            "instructions": "Добавьте вкладки.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6305e9f752a43",
+                                    "label": "Аккордеон",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_6305e9f752a44",
+                                    "label": "Заголовок",
+                                    "name": "accordion_title",
+                                    "type": "textarea",
+                                    "instructions": "Укажите заголовок вкладки.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Заголовок",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": "br"
+                                },
+                                {
+                                    "key": "field_6305e9f752a45",
+                                    "label": "Описание",
+                                    "name": "accordion_descr",
+                                    "type": "wysiwyg",
+                                    "instructions": "Укажите описание.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Какое то описание",
+                                    "tabs": "all",
+                                    "toolbar": "basic",
+                                    "media_upload": 0,
+                                    "delay": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Добавить",
@@ -1521,5 +1626,5 @@
     "active": true,
     "description": "Параметры страницы single-services.php",
     "show_in_rest": 0,
-    "modified": 1661262284
+    "modified": 1661332320
 }

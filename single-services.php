@@ -1271,6 +1271,42 @@
                 <!-- /. Stages -->
             <?php endif; ?>
 
+            <?php if( get_row_layout() == 'service-block_accordion' ): ?>
+                <!-- Accardion -->
+                <section class="accordion block-padding">
+                    <div class="accordion__body container">
+                        <h2 class="accordion__heading title title--large title--white title--w-bold title--indent-45">
+                            <?php echo get_sub_field('accordion-block_title'); ?>
+                        </h2>
+                        <?php if( have_rows('accordion') ): ?>
+                            <div class="accordion__items js-accordion">
+                            <?php while( have_rows('accordion') ): the_row(); 
+                                    
+                                    $accordion_title = get_sub_field('accordion_title');
+                                    $accordion_descr = get_sub_field('accordion_descr');
+                                
+                                ?>
+                                    <div class="accordion__item js-accordion-item <?php if( get_row_index() == 1) echo 'is-active'; ?>">
+                                        <h3 class="accordion__title js-accordion-title title title--small title--white title--w-light">
+                                            <?php echo $accordion_title; ?> 
+                                            <span class="accordion__arrow">
+                                                <svg class="accordion__svg-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 1.00098L5 5.00098L9 1.00098" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </h3>
+                                        <div class="accordion__text wysiwyg">
+                                            <?php echo $accordion_descr; ?>
+                                        </div>
+                                    </div>
+                                <?php endwhile; ?>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+                </section>
+                <!-- /. Accardion -->
+            <?php endif; ?>
+
         <?php endwhile ?>
     <?php endif ?>
 
