@@ -1707,25 +1707,6 @@
                             "key": "field_63062facf6cf9",
                             "label": "Название кнопки",
                             "name": "action_name-btn",
-                            "type": "textarea",
-                            "instructions": "Укажите название кнопки.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Получить скидку",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": "br"
-                        },
-                        {
-                            "key": "field_63062fe2f6cfa",
-                            "label": "Текст справа от кнопки",
-                            "name": "action_rignt-btn-text",
                             "type": "text",
                             "instructions": "Укажите название кнопки.",
                             "required": 0,
@@ -1740,6 +1721,25 @@
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
+                        },
+                        {
+                            "key": "field_63062fe2f6cfa",
+                            "label": "Текст справа от кнопки",
+                            "name": "action_right-btn-text",
+                            "type": "textarea",
+                            "instructions": "Укажите текст справа от кнопки.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Действует при предъявлении промокода 09WEB22",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
                         },
                         {
                             "key": "field_6306312a61f34",
@@ -1793,5 +1793,5 @@
     "active": true,
     "description": "Параметры страницы single-services.php",
     "show_in_rest": 0,
-    "modified": 1661350236
+    "modified": 1661350550
 }

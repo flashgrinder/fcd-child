@@ -3525,6 +3525,10 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
 }
 
+.action__left-text {
+  max-width: 300px;
+}
+
 .action__img {
   display: block;
   margin-left: auto;
