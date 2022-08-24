@@ -1,0 +1,129 @@
+.action__item {
+    border-radius: 10px;
+}
+
+.action__inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, .5fr));
+    align-items: center;
+    @include mobile-block {
+        grid-template-columns: .6fr;
+    }
+    @include mobileXS-block {
+        grid-template-columns: 1fr;
+    }
+}
+
+.action__item.action__item--bg-gradient {
+    background: var(--color-accent-gradient);
+}
+
+.action__item.action__item--bg-dark {
+    background: var(--color-dark-blue);
+}
+
+.action__wrapper {
+    position: relative;
+    padding: 40px 0 40px 45px;
+    z-index: 10;
+    @include mobile-block {
+        padding: 20px 0 20px 20px;
+    }
+    @include mobileXS-block {
+        padding: 20px;
+    }
+}
+
+.action__date-act {
+    opacity: .5;
+}
+
+.action__name,
+.action__price {
+    line-height: 1;
+}
+
+.action__name {
+    margin-top: 25px;
+    font-size: responsive 22px 35px;
+    font-range: 360px 1440px;
+}
+
+.action__small-text {
+    margin-top: 15px;
+}
+
+.action__price {
+    position: relative;
+    display: inline-block;
+    font-size: responsive 35px 65px;
+    font-range: 360px 1440px;
+}
+
+.action__plunk-sale {
+    position: absolute;
+    bottom: -10px;
+    right: -45%;
+    padding: 12px 25px;
+    background: #372E3B;
+    border-radius: 5px;
+    font-size: responsive 16px 20px;
+    font-range: 320px 1440px;
+    color: #CDCBCE;
+    transform: rotate(-5deg) translateX(-50%);
+    @include mobile-block {
+        bottom: -5px;
+        padding: 5px 15px;
+    }
+}
+
+.action__plunk-sale::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform-origin: left;
+    transform: rotate(-5deg) translate(-50%, -50%);
+    background: var(--color-white);
+}
+
+.action__act-btn {
+    margin-top: 25px;
+    display: flex;
+    grid-gap: 20px;
+    align-items: center;
+    @include mobile-block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    @include mobileXS-block {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.action__left-text {
+    @include mobileXS(order, -1);
+}
+
+.action__picture {
+    @include mobile-block {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 300px;
+    }
+    @include mobileXS-block {
+        top: 35%;
+        max-width: 150px;
+    }
+}
+
+.action__img {
+    display: block;
+    margin-left: auto;
+}

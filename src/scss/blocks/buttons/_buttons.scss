@@ -202,3 +202,19 @@
 .button--secondary:disabled {
     opacity: .45;
 }
+
+/* Button-white */
+.button--white {
+    border: 1px solid var(--color-white);
+    color: var(--color-accent-secondary);
+    background: var(--color-white);
+    transition: color .300s, background .300s, opacity .300s;
+}
+
+.button--white:hover,
+.button--white:focus,
+.button--white:target,
+.button--white:active {
+    color: var(--color-white);
+    background: var(--color-accent-gradient);
+}
