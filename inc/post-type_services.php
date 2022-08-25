@@ -19,6 +19,7 @@
             'public'             => true,
             'show_ui'            => true,
             'show_in_rest'       => true,
+            'show_in_menu'       => true,
             'menu_position'      => 4,
             'menu_icon'          => 'dashicons-media-code',
             'supports'           => ['title','editor','thumbnail','author','excerpt','custom-fields','revisions'],
