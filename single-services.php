@@ -1337,7 +1337,7 @@
                                     $action_small_title = get_sub_field('action_small-title');
                                     $action_big_title = get_sub_field('action_big-title');
                                     $action_plunk_sale = get_sub_field('action_plunk-sale');
-                                    $action_after_title = get_sub_field('action_after-title');
+                                    $action_after_text = get_sub_field('action_after-text');
                                     $action_name_btn = get_sub_field('action_name-btn');
                                     $action_rignt_btn_text = get_sub_field('action_right-btn-text');
                                     $action_img = get_sub_field('action_img');
@@ -1359,7 +1359,7 @@
                                         <?php endif; ?>
                                     </div>
                                     <div class="action__small-text text text--normal text--white text--w-light">
-                                        <?php echo $action_after_title; ?>
+                                        <?php echo $action_after_text; ?>
                                     </div>
                                     <div class="action__act-btn">
                                         <a href="#modal" class="action__button button button--white">
