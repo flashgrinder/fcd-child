@@ -2828,7 +2828,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .tarifs__swiper-slide.swiper-slide {
-  height: 100%;
+  height: auto;
 }
 
 .tarifs__slider-nav {

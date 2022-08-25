@@ -6,7 +6,8 @@ function init() {
 
     const tarifsSliderStore = new Swiper(".tarifs__swiper-container--default", {
         slidesPerView: 1,
-        autoHeight: true,
+        // autoHeight: true,
+        calculateHeight:true,
         navigation: {
             nextEl: '.tarifs__swiper-button-next',
             prevEl: '.tarifs__swiper-button-prev'
@@ -30,7 +31,8 @@ function init() {
 
     const tarifsSliderWeb = new Swiper(".tarifs__swiper-container--web", {
         slidesPerView: 1,
-        autoHeight: true,
+        // autoHeight: true,
+        calculateHeight:true,
         navigation: {
             nextEl: '.tarifs__swiper-button-next',
             prevEl: '.tarifs__swiper-button-prev'
