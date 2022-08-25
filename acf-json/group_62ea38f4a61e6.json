@@ -1067,7 +1067,7 @@
                                     "key": "field_62ff3e964a95a",
                                     "label": "Ссылка карточки",
                                     "name": "type-site_link",
-                                    "type": "url",
+                                    "type": "link",
                                     "instructions": "Укажите ссылку.",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -1076,8 +1076,7 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
-                                    "placeholder": ""
+                                    "return_format": "array"
                                 }
                             ]
                         }
@@ -1844,5 +1843,5 @@
     "active": true,
     "description": "Параметры страницы single-services.php",
     "show_in_rest": 0,
-    "modified": 1661410762
+    "modified": 1661412593
 }
