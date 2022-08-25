@@ -25,7 +25,8 @@
             'has_archive'        => false,
             'hierarchical'        => false,
             'rewrite'             => array('slug' => 'uslugi', 'with_front' => false),
-            'query_var'           => true
+            'query_var'           => true,
+            'show_in_nav_menus'   => true,
         ]);
     
     });
