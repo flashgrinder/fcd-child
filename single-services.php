@@ -1359,7 +1359,7 @@
                                         <?php endif; ?>
                                     </div>
                                     <div class="action__small-text text text--normal text--white text--w-light">
-                                        <?php echo $action_small_title; ?>
+                                        <?php echo $action_after_title; ?>
                                     </div>
                                     <div class="action__act-btn">
                                         <a href="#modal" class="action__button button button--white">
