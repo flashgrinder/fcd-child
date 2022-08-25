@@ -507,7 +507,7 @@
                                     "placeholder": "",
                                     "maxlength": "",
                                     "rows": "",
-                                    "new_lines": ""
+                                    "new_lines": "br"
                                 },
                                 {
                                     "key": "field_6303997d0863a",
@@ -1843,5 +1843,5 @@
     "active": true,
     "description": "Параметры страницы single-services.php",
     "show_in_rest": 0,
-    "modified": 1661412593
+    "modified": 1661432183
 }
