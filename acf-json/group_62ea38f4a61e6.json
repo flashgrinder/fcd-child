@@ -190,6 +190,25 @@
                                     "maxlength": ""
                                 },
                                 {
+                                    "key": "field_63071bccf73a4",
+                                    "label": "Время\/Текст",
+                                    "name": "tarifs-slider_time",
+                                    "type": "text",
+                                    "instructions": "Укажите текст справа от названия.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "2 недели",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
                                     "key": "field_630339a170a63",
                                     "label": "Текст до цены",
                                     "name": "tarifs-slider_beforetext",
@@ -250,7 +269,7 @@
                                     "key": "field_62ea53af4fefe",
                                     "label": "Описание",
                                     "name": "tarifs-slider_descr",
-                                    "type": "text",
+                                    "type": "textarea",
                                     "instructions": "Укажите короткое описание тарифа.",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -261,9 +280,9 @@
                                     },
                                     "default_value": "Короткое описание",
                                     "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": "br"
                                 },
                                 {
                                     "key": "field_62ea541a0b2d1",
@@ -434,6 +453,25 @@
                                     "maxlength": ""
                                 },
                                 {
+                                    "key": "field_63071c3cf73a5",
+                                    "label": "Время\/Текст",
+                                    "name": "tarifs-slider_time",
+                                    "type": "text",
+                                    "instructions": "Укажите текст справа от названия.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "2 недели",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
                                     "key": "field_6303997d08637",
                                     "label": "Текст до цены",
                                     "name": "tarifs-slider_beforetext",
@@ -475,7 +513,7 @@
                                     "key": "field_6303997d0863a",
                                     "label": "Описание",
                                     "name": "tarifs-slider_descr",
-                                    "type": "text",
+                                    "type": "textarea",
                                     "instructions": "Укажите короткое описание тарифа.",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -486,9 +524,9 @@
                                     },
                                     "default_value": "Короткое описание",
                                     "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": "br"
                                 },
                                 {
                                     "key": "field_6303997d0863b",
@@ -699,25 +737,6 @@
                                             "endpoint": 0
                                         },
                                         {
-                                            "key": "field_63033a3070a64",
-                                            "label": "Текст до цены",
-                                            "name": "tarifs-slider_beforetext",
-                                            "type": "text",
-                                            "instructions": "Укажите текст до цены.",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "default_value": "От",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
-                                        },
-                                        {
                                             "key": "field_62ff5e26ca66a",
                                             "label": "Название тарифа",
                                             "name": "tarifs-slider_name",
@@ -731,6 +750,44 @@
                                                 "id": ""
                                             },
                                             "default_value": "Бесплатный",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_63071d36f73a7",
+                                            "label": "Время\/Текст",
+                                            "name": "tarifs-slider_time",
+                                            "type": "text",
+                                            "instructions": "Укажите текст справа от названия.",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "2 недели",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_63033a3070a64",
+                                            "label": "Текст до цены",
+                                            "name": "tarifs-slider_beforetext",
+                                            "type": "text",
+                                            "instructions": "Укажите текст до цены.",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "От",
                                             "placeholder": "",
                                             "prepend": "",
                                             "append": "",
@@ -778,7 +835,7 @@
                                             "key": "field_62ff5e26ca66d",
                                             "label": "Описание",
                                             "name": "tarifs-slider_descr",
-                                            "type": "text",
+                                            "type": "textarea",
                                             "instructions": "Укажите короткое описание тарифа.",
                                             "required": 0,
                                             "conditional_logic": 0,
@@ -789,9 +846,9 @@
                                             },
                                             "default_value": "Короткое описание",
                                             "placeholder": "",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
+                                            "maxlength": "",
+                                            "rows": "",
+                                            "new_lines": "br"
                                         },
                                         {
                                             "key": "field_62ff5e26ca66e",
@@ -1787,5 +1844,5 @@
     "active": true,
     "description": "Параметры страницы single-services.php",
     "show_in_rest": 0,
-    "modified": 1661351009
+    "modified": 1661410762
 }
