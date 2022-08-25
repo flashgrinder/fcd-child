@@ -2431,7 +2431,8 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.wysiwyg ul {
+.wysiwyg ul,
+.wysiwyg ol {
   padding-left: 20px;
   font-size: calc(14px + 2 * ((100vw - 320px) / 704));
   font-weight: 300;
@@ -2439,19 +2440,22 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (min-width: 1024px){
 
-  .wysiwyg ul{
+  .wysiwyg ul,
+.wysiwyg ol{
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 320px){
 
-  .wysiwyg ul{
+  .wysiwyg ul,
+.wysiwyg ol{
     font-size: 14px;
   }
 }
 
-.wysiwyg ul li ~ li {
+.wysiwyg ul li ~ li,
+.wysiwyg ol li ~ li {
   margin-top: 20px;
 }
 
@@ -4053,7 +4057,8 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
   }
 
-  .wysiwyg ul {
+  .wysiwyg ul,
+  .wysiwyg ol {
     padding-left: 20px;
   }
 

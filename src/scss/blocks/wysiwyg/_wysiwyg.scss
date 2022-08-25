@@ -29,7 +29,8 @@
     font-range: 320px 1440px;
 }
 
-.wysiwyg ul {
+.wysiwyg ul,
+.wysiwyg ol {
     padding-left: 20px;
     font-size: responsive 14px 16px;
     font-range: 320px 1024px;
@@ -39,7 +40,8 @@
     }
 }
 
-.wysiwyg ul li ~ li {
+.wysiwyg ul li ~ li,
+.wysiwyg ol li ~ li {
     margin-top: 20px;
 }
 
