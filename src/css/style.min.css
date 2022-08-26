@@ -3037,6 +3037,10 @@ body::-webkit-scrollbar-thumb {
   margin-top: auto;
 }
 
+.tarif-card__footer.tarif-card__footer--no-el {
+  margin-top: 0;
+}
+
 .tarif-card__action {
   margin-top: 45px;
   text-align: center;

@@ -1,0 +1,79 @@
+{
+    "key": "group_62ea28262ea3a",
+    "title": "Настройки отзыва",
+    "fields": [
+        {
+            "key": "field_62ea28404f696",
+            "label": "Должность",
+            "name": "review_position",
+            "type": "text",
+            "instructions": "Укажите должность.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Должность",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62ea288f4f697",
+            "label": "Текст отзыва",
+            "name": "review_text",
+            "type": "textarea",
+            "instructions": "Укажите не очень длинный текст.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_62ea29b26a9ae",
+            "label": "Ссылка на кейс",
+            "name": "review_case",
+            "type": "url",
+            "instructions": "Укажите ссылку на кейс.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "reviews"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Параметры  post-type_reviews.php",
+    "show_in_rest": 0,
+    "modified": 1661496926
+}

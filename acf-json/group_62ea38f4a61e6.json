@@ -611,11 +611,11 @@
                                     "save_custom": 0
                                 },
                                 {
-                                    "key": "field_63039acb0863f",
-                                    "label": "Ссылка",
-                                    "name": "tarifs-slider_link",
-                                    "type": "page_link",
-                                    "instructions": "Укажите ссылку на страницу услуги.",
+                                    "key": "field_63086eada98f6",
+                                    "label": "Показ\/Скрытие ссылки\/модального окна",
+                                    "name": "tarifs-slider_hide-show",
+                                    "type": "radio",
+                                    "instructions": "Показывает ссылку на услугу\/модальное окно или скрывает ссылку.",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -623,13 +623,40 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "post_type": [
-                                        "services"
-                                    ],
-                                    "taxonomy": "",
+                                    "choices": {
+                                        "tarifs-service_link": "Ссылка на услугу",
+                                        "tarifs-service_popup": "Модальное окно",
+                                        "tarifs-service_void": "Ничего не показывать"
+                                    },
                                     "allow_null": 0,
-                                    "allow_archives": 1,
-                                    "multiple": 0
+                                    "other_choice": 0,
+                                    "default_value": "",
+                                    "layout": "horizontal",
+                                    "return_format": "array",
+                                    "save_other_choice": 0
+                                },
+                                {
+                                    "key": "field_63039acb0863f",
+                                    "label": "Ссылка",
+                                    "name": "tarifs-slider_link",
+                                    "type": "link",
+                                    "instructions": "Укажите ссылку на страницу услуги.",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_63086eada98f6",
+                                                "operator": "==",
+                                                "value": "tarifs-service_link"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "url"
                                 }
                             ]
                         }
@@ -1843,5 +1870,5 @@
     "active": true,
     "description": "Параметры страницы single-services.php",
     "show_in_rest": 0,
-    "modified": 1661435230
+    "modified": 1661498787
 }
