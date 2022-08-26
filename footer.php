@@ -1,5 +1,5 @@
             <!-- Form-page -->
-            <section class="form-page <?php if( is_front_page() ) echo 'form-page--front-page'; ?> block-padding">
+            <section class="form-page <?php if( is_front_page() ) echo 'screen form-page--front-page'; ?> block-padding">
                 <?php if( is_front_page() ) : ?>
                 <div class="form-page__outer">
                 <?php endif; ?>
