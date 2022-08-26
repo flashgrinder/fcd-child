@@ -5,6 +5,11 @@
     padding: 340px 0 50px;
 }
 
+.footer--front-page {
+    display: none;
+    @include tablet(display, block);
+}
+
 .footer__decor {
     position: absolute;
     left: -10%;

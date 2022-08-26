@@ -10,6 +10,7 @@
     padding: 15px;
     left: 50%;
     transform: translateX(-50%);
+    @include tablet(display, none);
 }
 
 .progress__numbers {

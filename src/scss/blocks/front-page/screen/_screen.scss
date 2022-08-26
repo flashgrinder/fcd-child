@@ -1,6 +1,7 @@
 .screen__pic {
     width: auto;
     height: 100vh;
+    @include tablet(height, auto);
 }
 
 .screen__svg {
@@ -8,21 +9,35 @@
     width: auto;
     height: 100%;
     object-fit: contain;
+    @include tablet-block {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .screen__body {
     position: absolute;
     top: 0;
     width: 100vw;
+    @include tablet-block {
+        position: static;
+    }
 }
 
 .screen__inner {
-    margin-top: 30%;
+    margin-top: 25%;
     max-width: 650px;
     padding: 25px 65px;
     background: rgba(32, 32, 32, 0.25);
     border-radius: 10px;
     box-shadow: 10px 10px 25px -10px rgba(0, 0, 0, 0.15);
+    @include tablet-block {
+        margin-top: 0;
+        background: transparent;
+        border-radius: 0;
+        padding: 50px 0 150px;
+        box-shadow: none;
+    }
 }
 
 .screen__heading {

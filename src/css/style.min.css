@@ -1509,6 +1509,11 @@ body::-webkit-scrollbar-thumb {
   z-index: 100;
 }
 
+.header--front-page {
+  position: fixed;
+  background: rgba(32, 32, 32, 0.35);
+}
+
 .header__body {
   display: flex;
   justify-content: space-between;
@@ -1596,9 +1601,9 @@ body::-webkit-scrollbar-thumb {
           animation: rotate-burger-after 0.2s linear 0.2s forwards;
 }
 
-/* Horizontal-container */
+/* Scroll-container */
 
-.horizontal-container {
+.scroll-container {
   -ms-scroll-chaining: none;
       overscroll-behavior: none;
   height: 100vh;
@@ -1677,7 +1682,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .screen__inner {
-  margin-top: 30%;
+  margin-top: 25%;
   max-width: 650px;
   padding: 25px 65px;
   background: rgba(32, 32, 32, 0.25);
@@ -1960,6 +1965,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Form-page */
+
+.form-page--front-page .form-page__outer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  height: 100%;
+}
+
+.form-page--front-page .form-page__body {
+  width: 100%;
+}
 
 .form-page__inner {
   position: relative;
@@ -3555,6 +3573,10 @@ body::-webkit-scrollbar-thumb {
   padding: 340px 0 50px;
 }
 
+.footer--front-page {
+  display: none;
+}
+
 .footer__decor {
   position: absolute;
   left: -10%;
@@ -3704,6 +3726,38 @@ body::-webkit-scrollbar-thumb {
     display: flex;
   }
 
+  .scroll-container {
+    position: relative;
+    display: block;
+    height: auto;
+    z-index: 10;
+  }
+
+  .progress {
+    display: none;
+  }
+
+  .screen__pic {
+    height: auto;
+  }
+
+  .screen__svg {
+    width: 100%;
+    height: auto;
+  }
+
+  .screen__body {
+    position: static;
+  }
+
+  .screen__inner {
+    margin-top: 0;
+    background: transparent;
+    border-radius: 0;
+    padding: 50px 0 150px;
+    box-shadow: none;
+  }
+
   .menu__item.menu__item--submenu > .menu__link::after {
     margin-left: 15px;
     right: auto;
@@ -3766,6 +3820,10 @@ body::-webkit-scrollbar-thumb {
 
   .cases-slider__swiper-button-next {
     right: -20px;
+  }
+
+  .footer--front-page {
+    display: block;
   }
 }
 

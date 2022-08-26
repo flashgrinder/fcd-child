@@ -12,22 +12,29 @@ function countNums() {
 function init() {
 
     gsap.registerPlugin(ScrollTrigger);
-    
-    const normalProgress = gsap.timeline({
-        scrollTrigger: {
-          scrub: true,
-          trigger: ".screen",
-          start: 1,
-          end: "max"
+
+    ScrollTrigger.matchMedia({
+        "(min-width: 1024px)": () => {
+
+            const normalProgress = gsap.timeline({
+                scrollTrigger: {
+                  scrub: true,
+                  trigger: ".screen",
+                  start: 1,
+                  end: "max"
+                }
+            });
+        
+            normalProgress.to(".js-progress-bar", {
+                value: 6,
+                snap: { innerHTML: 1 },
+                onUpdate: countNums,
+                ease: "none"
+            });
         }
     });
 
-    normalProgress.to(".js-progress-bar", {
-        value: 5,
-        snap: { innerHTML: 1 },
-        onUpdate: countNums,
-        ease: "none"
-    });
+    
 
 }
 

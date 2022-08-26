@@ -1,5 +1,5 @@
 import gsap from 'gsap';
-import horizontalScroll from '../libs/modules/horizontal-scroll';
+import containerScroll from '../libs/modules/horizontal-scroll';
 import burgerMenu from '../libs/modules/burger-menu.js';
 import progressBar from '../libs/modules/progress-bar';
 import parallaxjs from '../libs/modules/parallax';
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
     });
 
     const burgerMenuTrue = document.querySelector('.burger-menu');
-    const horizintalScrollTrue = document.querySelector('.horizontal-container');
+    const containerScrollTrue = document.querySelector('.scroll-container');
     const progressBarTrue = document.querySelector('.progress');
     const paralaxjsTrue = document.querySelector('.parallax-container');
     const tarifsSliderTrue = document.querySelector('.tarifs__slider');
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
     const tabsTrue = document.querySelector('.tabs');
     const accordionTrue = document.querySelector('.accordion');
     
-    horizintalScrollTrue ? horizontalScroll.init() : false;
+    containerScrollTrue ? containerScroll.init() : false;
     burgerMenuTrue ? burgerMenu.init() : false;
     progressBarTrue ? progressBar.init() : false;
     paralaxjsTrue ? parallaxjs.init() : false;

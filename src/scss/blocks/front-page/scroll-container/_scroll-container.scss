@@ -1,0 +1,12 @@
+.scroll-container {
+    overscroll-behavior: none;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    @include tablet-block {
+        position: relative;
+        display: block;
+        height: auto;
+        z-index: 10;
+    }
+}

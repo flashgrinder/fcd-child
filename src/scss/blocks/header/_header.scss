@@ -10,6 +10,11 @@
     }
 }
 
+.header--front-page {
+    position: fixed;
+    background: rgba(32, 32, 32, 0.35);
+}
+
 .header__body {
     display: flex;
     justify-content: space-between;
