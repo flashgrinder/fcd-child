@@ -10,7 +10,7 @@
 <body class="page bg--primary">
 
     <!-- Header -->
-    <header class="header">
+    <header class="header <?php if( is_front_page() ) echo 'header--front-page'; ?>">
         <div class="header__body container">
             <a href="<?php echo home_url(); ?>" class="header__logo logo">
                 <?php $custom_logo__url = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' ); ?>
@@ -46,3 +46,6 @@
 
     <!-- MAIN -->
     <main class="main page__container">
+        <?php if( is_front_page() ) : ?>
+            <div class="scroll-container">
+        <?php endif; ?>
