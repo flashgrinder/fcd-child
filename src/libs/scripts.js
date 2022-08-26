@@ -7,7 +7,7 @@ import tarifsSlider from '../libs/modules/tarifs';
 import partnersSlider from '../libs/modules/partners';
 import casesSlider from '../libs/modules/cases';
 import tabs from '../libs/modules/tabs';
-import accardion from '../libs/modules/accordion';
+import accordion from '../libs/modules/accordion';
 
 document.addEventListener('DOMContentLoaded', function(e) {
 
@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
         nullTargetWarn: true
     });
 
+    const burgerMenuTrue = document.querySelector('.burger-menu');
     const horizintalScrollTrue = document.querySelector('.horizontal-container');
     const progressBarTrue = document.querySelector('.progress');
     const paralaxjsTrue = document.querySelector('.parallax-container');
@@ -22,15 +23,15 @@ document.addEventListener('DOMContentLoaded', function(e) {
     const partnersSliderTrue = document.querySelector('.partners__slider');
     const casesSliderTrue = document.querySelector('.cases-slider');
     const tabsTrue = document.querySelector('.tabs');
-    const accardionTrue = document.querySelector('.accordion');
+    const accordionTrue = document.querySelector('.accordion');
     
     horizintalScrollTrue ? horizontalScroll.init() : false;
-    burgerMenu.init();
+    burgerMenuTrue ? burgerMenu.init() : false;
     progressBarTrue ? progressBar.init() : false;
     paralaxjsTrue ? parallaxjs.init() : false;
     tarifsSliderTrue ? tarifsSlider.init() : false;
     partnersSliderTrue ? partnersSlider.init() : false;
     casesSliderTrue ? casesSlider.init() : false;
     tabsTrue ? tabs.init() : false;
-    accardionTrue ? accardion.init() : false;
+    accordionTrue ? accordion.init() : false;
 });
