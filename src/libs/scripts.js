@@ -12,7 +12,8 @@ import accordion from '../libs/modules/accordion';
 document.addEventListener('DOMContentLoaded', function(e) {
 
     gsap.config({
-        nullTargetWarn: true
+        nullTargetWarn: true,
+        force3D: true
     });
 
     const burgerMenuTrue = document.querySelector('.burger-menu');
