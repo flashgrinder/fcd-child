@@ -10,31 +10,31 @@ function init() {
     let densityScrollContainer = scrollContainer.scrollWidth - document.documentElement.clientWidth;
 
     let screenEntry = document.querySelector(".js-screen-entry");
-    let screenLayerEntryOne = document.querySelector(".screen-entry__layer--one");
-    let screenLayerEntryTwo = document.querySelector(".screen-entry__layer--two");
-    let screenLayerEntryThree = document.querySelector(".screen-entry__layer--three");
-    let screenLayerEntryFour = document.querySelector(".screen-entry__layer--four");
+    let screenLayerEntryOne = document.querySelector(".js-screen-entry__layer--one");
+    let screenLayerEntryTwo = document.querySelector(".js-screen-entry__layer--two");
+    let screenLayerEntryThree = document.querySelector(".js-screen-entry__layer--three");
+    let screenLayerEntryFour = document.querySelector(".js-screen-entry__layer--four");
 
     let screenBrand = document.querySelector(".js-screen-brand");
-    let screenLayerBrandOne = document.querySelector(".screen-brand__layer--one");
-    let screenLayerBrandTwo = document.querySelector(".screen-brand__layer--two");
-    let screenLayerBrandThree = document.querySelector(".screen-brand__layer--three");
-    let screenLayerBrandFour = document.querySelector(".screen-brand__layer--four");
+    let screenLayerBrandOne = document.querySelector(".js-screen-brand__layer--one");
+    let screenLayerBrandTwo = document.querySelector(".js-screen-brand__layer--two");
+    let screenLayerBrandThree = document.querySelector(".js-screen-brand__layer--three");
+    let screenLayerBrandFour = document.querySelector(".js-screen-brand__layer--four");
 
     let screenHackerman = document.querySelector(".js-screen-hackerman");
-    let screenLayerHackermanOne = document.querySelector(".screen-hackerman__layer--one");
-    let screenLayerHackermanTwo = document.querySelector(".screen-hackerman__layer--two");
-    let screenLayerHackermanThree = document.querySelector(".screen-hackerman__layer--three");
+    let screenLayerHackermanOne = document.querySelector(".js-screen-hackerman__layer--one");
+    let screenLayerHackermanTwo = document.querySelector(".js-screen-hackerman__layer--two");
+    let screenLayerHackermanThree = document.querySelector(".js-screen-hackerman__layer--three");
 
     let screenMarketing = document.querySelector(".js-screen-marketing");
-    let screenLayerMarketingOne = document.querySelector(".screen-marketing__layer--one");
-    let screenLayerMarketingTwo = document.querySelector(".screen-marketing__layer--two");
-    let screenLayerMarketingThree = document.querySelector(".screen-marketing__layer--three");
+    let screenLayerMarketingOne = document.querySelector(".js-screen-marketing__layer--one");
+    let screenLayerMarketingTwo = document.querySelector(".js-screen-marketing__layer--two");
+    let screenLayerMarketingThree = document.querySelector(".js-screen-marketing__layer--three");
 
     let screenIt = document.querySelector(".js-screen-it");
-    let screenLayerItOne = document.querySelector(".screen-it__layer--one");
-    let screenLayerItTwo = document.querySelector(".screen-it__layer--two");
-    let screenLayerItThree = document.querySelector(".screen-it__layer--three");
+    let screenLayerItOne = document.querySelector(".js-screen-it__layer--one");
+    let screenLayerItTwo = document.querySelector(".js-screen-it__layer--two");
+    let screenLayerItThree = document.querySelector(".js-screen-it__layer--three");
 
     ScrollTrigger.matchMedia({
         "(min-width: 1024px)": () => {
