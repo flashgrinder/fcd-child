@@ -2115,13 +2115,13 @@ body::-webkit-scrollbar-thumb {
 
 .post__cat {
   border-radius: 3px;
-  background: var(--color-dark-gray);
+  background: var(--color-dark);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .post__cat:hover {
-  color: var(--color-blue);
+  color: var(--color-accent-secondary);
 }
 
 .post__cat,
