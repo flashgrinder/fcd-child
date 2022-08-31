@@ -1266,7 +1266,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   border-radius: 2px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #123548;
+  background-color: #E93873;
 }
 
 /* Buttons */
@@ -1649,14 +1649,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 ::-webkit-progress-value {
-  background-color: var(--color-blue);
+  background: linear-gradient(90deg, #EB5733 0%, #E93873 602.38%);
   height: 3px;
   border-radius: 5px;
 }
 
 ::-moz-progress-bar {
   padding: 2px;
-  background-color: var(--color-blue);
+  background: linear-gradient(90deg, #EB5733 0%, #E93873 602.38%);
   border-radius: 5px;
 }
 

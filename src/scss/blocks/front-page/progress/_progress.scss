@@ -33,13 +33,13 @@
 }
 
 ::-webkit-progress-value {
-    background-color: var(--color-blue);
+    background: linear-gradient(90deg, #EB5733 0%, #E93873 602.38%);
     height: 3px;
     border-radius: 5px;
 }
 
 ::-moz-progress-bar {
     padding: 2px;
-    background-color: var(--color-blue);
+    background: linear-gradient(90deg, #EB5733 0%, #E93873 602.38%);
     border-radius: 5px;
 }
