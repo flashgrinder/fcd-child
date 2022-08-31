@@ -15,6 +15,10 @@
     }
 }
 
+.screen__layer {
+    will-change: transform;
+}
+
 .screen__body {
     position: absolute;
     top: 0;

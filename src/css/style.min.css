@@ -1675,6 +1675,10 @@ body::-webkit-scrollbar-thumb {
      object-fit: contain;
 }
 
+.screen__layer {
+  will-change: transform;
+}
+
 .screen__body {
   position: absolute;
   top: 0;
@@ -1704,12 +1708,6 @@ body::-webkit-scrollbar-thumb {
 .screen-entry {
   position: relative;
   z-index: 9999;
-}
-
-/* Js-screen */
-
-.screen-entry__layer {
-  will-change: transform;
 }
 
 /* Page-404 */
