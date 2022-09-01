@@ -39,7 +39,7 @@
                                         Ваши данные находятся  под защитой
                                     </span> 
                                 </p>
-                                <div class="wpcf7-response-output" aria-hidden="true">
+                                <div class="wpcf7-response-output form-page__result" aria-hidden="true">
                                     Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.
                                 </div>
                             </form>

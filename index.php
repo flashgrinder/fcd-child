@@ -77,7 +77,7 @@
 
                 $current_page = get_query_var('paged');
                 $current_page = max( 1, $current_page );
-                $per_page = 9;
+                $per_page = 1;
                 $offset_start = 0;
                 $offset = ( $current_page - 1 ) * $per_page + $offset_start;
 
