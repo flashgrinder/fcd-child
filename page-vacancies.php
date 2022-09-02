@@ -64,30 +64,15 @@
     <section id="vacancy" class="vacancy block-padding">
         <div class="vacancy__body container">
             <div class="vacancy__filters">
-                <a href="#" class="vacancy__btn-filter button button--dark button--small is-active">
-                    Все
-                </a>
-                <a href="#" class="vacancy__btn-filter button button--dark button--small">
-                    Из офиса
-                </a>
-                <a href="#" class="vacancy__btn-filter button button--dark button--small">
-                    Удалённая работа
-                </a>
-                <a href="#" class="vacancy__btn-filter button button--dark button--small">
-                    Без опыта
-                </a>
-                <a href="#" class="vacancy__btn-filter button button--dark button--small">
-                    От 1 года
-                </a>
-                <a href="#" class="vacancy__btn-filter button button--dark button--small">
-                    От 2 лет
-                </a>
-                <a href="#" class="vacancy__btn-filter button button--dark button--small">
-                    Полный рабочий день
-                </a>
-                <a href="#" class="vacancy__btn-filter button button--dark button--small">
-                    Сокращённый рабочий день
-                </a>
+                <?php 
+                    $categories = get_terms(['taxonomy' => 'cats_vacancies']);
+                    
+                    if($categories){
+                        foreach($categories as $category) {
+                            echo '<a href="'. get_category_link($category->term_id) . '" class="vacancy__btn-filter button button--dark button--small is-active">' . $category->name . '</a>';
+                        }
+                    }
+                ?>
             </div>
             <div class="vacancy__list">
             <?php

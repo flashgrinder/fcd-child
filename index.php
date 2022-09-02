@@ -63,11 +63,11 @@
         <div class="news-list__body container">
             <div class="news-list__filter">
                 <?php 
-                    $categories = get_the_category();
+                    $categories = get_terms(['taxonomy' => 'category']);
                     
                     if($categories){
                         foreach($categories as $category) {
-                            echo '<a href="'. get_category_link($category->term_id) . '" class="news-list__btn-filter button button--dark button--small">' . $category->cat_name . '</a>';
+                            echo '<a href="'. get_category_link($category->term_id) . '" class="news-list__btn-filter button button--dark button--small">' . $category->name . '</a>';
                         }
                     }
                 ?>
