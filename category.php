@@ -1,114 +1,97 @@
 <?php get_header(); ?>
 
-    <!-- News-list -->
-    <section class="news-list block-padding" id="news">
-        <div class="news-list__body container">
-            <div class="news-list__items">
-                <?php
-
-                    $current_page = get_query_var('paged');
-                    $current_page = max( 1, $current_page );
-                    $per_page = 9;
-                    $offset_start = 0;
-                    $offset = ( $current_page - 1 ) * $per_page + $offset_start;
-
-                    $post_list = new WP_Query(array(
-                        'posts_per_page' => $per_page,
-                        'paged'          => $current_page,
-                        'offset'         => $offset,
-                        'orderby'     => 'date',
-                        'order'       => 'DESC',
-                        'suppress_filters' => true,
-                        'cat' => get_query_var('cat')
-                    ));
-
-                    $total_rows = max( 0, $post_list->found_posts - $offset_start );
-                    $total_pages = ceil( $total_rows / $per_page );
-
-                    if( $post_list->have_posts() ) : 
-                        while( $post_list->have_posts() ) : 
-                            $post_list->the_post();
-                    ?>
-                    <article class="news-list__item">
-                        <picture class="news-list__pic">
-                            <?php
-                                $default_attr = [
-                                    'class'	=> "news-list__thumb",
-                                    'alt'   => get_the_title()
-                                ];
-                                
-                                echo get_the_post_thumbnail( $post->ID, 'medium', $default_attr ) ?>
-                        </picture>
-                        <aside class="news-list__aside">
-                            <div class="news-list__meta">
-                                <div class="news-list__meta-wrap">
-                                    <?php 
-                                        $categories = get_the_category();
-                                        
-                                        if($categories){
-                                            foreach($categories as $category) {
-                                                echo '<a href="'. get_category_link($category->term_id) . '" class="news-list__cat text text--small text--white text--w-light">' . $category->cat_name . '</a>';
-                                            }
-                                        }
-                                    ?>
-                                    <span class="news-list__post-date text text--small text--white text--w-light">
-                                        <?php echo get_the_date('j F Y'); ?>
-                                    </span>
-                                </div>
-                                <div class="news-list__meta-wrap">
-                                    <span class="news-list__time-read text text--small text--white text--w-light">
-                                        <?php estimated_reading_time(); ?>
-                                    </span>
-                                    <span class="news-list__views text text--small text--white text--w-light">
-                                        <?php if( get_post_meta( $post->ID, 'views', true ) == null ) { echo '0'; } else { echo get_post_meta( $post->ID, 'views', true ); } ?>
-                                        <?php echo num_decline(kama_postviews(), 'просмотр, просмотров');  ?>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="news-list__text">
-                                <h2 class="news-list__title title title--medium title--white title--w-bold title--indent">
-                                    <?php the_title(); ?>
-                                </h2>
-                                <p class="news-list__excerpt text text--white text--normal text--w-light">
-                                    <?php the_excerpt(); ?>
-                                </p>
-                            </div>
-                            <a href="<?php the_permalink(); ?>" class="news-list__more link-secondary">
-                                <span class="news-list__more-text">
-                                    Читать полностью
-                                </span> 
-                                <span class="news-list__more-icon">
-                                    <svg class="news-list__more-icon link-secondary__arrow-secondary" width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5V3.5ZM16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464466C12.9763 0.269204 12.6597 0.269204 12.4645 0.464466C12.2692 0.659728 12.2692 0.976311 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.7308 12.9763 7.7308 13.1716 7.53553L16.3536 4.35355ZM1 4.5H16V3.5H1V4.5Z"/>
-                                    </svg>
-                                </span>
-                            </a>
-                        </aside>
-                    </article>
-                    <?php endwhile; ?>
-                <?php endif;?>
-                <?php wp_reset_postdata(); ?>
-            </div>
-            <!-- Pagination -->
-            <nav class="pagination">
-                <div class="pagination__inner">
-                    <?php   
-                        echo paginate_links(
-                                $args = array(
-                                    'total'   => $total_pages,
-                                    'current' => $current_page,
-                                    'mid_size' => 1,
-                                    'end_size' => 1,
-                                    'prev_next' => false,
-                                    'prev_text' => false,
-                                    'next_text' => false
-                            ));
-
-                        wp_reset_postdata();
+    <!-- Info-block -->
+    <section class="info-block">
+        <div class="info-block__body container">
+            <div class="info-block__inner">
+                <div class="info-block__text">
+                    <h1 class="info-block__heading title title--huge title--white title--w-bold title--indent">
+                        <?php single_cat_title() ?>
+                    </h1>
+                    <p class="info-block__descr text text--large text--white text--w-light">
+                        <?php echo get_the_excerpt(get_option('page_for_posts', true)); ?>
+                    </p>
+                </div>
+                <div class="info-block__pic">
+                    <?php
+                        $default_attr = [
+                            'class'	=> "info-block__img",
+                            'alt'   => get_the_title(get_option('page_for_posts', true))
+                        ];
+                                    
+                        echo get_the_post_thumbnail(get_option('page_for_posts', true), 'full', $default_attr);
                     ?>
                 </div>
-            </nav>
-            <!-- /. Pagination -->
+            </div>
+            <div class="info-block__decor">
+                <svg class="info-block__elips" width="2524" height="1511" viewBox="0 0 2524 1511" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_f_3418_19793)">
+                        <path d="M1216.74 592.381C1548.94 592.381 1818.24 623.42 1818.24 661.709C1818.24 699.998 1548.94 731.038 1216.74 731.038C884.546 731.038 615.245 699.998 615.245 661.709C615.245 623.42 884.546 592.381 1216.74 592.381Z" fill="#E82F84" fill-opacity="0.45"
+                        />
+                        <path d="M1243.78 688.458C1633.98 584.16 1958.36 529.592 1968.29 566.576C1978.23 603.561 1669.96 718.093 1279.75 822.39C889.546 926.688 565.168 981.256 555.234 944.272C545.299 907.287 853.57 792.755 1243.78 688.458Z" fill="#E82F84" fill-opacity="0.25"
+                        />
+                    </g>
+                    <defs>
+                        <filter id="filter0_f_3418_19793" x="0" y="0" width="2523.53" height="1510.85" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feGaussianBlur stdDeviation="277.5" result="effect1_foregroundBlur_3418_19793" />
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+            <div class="info-block__scroll">
+                <svg class="info-block__scroll-icon" width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 5.05546V8.66032M7 1C5.4087 1 3.88258 1.74179 2.75736 3.06218C1.63214 4.38258 1 6.17341 1 8.04073V16.4896C1 18.3569 1.63214 20.1478 2.75736 21.4682C3.88258 22.7886 5.4087 23.5303 7 23.5303C8.5913 23.5303 10.1174 22.7886 11.2426 21.4682C12.3679 20.1478 13 18.3569 13 16.4896V8.04073C13 6.17341 12.3679 4.38258 11.2426 3.06218C10.1174 1.74179 8.5913 1 7 1Z"
+                    stroke="#F0F6F7" stroke-width="1.10645" stroke-linecap="round" />
+                </svg>
+                <div class="info-block__scroll-text text text--small text--white text--w-light text--uppercase">
+                    Scroll
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /. Info-block -->
+
+    <!-- News-list -->
+    <section class="news-list block-padding" id="news" data-pageid="<?php the_ID(); ?>">
+        <div class="news-list__body container">
+            <div class="news-list__filter">
+                <?php 
+                    $categories = get_terms(['taxonomy' => 'category']);
+                    
+                    if($categories){
+                        foreach($categories as $category) {
+                            echo '<a href="'. get_category_link($category->term_id) . '" class="news-list__btn-filter button button--dark button--small" data-termid="'.  $category->term_id.'">' . $category->name . '</a>';
+                        }
+                    }
+                ?>
+            </div>
+            <div class="news-list__items" id="news-list__items">
+                <?php
+
+                    $post_list = new WP_Query(array(
+                        'post_type'  => 'post',
+                        'post_status' => 'publish',
+                        'taxonomy' => 'category',
+                        'paged'          => get_query_var('paged'),
+                        'orderby'     => 'date',
+                        'order'       => 'DESC',
+                        'cat' => get_query_var('cat'),
+                        'suppress_filters' => true
+                    ));
+
+                ?>
+                <?php if( $post_list->have_posts() ) : 
+                        while( $post_list->have_posts() ) : $post_list->the_post(); ?>
+
+                            <?php get_template_part( 'template-parts/template', 'post'); ?>
+
+                    <?php endwhile; ?>
+                <?php  endif; ?>
+                <?php wp_reset_query(); ?>
+            </div>
+            <?php get_template_part( 'template-parts/template', 'pagination'); ?>
         </div>
     </section>
     <!-- /. News-list -->
