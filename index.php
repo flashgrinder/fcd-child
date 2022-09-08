@@ -70,12 +70,12 @@
                     
                     if($categories){
                         foreach($categories as $category) {
-                            echo '<a href="'. get_category_link($category->term_id) . '" class="news-list__btn-filter button button--dark button--small" data-type="post" data-termid="'.  $category->term_id.'">' . $category->name . '</a>';
+                            echo '<a href="'. get_category_link($category->term_id) . '" class="news-list__btn-filter button button--dark button--small js-category" data-type="post" data-termid="'.  $category->term_id.'">' . $category->name . '</a>';
                         }
                     }
                 ?>
             </div>
-            <div class="news-list__items" id="news-list__items">
+            <div class="news-list__items" id="news-list__itemsjs-posts" data-posts-count="3">
             <?php
 
                 $post_list = new WP_Query(array(
