@@ -504,7 +504,7 @@
                                         $partners_logo = get_sub_field('partners_logo-img');
                                     
                                     ?>
-                                        <a href="<?php echo $partners_link; ?>" class="partners__item swiper-slide" target="_blank">
+                                        <a href="<?php echo (!empty( $partners_link )) ? $partners_link : "javascript:;"; ?>" class="partners__item swiper-slide" <?php if( !empty( $partners_link ) ) {echo "target='_blank'";} ?>>
                                             <img src="<?php echo esc_url($partners_logo['url']); ?>" alt="<?php echo esc_attr($partners_logo['alt']); ?>" class="partners__logo">
                                         </a>
                                     <?php endwhile; ?>
