@@ -62,6 +62,9 @@
     <section class="news-list block-padding" id="news" data-pageid="<?php the_ID(); ?>">
         <div class="news-list__body container">
             <div class="news-list__filter">
+                <a href="javascript:;" class="news-list__btn-filter button button--dark button--small is-active">
+                    Все
+                </a>
                 <?php 
                     $categories = get_terms(['taxonomy' => 'category']);
                     
