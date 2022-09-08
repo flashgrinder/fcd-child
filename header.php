@@ -46,6 +46,3 @@
 
     <!-- MAIN -->
     <main class="main page__container">
-        <?php if( is_front_page() ) : ?>
-            <div class="scroll-container">
-        <?php endif; ?>
