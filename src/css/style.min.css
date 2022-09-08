@@ -1955,6 +1955,11 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none;
 }
 
+.news-list__action {
+  margin-top: 45px;
+  text-align: center;
+}
+
 /* Popular-services */
 
 .popular-services__inner {
