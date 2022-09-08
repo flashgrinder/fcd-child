@@ -1,7 +1,8 @@
 import gsap from 'gsap';
-import containerScroll from '../libs/modules/horizontal-scroll';
-import burgerMenu from '../libs/modules/burger-menu.js';
+// import containerScroll from '../libs/modules/horizontal-scroll';
+import burgerMenu from '../libs/modules/burger-menu';
 import progressBar from '../libs/modules/progress-bar';
+import mainSlider from '../libs/modules/main-slider';
 import parallaxjs from '../libs/modules/parallax';
 import tarifsSlider from '../libs/modules/tarifs';
 import partnersSlider from '../libs/modules/partners';
@@ -16,8 +17,9 @@ document.addEventListener('DOMContentLoaded', function(e) {
         force3D: true
     });
 
+    // const containerScrollTrue = document.querySelector('.scroll-container');
     const burgerMenuTrue = document.querySelector('.burger-menu');
-    const containerScrollTrue = document.querySelector('.scroll-container');
+    const mainSliderTrue = document.querySelector('.main-slider');
     const progressBarTrue = document.querySelector('.progress');
     const paralaxjsTrue = document.querySelector('.parallax-container');
     const tarifsSliderTrue = document.querySelector('.tarifs__slider');
@@ -26,8 +28,9 @@ document.addEventListener('DOMContentLoaded', function(e) {
     const tabsTrue = document.querySelector('.tabs');
     const accordionTrue = document.querySelector('.accordion');
     
-    containerScrollTrue ? containerScroll.init() : false;
+    // containerScrollTrue ? containerScroll.init() : false;
     burgerMenuTrue ? burgerMenu.init() : false;
+    mainSliderTrue ? mainSlider.init() : false;
     progressBarTrue ? progressBar.init() : false;
     paralaxjsTrue ? parallaxjs.init() : false;
     tarifsSliderTrue ? tarifsSlider.init() : false;

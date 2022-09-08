@@ -1,13 +1,17 @@
+.screen {
+    height: 100%;
+}
+
 .screen__pic {
     width: auto;
-    height: 100vh;
+    height: auto;
     @include tablet(height, auto);
 }
 
 .screen__svg {
     display: block;
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     object-fit: contain;
     @include tablet-block {
         width: 100%;
