@@ -9,7 +9,8 @@
 
         // echo(json_encode( array('status'=>'ok','request_vars'=>$_REQUEST) ));
         $query_data = $_GET;
-        $postType = $query_data['type'];
+        $postsCount = ! empty( $query_data[ 'posts_per_page' ] ) ? $query_data['posts_per_page'] : 1;
+        $postType = ! empty( $query_data[ 'type' ] ) ? $query_data['type'] : false;
         $paged = ! empty( $query_data[ 'paged' ] ) ? $query_data['paged'] : 1;
         $cat = ! empty( $query_data[ 'category' ] ) ? $query_data['category'] : false;
         // $pageid = ($query_data['pageid']) ? explode(',',$query_data['pageid']) : false;
@@ -27,6 +28,7 @@
         $current_page = get_query_var('paged');
 
         $post_list = new WP_Query(array(
+            'posts_per_page' => $postsCount,
             'post_type'  => $postType,
             'post_status' => 'publish',
             'taxonomy' => 'category',

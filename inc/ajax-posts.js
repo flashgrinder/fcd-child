@@ -8,18 +8,24 @@ jQuery(document).ready( function( $ ){
     // });
 
     // при клике на терм фильтрация
-    $('.news-list__btn-filter').on('click', function(e) {
+    $('.js-category').on('click', function(e) {
         e.preventDefault();
-        if ($('.news-list__btn-filter').not(this).hasClass('is-active')) {
-            $('.news-list__btn-filter').removeClass('is-active');
+        if ($('.js-category').not(this).hasClass('is-active')) {
+            $('.js-category').removeClass('is-active');
         };
         $(this).toggleClass('is-active');
         get_posts();
     })
     function catID() {
-        var catID = $(".news-list__btn-filter.is-active").data('termid');
-        console.log(catID);
+        var catID = $(".js-category.is-active").data('termid');
+
         return catID;
+    }
+
+    function postsCounts() {
+        var postsCount = $(".js-posts").data('posts-count');
+
+        return postsCount;
     }
 
     // клик на пагинацю
@@ -51,13 +57,13 @@ jQuery(document).ready( function( $ ){
             category: catID,
             type: postType,
             paged: paged_value,
+            posts_per_page: postsCounts,
         };
         
         jQuery.get( blogUrl.ajax_url, data, function( response ) {
                 // console.log( 'Получено с сервера: ' + response );
-
                 $('.news-list__items').html(response);
-                console.log("Только что, был успешно выполнен ajax-запрос страницы " + blogUrl.ajax_url + ".");
+                // console.log("Только что, был успешно выполнен ajax-запрос страницы " + blogUrl.ajax_url + ".");
             } 
         );
     }

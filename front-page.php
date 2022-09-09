@@ -7803,7 +7803,7 @@
                 Блог
             </h2>
             <div class="news-list__filter">
-                <a href="javascript:;" class="news-list__btn-filter button button--dark button--small is-active">
+                <a href="javascript:;" class="news-list__btn-filter button button--dark button--small js-category is-active">
                     Все
                 </a>
                 <?php 
@@ -7816,7 +7816,7 @@
                     }
                 ?>
             </div>
-            <div class="news-list__items" id="news-list__items js-posts" data-posts-count="3">
+            <div class="news-list__items js-posts" id="news-list__items" data-posts-count="3">
             <?php
 
                 $post_list = new WP_Query(array(
