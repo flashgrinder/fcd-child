@@ -5,6 +5,7 @@
     width: 100%;
     z-index: 100;
     background: var(--color-bg-primary);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.02);
     @include tablet-block {
         position: fixed;
         background: #13111B;
