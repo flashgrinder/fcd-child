@@ -4208,6 +4208,10 @@ body::-webkit-scrollbar-thumb {
     grid-template-columns: minmax(300px, 0.3fr) minmax(300px, 1fr);
   }
 
+  .service__item {
+    opacity: 1;
+  }
+
   .service__item.service__item--left {
     padding-right: 15px;
   }

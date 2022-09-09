@@ -12,6 +12,7 @@
 .service__item {
     opacity: .5;
     transition: opacity .150s ease-in-out;
+    @include mobile(opacity, 1);
 }
 
 .service__item:hover {
