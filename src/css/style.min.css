@@ -2355,6 +2355,7 @@ body::-webkit-scrollbar-thumb {
   color: var(--color-white);
   text-decoration: none;
   transition: color ease-in-out 0.15s;
+  cursor: pointer;
 }
 
 .menu__link:hover {
