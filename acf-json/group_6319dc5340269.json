@@ -21,7 +21,27 @@
                     "name": "service-block_editor",
                     "label": "Текстовый редактор",
                     "display": "block",
-                    "sub_fields": [],
+                    "sub_fields": [
+                        {
+                            "key": "field_631b3a3933334",
+                            "label": "Главный заголовок блока",
+                            "name": "page-wysiwyg_title",
+                            "type": "textarea",
+                            "instructions": "Укажите главный заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "О нас",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br"
+                        }
+                    ],
                     "min": "",
                     "max": "1"
                 },
@@ -112,7 +132,7 @@
                 "layout_631b2d2372661": {
                     "key": "layout_631b2d2372661",
                     "name": "service-block_service",
-                    "label": "Основные услуги",
+                    "label": "Основные услуги(Колонки)",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -218,7 +238,7 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "Создадим сайт любой сложности под ваши задачи. От лендинга до полноценного корпоративного сайта или интернет-магазина",
+                                    "default_value": "Создадим сайт любой сложности под ваши задачи. От лендинга до полноценного корпоративного сайта или интернет-магазина.",
                                     "placeholder": "",
                                     "maxlength": "",
                                     "rows": "",
@@ -1887,7 +1907,7 @@
                             "label": "Задачи",
                             "name": "tasks",
                             "type": "repeater",
-                            "instructions": "Добавьте этапы.",
+                            "instructions": "Добавьте задачи.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -2279,5 +2299,5 @@
     "active": true,
     "description": "Параметры страницы front-page.php",
     "show_in_rest": 0,
-    "modified": 1662726722
+    "modified": 1662728900
 }

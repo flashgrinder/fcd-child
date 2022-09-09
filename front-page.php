@@ -6324,6 +6324,9 @@
                 <!-- Page-wysiwyg -->
                 <section class="page-wysiwyg block-padding">
                     <div class="page-wysiwyg__body container">
+                        <h2 class="page-wysiwyg__heading title title--large title--white title--w-bold title--indent-45">
+                            <?php echo get_sub_field('page-wysiwyg_title'); ?>
+                        </h2>
                         <div class="page-wysiwyg__content wysiwyg">
                             <?php the_content(); ?>
                         </div>
