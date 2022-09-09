@@ -1574,6 +1574,132 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_631b0469426d5": {
+                    "key": "layout_631b0469426d5",
+                    "name": "service-block_tasks",
+                    "label": "Задачи",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_631b0469426d6",
+                            "label": "Заголовок блока",
+                            "name": "tasks-block_title",
+                            "type": "textarea",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Какие задачи мы решаем",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_631b0469426d8",
+                            "label": "Задачи",
+                            "name": "tasks",
+                            "type": "repeater",
+                            "instructions": "Добавьте этапы.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_631b0469426d9",
+                                    "label": "Задача",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_631b050d426dc",
+                                    "label": "Номер",
+                                    "name": "tasks-item_num",
+                                    "type": "number",
+                                    "instructions": "Укажите номер.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "01",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "min": "",
+                                    "max": "",
+                                    "step": ""
+                                },
+                                {
+                                    "key": "field_631b0469426da",
+                                    "label": "Заголовок",
+                                    "name": "tasks-item_title",
+                                    "type": "textarea",
+                                    "instructions": "Укажите заголовок.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Заголовок",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": "br"
+                                },
+                                {
+                                    "key": "field_631b0469426db",
+                                    "label": "Описание",
+                                    "name": "tasks-item_descr",
+                                    "type": "textarea",
+                                    "instructions": "Укажите описание.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Какое то описание",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": "br"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_6305e9f752a3f": {
                     "key": "layout_6305e9f752a3f",
                     "name": "service-block_accordion",
@@ -1870,5 +1996,5 @@
     "active": true,
     "description": "Параметры страницы front-page.php",
     "show_in_rest": 0,
-    "modified": 1662639272
+    "modified": 1662715214
 }

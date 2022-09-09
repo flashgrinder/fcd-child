@@ -7537,6 +7537,41 @@
                 <!-- /. Benefits -->
             <?php endif; ?>
 
+            <?php if( get_row_layout() == 'service-block_tasks' ): ?>
+                <!-- Tasks -->
+                <section class="tasks block-padding">
+                    <div class="tasks__body container">
+                        <h2 class="tasks__heading title title--large title--white title--w-bold title--indent-45">
+                            <?php echo get_sub_field('tasks-block_title'); ?>
+                        </h2>
+                        <?php if( have_rows('tasks') ): ?>
+                        <div class="tasks__items">
+                            <?php while( have_rows('tasks') ): the_row(); 
+                                        
+                                $tasks_item_num = get_sub_field('tasks-item_num');
+                                $tasks_item_title = get_sub_field('tasks-item_title');
+                                $tasks_item_descr = get_sub_field('tasks-item_descr');
+                            
+                            ?>
+                                <article class="tasks__item">
+                                    <div class="tasks__num title title--w-bold">
+                                        <?php echo $tasks_item_num; ?>
+                                    </div>
+                                    <h3 class="tasks__title title title--medium title--white title--w-light">
+                                        <?php echo $tasks_item_title; ?>
+                                    </h3>
+                                    <div class="tasks__descr text text--normal text--white text--w-light">
+                                        <?php echo $tasks_item_descr; ?>
+                                    </div>
+                                </article>
+                            <?php endwhile; ?>
+                        </div>
+                        <?php endif; ?>
+                    </div>
+                </section>
+                <!-- /. Tasks -->
+            <?php endif; ?>
+
             <?php if( get_row_layout() == 'service-block_stages' ): ?>
                 <!-- Stages -->
                 <section class="stages block-padding">
