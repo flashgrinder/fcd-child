@@ -109,6 +109,289 @@
                     "min": "",
                     "max": "1"
                 },
+                "layout_631b2d2372661": {
+                    "key": "layout_631b2d2372661",
+                    "name": "service-block_service",
+                    "label": "Основные услуги",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_631b2d2372662",
+                            "label": "Заголовок блока",
+                            "name": "service-block_title",
+                            "type": "textarea",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Основные услуги",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_631b2d8372665",
+                            "label": "Левая колонка",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_631b2daf72666",
+                            "label": "Услуги",
+                            "name": "service-items-left",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_631b30923eff8",
+                                    "label": "Услуга",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_631b2df472667",
+                                    "label": "Заголовок",
+                                    "name": "service-item_title",
+                                    "type": "textarea",
+                                    "instructions": "Укажите заголовок.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Разработка веб-сайта",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": "br"
+                                },
+                                {
+                                    "key": "field_631b2e5a72668",
+                                    "label": "Описание",
+                                    "name": "service-item_descr",
+                                    "type": "textarea",
+                                    "instructions": "Укажите описание.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Создадим сайт любой сложности под ваши задачи. От лендинга до полноценного корпоративного сайта или интернет-магазина",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": "br"
+                                },
+                                {
+                                    "key": "field_631b2e8072669",
+                                    "label": "Список",
+                                    "name": "service-item-checklist",
+                                    "type": "repeater",
+                                    "instructions": "Список с пунктами.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "collapsed": "",
+                                    "min": 0,
+                                    "max": 0,
+                                    "layout": "",
+                                    "button_label": "",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_631b2f147266a",
+                                            "label": "Пункт списка",
+                                            "name": "service-item_check",
+                                            "type": "textarea",
+                                            "instructions": "Укажите короткий текст.",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "Есть как дешёвые решения на типовых элементах, так и полностью уникальный дизайн любого вида сайта",
+                                            "placeholder": "",
+                                            "maxlength": "",
+                                            "rows": "",
+                                            "new_lines": "br"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "field_631b2f837266b",
+                                    "label": "Ссылка",
+                                    "name": "service-item_link",
+                                    "type": "link",
+                                    "instructions": "Укажите ссылку на услугу.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "url"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_631b300572672",
+                            "label": "Правая колонка",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_631b2fd37266c",
+                            "label": "Услуги",
+                            "name": "service-items-right",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_631b30a53eff9",
+                                    "label": "Услуга",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_631b2fd37266d",
+                                    "label": "Заголовок",
+                                    "name": "service-item_title",
+                                    "type": "textarea",
+                                    "instructions": "Укажите заголовок.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Разработка веб-сайта",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": "br"
+                                },
+                                {
+                                    "key": "field_631b2fd37266e",
+                                    "label": "Описание",
+                                    "name": "service-item_descr",
+                                    "type": "textarea",
+                                    "instructions": "Укажите описание.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Создадим сайт любой сложности под ваши задачи. От лендинга до полноценного корпоративного сайта или интернет-магазина",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": "br"
+                                },
+                                {
+                                    "key": "field_631b2fd372671",
+                                    "label": "Ссылка",
+                                    "name": "service-item_link",
+                                    "type": "link",
+                                    "instructions": "Укажите ссылку на услугу.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "url"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
                 "layout_62ea4fc6cff65": {
                     "key": "layout_62ea4fc6cff65",
                     "name": "service-block_tarifs",
@@ -1996,5 +2279,5 @@
     "active": true,
     "description": "Параметры страницы front-page.php",
     "show_in_rest": 0,
-    "modified": 1662715214
+    "modified": 1662726722
 }

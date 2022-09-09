@@ -6332,6 +6332,99 @@
                 <!-- /. Page-wysiwyg -->
             <?php endif; ?>
 
+            <?php if( get_row_layout() == 'service-block_service' ): ?>
+                <!-- Service -->
+                <section class="service block-padding">
+                    <div class="service__body container">
+                        <h2 class="service__heading title title--large title--white title--w-bold title--indent-45">
+                            <?php echo get_sub_field('service-block_title'); ?>
+                        </h2>
+                        <div class="service__columns">
+                            <?php if( have_rows('service-items-left') ): ?>
+                                <div class="service__left-side">
+                                <?php while( have_rows('service-items-left') ): the_row();
+
+                                    $service_item_title = get_sub_field('service-item_title');
+                                    $service_item_descr = get_sub_field('service-item_descr');
+                                    $service_item_link = get_sub_field('service-item_link');
+
+                                    ?>
+                                        <article class="service__item service__item--left">
+                                            <h3 class="service__title title title--medium title--white title--w-light">
+                                                <?php echo $service_item_title; ?>
+                                            </h3>
+                                            <div class="service__descr text text--normal text--white text--w-light">
+                                                <?php echo $service_item_descr; ?>
+                                            </div>
+                                            <?php if( have_rows('service-item-checklist') ): ?>
+                                                <ul class="service__checklist text text--normal text--white text--w-light">
+                                                <?php while( have_rows('service-item-checklist') ): the_row();
+
+                                                    $service_item_check = get_sub_field('service-item_check');
+
+                                                    ?>
+                                                        <li class="service__check">
+                                                            <?php echo $service_item_check; ?>
+                                                        </li>
+                                                    <?php endwhile; ?>
+                                                </ul>
+                                            <?php endif; ?>
+                                            <div class="service__action">
+                                                <a href="<?php echo $service_item_link; ?>" class="service__btn link-primary">
+                                                    <span class="service__btn-text">
+                                                        Перейти
+                                                    </span> 
+                                                    <span class="service__btn-icon">
+                                                        <svg class="service__btn-icon link-primary__arrow-primary" width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5V3.5ZM16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464466C12.9763 0.269204 12.6597 0.269204 12.4645 0.464466C12.2692 0.659728 12.2692 0.976311 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.7308 12.9763 7.7308 13.1716 7.53553L16.3536 4.35355ZM1 4.5H16V3.5H1V4.5Z"/>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </article>
+                                    <?php endwhile; ?>
+                                </div>
+                            <?php endif; ?>
+                            <?php if( have_rows('service-items-right') ): ?>
+                                <div class="service__right-side">
+                                <?php while( have_rows('service-items-right') ): the_row();
+
+                                    $service_item_title = get_sub_field('service-item_title');
+                                    $service_item_descr = get_sub_field('service-item_descr');
+                                    $service_item_link = get_sub_field('service-item_link');
+
+                                    ?>
+                                        <article class="service__item service__item--right">
+                                            <div class="service__inner">
+                                                <h3 class="service__title title title--medium title--white title--w-light">
+                                                    <?php echo $service_item_title; ?>
+                                                </h3>
+                                                <div class="service__descr text text--normal text--white text--w-light">
+                                                    <?php echo $service_item_descr; ?>
+                                                </div>
+                                            </div>
+                                            <div class="service__action">
+                                                <a href="<?php echo $service_item_link; ?>" class="service__btn link-primary">
+                                                    <span class="service__btn-text">
+                                                        Перейти
+                                                    </span> 
+                                                    <span class="service__btn-icon">
+                                                        <svg class="service__btn-icon link-primary__arrow-primary" width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5V3.5ZM16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464466C12.9763 0.269204 12.6597 0.269204 12.4645 0.464466C12.2692 0.659728 12.2692 0.976311 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.7308 12.9763 7.7308 13.1716 7.53553L16.3536 4.35355ZM1 4.5H16V3.5H1V4.5Z"/>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </article>
+                                    <?php endwhile; ?>
+                                </div>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </section>
+                <!-- /. Service -->
+            <?php endif; ?>
+
             <?php if( get_row_layout() == 'service-block_tarifs' ): ?>
                 <!-- Tarifs -->
                 <section class="tarifs block-padding">
