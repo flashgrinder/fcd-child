@@ -50,7 +50,8 @@ jQuery(document).ready( function( $ ){
     function get_posts(paged) {
 
         var paged_value = paged,
-            postType = $(this).data('type');
+            postType = $(".js-category").data('type'),
+            postTax = $(".js-taxonomy").data('taxonomy');
 
         var data = {
             action: 'get_make_posts',
@@ -58,11 +59,12 @@ jQuery(document).ready( function( $ ){
             type: postType,
             paged: paged_value,
             posts_per_page: postsCounts,
+            taxonomy: postTax,
         };
         
         jQuery.get( blogUrl.ajax_url, data, function( response ) {
                 // console.log( 'Получено с сервера: ' + response );
-                $('.news-list__items').html(response);
+                $('.js-posts-container').html(response);
                 // console.log("Только что, был успешно выполнен ajax-запрос страницы " + blogUrl.ajax_url + ".");
             } 
         );

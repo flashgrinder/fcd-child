@@ -62,7 +62,7 @@
     <section class="news-list block-padding" id="news" data-pageid="<?php the_ID(); ?>">
         <div class="news-list__body container">
             <div class="news-list__filter">
-                <a href="javascript:;" class="news-list__btn-filter button button--dark button--small js-category is-active">
+                <a href="javascript:;" class="news-list__btn-filter button button--dark button--small js-taxonomy js-category is-active" data-taxonomy="category" data-type="post">
                     Все
                 </a>
                 <?php 
@@ -70,18 +70,17 @@
                     
                     if($categories){
                         foreach($categories as $category) {
-                            echo '<a href="'. get_category_link($category->term_id) . '" class="news-list__btn-filter button button--dark button--small js-category" data-type="post" data-termid="'.  $category->term_id.'">' . $category->name . '</a>';
+                            echo '<a href="'. get_category_link($category->term_id) . '" class="news-list__btn-filter button button--dark button--small js-category" data-taxonomy="category" data-type="post" data-termid="'.  $category->term_id.'">' . $category->name . '</a>';
                         }
                     }
                 ?>
             </div>
-            <div class="news-list__items js-posts" id="news-list__items" data-posts-count="1">
+            <div class="news-list__items js-posts js-posts-container" id="news-list__items" data-posts-count="1">
             <?php
 
                 $post_list = new WP_Query(array(
                     'post_type'  => 'post',
                     'post_status' => 'publish',
-                    'taxonomy' => 'category',
                     'paged'          => get_query_var('paged'),
                     'orderby'     => 'date',
                     'order'       => 'DESC',

@@ -7816,7 +7816,7 @@
                     }
                 ?>
             </div>
-            <div class="news-list__items js-posts" id="news-list__items" data-posts-count="3">
+            <div class="news-list__items js-posts js-posts-container" id="news-list__items" data-posts-count="3">
             <?php
 
                 $post_list = new WP_Query(array(

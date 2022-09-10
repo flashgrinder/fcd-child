@@ -63,62 +63,59 @@
     <!-- Vacancy -->
     <section id="vacancy" class="vacancy block-padding">
         <div class="vacancy__body container">
-            <div class="vacancy__filters">
-                <?php 
-                    $categories = get_terms(['taxonomy' => 'cats_vacancies']);
-                    
-                    if($categories){
-                        foreach($categories as $category) {
-                            echo '<a href="'. get_category_link($category->term_id) . '" class="vacancy__btn-filter button button--dark button--small is-active">' . $category->name . '</a>';
+        <?php
+
+            $args = array(
+                'posts_per_page' => -1,
+                'post_type' => 'vacancies',
+                'post_status' => 'publish',
+                'taxonomy' => 'cats_vacancies',
+                'paged'          => get_query_var('paged'),
+                'orderby'     => 'date',
+                'order'       => 'DESC',
+                'suppress_filters' => true
+            );
+
+            $post_list = new WP_Query( $args );
+
+            ?>
+            <?php if( $post_list->have_posts() ) : ?>
+                <div class="vacancy__filters">
+                    <a href="javascript:;" class="vacancy__btn-filter button button--dark button--small js-taxonomy js-category is-active" data-taxonomy="cats_vacancies" data-type="vacancies">
+                        Все
+                    </a>
+                    <?php 
+                        $categories = get_terms(['taxonomy' => 'cats_vacancies']);
+                        
+                        if($categories){
+                            foreach($categories as $category) {
+                                echo '<a href="'. get_category_link($category->term_id) . '" class="vacancy__btn-filter button button--dark button--small js-taxonomy js-category" data-taxonomy="cats_vacancies" data-type="vacancies" data-termid="'.  $category->term_id.'">' . $category->name . '</a>';
+                            }
                         }
-                    }
-                ?>
-            </div>
-            <div class="vacancy__list">
-            <?php
+                    ?>
+                </div>
+            <?php endif; ?>
+            <div class="vacancy__list js-posts js-posts-container" data-posts-count="-1">
+            <?php if( $post_list->have_posts() ) : ?>
+                <?php while( $post_list->have_posts() ) : $post_list->the_post(); ?>
 
-                $args = array(
-                    'post_type' => 'vacancies',
-                    'posts_per_page' => -1,
-                    'orderby'     => 'date',
-                    'order'       => 'DESC',
-                    'suppress_filters' => true
-                );
+                    <?php get_template_part( 'template-parts/template', 'vacancy'); ?>
 
-                $wp_query = new WP_Query( $args );
-
-
-                if( have_posts() ) : 
-                    while( have_posts() ) : the_post(); ?>
-                    <article class="vacancy__item">
-                        <div class="vacancy__info">
-                            <h3 class="vacancy__title title title--medium title--white title--w-bold">
-                                <?php the_title(); ?>
-                            </h3>
-                            <div class="vacancy__descr text text--normal text--white title--w-light">
-                                <?php the_field('vacancies_descr'); ?>
-                            </div>
-                            <div class="vacancy__tags">
-                                <?php 
-                                    $categories = get_the_category();
-                                    
-                                    if($categories){
-                                        foreach($categories as $category) {
-                                            echo '<a href="'. get_category_link($category->term_id) . '" class="vacancy__tag button button--dark button--small">' . $category->cat_name . '</a>';
-                                        }
-                                    }
-                                ?>
-                            </div>
-                        </div>
-                        <div class="vacancy__action">
-                            <a href="#modal" class="vacancy__button button button--primary">
-                                Откликнуться
-                            </a>
-                        </div>
-                    </article>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-                <?php wp_reset_query(); ?>
+                <?php endwhile; ?>
+            <?php else : ?>
+                <div class="vacancy__not-wrapper">
+                    <img src="<?php echo STANDART_DIR; ?>img/upload/vacancy-yoda-1.png" alt="Вакансии" class="vacancy__not-img">
+                    <h2 class="vacancy__not title title--medium title--white title--w-light">
+                        В настоящий момент вакансий нет, но попытаться можешь ты силы достичь, заявку оставив!
+                    </h2>
+                    <div class="vacancy__action vacancy__action--not">
+                        <a href="#modal" class="vacancy__button button button--primary">
+                            Попытаться
+                        </a>
+                    </div>
+                </div>
+            <?php endif; ?>
+            <?php wp_reset_query(); ?>
             </div>
             <div class="vacancy__content wysiwyg">
                 <?php the_content(); ?>

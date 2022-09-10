@@ -13,12 +13,13 @@
         $postType = ! empty( $query_data[ 'type' ] ) ? $query_data['type'] : false;
         $paged = ! empty( $query_data[ 'paged' ] ) ? $query_data['paged'] : 1;
         $cat = ! empty( $query_data[ 'category' ] ) ? $query_data['category'] : false;
+        $tax = ! empty( $query_data[ 'taxonomy' ] ) ? $query_data['taxonomy'] : false;
         // $pageid = ($query_data['pageid']) ? explode(',',$query_data['pageid']) : false;
         $tax_query = array('relation' => 'AND',);
 
         if ($cat) {
             $bet = array(
-                'taxonomy' => 'category',
+                'taxonomy' => $tax,
                 'field' => 'id',
                 'terms' => $cat,
             );
@@ -31,7 +32,7 @@
             'posts_per_page' => $postsCount,
             'post_type'  => $postType,
             'post_status' => 'publish',
-            'taxonomy' => 'category',
+            // 'taxonomy' => 'category',
             'paged'          => $paged,
             'orderby'     => 'date',
             'order'       => 'DESC',
@@ -42,7 +43,12 @@
         if( $post_list->have_posts() ) : 
             while( $post_list->have_posts() ) : $post_list->the_post();
 
-                get_template_part( 'template-parts/template', 'post');
+                if( $postType == 'post') {
+                    get_template_part( 'template-parts/template', 'post');
+                }
+                if ( $postType == 'vacancies') {
+                    get_template_part( 'template-parts/template', 'vacancy');
+                }
 
             endwhile;
         endif;

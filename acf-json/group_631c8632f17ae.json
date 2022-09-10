@@ -1,0 +1,44 @@
+{
+    "key": "group_631c8632f17ae",
+    "title": "Настройки страницы",
+    "fields": [
+        {
+            "key": "field_631c863d18540",
+            "label": "Описание вакансии",
+            "name": "vacancies_descr",
+            "type": "textarea",
+            "instructions": "Укажите короткое описание вакансии.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "vacancies"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Параметры вакансии",
+    "show_in_rest": 0,
+    "modified": 1662813881
+}
