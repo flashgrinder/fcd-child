@@ -47,7 +47,7 @@
                     </defs>
                 </svg>
             </div>
-            <div class="info-block__scroll">
+            <div class="info-block__scroll js-scroll-down">
                 <svg class="info-block__scroll-icon" width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7 5.05546V8.66032M7 1C5.4087 1 3.88258 1.74179 2.75736 3.06218C1.63214 4.38258 1 6.17341 1 8.04073V16.4896C1 18.3569 1.63214 20.1478 2.75736 21.4682C3.88258 22.7886 5.4087 23.5303 7 23.5303C8.5913 23.5303 10.1174 22.7886 11.2426 21.4682C12.3679 20.1478 13 18.3569 13 16.4896V8.04073C13 6.17341 12.3679 4.38258 11.2426 3.06218C10.1174 1.74179 8.5913 1 7 1Z"
                     stroke="#F0F6F7" stroke-width="1.10645" stroke-linecap="round" />

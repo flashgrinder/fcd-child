@@ -590,6 +590,34 @@ img {
           animation: change-color-word 2s ease infinite alternate backwards;
 }
 
+@-webkit-keyframes scroll_down_btn-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 5px);
+  }
+
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+
+@keyframes scroll_down_btn-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 5px);
+  }
+
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+
 /* Base Classes */
 
 /* Containers */
@@ -1604,53 +1632,6 @@ body::-webkit-scrollbar-thumb {
 
 /* Progress */
 
-.progress {
-  position: fixed;
-  bottom: 15px;
-  z-index: 111111;
-  background: rgba(32, 32, 32, 0.25);
-  box-shadow: 10px 10px 25px -10px rgba(0, 0, 0, 0.15);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
-  border-radius: 10px;
-  padding: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.progress__numbers {
-  margin: 0;
-  text-align: center;
-}
-
-.progress__bar {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-color: rgba(255, 255, 255, 0.1);
-  accent-color: black;
-  height: 7px;
-  border-radius: 5px;
-  max-width: 125px;
-}
-
-::-webkit-progress-bar {
-  padding: 2px;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-::-webkit-progress-value {
-  background: linear-gradient(90deg, #EB5733 0%, #E93873 602.38%);
-  height: 3px;
-  border-radius: 5px;
-}
-
-::-moz-progress-bar {
-  padding: 2px;
-  background: linear-gradient(90deg, #EB5733 0%, #E93873 602.38%);
-  border-radius: 5px;
-}
-
 /* Main-slider */
 
 .main-slider {
@@ -1855,6 +1836,11 @@ body::-webkit-scrollbar-thumb {
   transform: translateX(-50%);
   text-align: center;
   cursor: pointer;
+}
+
+.info-block__scroll-icon {
+  -webkit-animation: scroll_down_btn-animation linear 3s infinite forwards alternate;
+          animation: scroll_down_btn-animation linear 3s infinite forwards alternate;
 }
 
 /* News-list */
@@ -3921,10 +3907,6 @@ body::-webkit-scrollbar-thumb {
 
   .burger-menu {
     display: flex;
-  }
-
-  .progress {
-    display: none;
   }
 
   .main-slider__slider-nav {

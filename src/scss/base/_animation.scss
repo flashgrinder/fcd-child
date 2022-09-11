@@ -288,3 +288,15 @@
 .a-screen-it__layer--word {
     animation: change-color-word 2s ease infinite alternate backwards;
 }
+
+@keyframes scroll_down_btn-animation {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, 5px);
+    }
+    100% {
+        transform: translate(0, 0px);
+    }
+}

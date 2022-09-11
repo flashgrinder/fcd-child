@@ -73,3 +73,7 @@
     text-align: center;
     cursor: pointer;
 }
+
+.info-block__scroll-icon {
+    animation: scroll_down_btn-animation linear 3s infinite forwards alternate;
+}
