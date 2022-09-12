@@ -3,11 +3,6 @@
     align-items: flex-start;
     flex-wrap: wrap;
     grid-gap: 15px;
-    @include tabletSM-block {
-        overflow-x: auto;
-        touch-action: cross-slide-y;
-        -ms-overflow-style: none;
-    }
 }
 
 .cases__filters::-webkit-scrollbar {
@@ -21,6 +16,12 @@
 .cases__items {
     margin-top: 25px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, .33333fr));
     grid-gap: 80px 20px;
+    @include tabletSM-block {
+        grid-template-columns: repeat(auto-fit, minmax(280px, .5fr));
+    }
+    @include mobile-block {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
 }

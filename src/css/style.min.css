@@ -3186,7 +3186,7 @@ body::-webkit-scrollbar-thumb {
   margin-top: 25px;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 0.33333fr));
   grid-gap: 80px 20px;
 }
 
@@ -3286,6 +3286,14 @@ body::-webkit-scrollbar-thumb {
 .case-card__tag.button--dark:hover {
   color: var(--color-dark-gray);
   opacity: 1;
+}
+
+.case-card__pic {
+  width: 100%;
+  max-height: 321px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
 }
 
 .case-card__img {
@@ -4035,10 +4043,8 @@ body::-webkit-scrollbar-thumb {
     -ms-overflow-style: none;
   }
 
-  .cases__filters {
-    overflow-x: auto;
-    touch-action: cross-slide-y;
-    -ms-overflow-style: none;
+  .cases__items {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 0.5fr));
   }
 
   .benefits__items {
@@ -4144,6 +4150,10 @@ body::-webkit-scrollbar-thumb {
 
   .vacancy__tags {
     margin-top: 25px;
+  }
+
+  .cases__items {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 
   .cases-slider__swiper-button-prev {
