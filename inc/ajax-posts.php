@@ -49,6 +49,9 @@
                 if ( $postType == 'vacancies') {
                     get_template_part( 'template-parts/template', 'vacancy');
                 }
+                if ( $postType == 'cases') {
+                    get_template_part( 'template-parts/template', 'case');
+                }
 
             endwhile;
         endif;
