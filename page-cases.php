@@ -114,13 +114,13 @@
                     <?php endwhile; ?>
                 </div>
                 <?php else : ?>
-                <div class="vacancy__not-wrapper">
-                    <img src="<?php echo STANDART_DIR; ?>img/upload/vacancy-yoda-1.png" alt="Вакансии" class="vacancy__not-img">
-                    <h2 class="vacancy__not title title--medium title--white title--w-light">
+                <div class="not-post">
+                    <img src="<?php echo STANDART_DIR; ?>img/upload/vacancy-yoda-1.png" alt="Вакансии" class="not-post__img">
+                    <h2 class="not-post__title title title--medium title--white title--w-light">
                         Заявку оставив, кейс великолепный, мы можем создать вам!
                     </h2>
-                    <div class="vacancy__action vacancy__action--not">
-                        <a href="#modal" class="vacancy__button button button--primary">
+                    <div class="not-post__action not-post__action--not">
+                        <a href="#modal" class="not-post__button button button--primary">
                             Оставить заявку
                         </a>
                     </div>
