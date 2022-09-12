@@ -30,7 +30,11 @@
 }
 
 .info-block__pic {
-    @include mobile(order, -1);
+    @include mobile-block {
+        order: -1;
+        max-width: 470px;
+        margin: 0 auto;
+    }
 }
 
 .info-block__img {

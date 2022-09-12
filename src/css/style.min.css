@@ -4081,6 +4081,8 @@ body::-webkit-scrollbar-thumb {
 
   .info-block__pic {
     order: -1;
+    max-width: 470px;
+    margin: 0 auto;
   }
 
   .news-list__item {
