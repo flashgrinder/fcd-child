@@ -58,7 +58,6 @@
     display: flex;
     align-items: baseline;
     @include mobile(flex-direction, column);
-    @include mobileXS(flex-direction, row);
 }
 
 .news-list__meta-wrap ~ .news-list__meta-wrap {
@@ -104,11 +103,6 @@
 
 .news-list__post-date::after {
     @include mobile(content, none);
-}
-
-.news-list__views,
-.news-list__time-read {
-    @include mobileXS(display, none);
 }
 
 .news-list__text {

@@ -4274,15 +4274,6 @@ body::-webkit-scrollbar-thumb {
     grid-auto-rows: minmax(170px, auto);
   }
 
-  .news-list__meta {
-    flex-direction: row;
-  }
-
-  .news-list__views,
-  .news-list__time-read {
-    display: none;
-  }
-
   .popular-services__inner {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
