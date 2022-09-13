@@ -7801,7 +7801,7 @@
                 Блог
             </h2>
             <div class="news-list__filter">
-                <a href="javascript:;" class="news-list__btn-filter button button--dark button--small js-category is-active">
+                <a href="javascript:;" class="news-list__btn-filter button button--dark button--small js-taxonomy js-category is-active" data-taxonomy="category" data-type="post">
                     Все
                 </a>
                 <?php 
@@ -7809,7 +7809,7 @@
                     
                     if($categories){
                         foreach($categories as $category) {
-                            echo '<a href="'. get_category_link($category->term_id) . '" class="news-list__btn-filter button button--dark button--small js-category" data-type="post" data-termid="'.  $category->term_id.'">' . $category->name . '</a>';
+                            echo '<a href="'. get_category_link($category->term_id) . '" class="news-list__btn-filter button button--dark button--small js-taxonomy js-category" data-taxonomy="category" data-type="post" data-termid="'.  $category->term_id.'">' . $category->name . '</a>';
                         }
                     }
                 ?>
