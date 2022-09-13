@@ -1,6 +1,6 @@
 .service__columns {
     display: grid;
-    grid-template-columns: minmax(300px, .3fr) minmax(350px, 1fr);
+    grid-template-columns: minmax(300px, .5fr) minmax(350px, 1fr);
     @include mobile-block {
         grid-template-columns: minmax(300px, .3fr) minmax(300px, 1fr);
     }
@@ -9,24 +9,27 @@
     }
 }
 
-.service__item {
-    opacity: .5;
-    transition: opacity .150s ease-in-out;
-    @include mobile(opacity, 1);
+.service__item:hover .service__title,
+.service__item:hover .service__descr,
+.service__item:hover .service__checklist,
+.service__item:hover .service__action {
+    opacity: 1;
 }
 
-.service__item:hover {
-    opacity: 1;
+.service__title,
+.service__descr,
+.service__checklist,
+.service__action {
+    opacity: .5;
+    transition: opacity .150s ease-in-out;
 }
 
 /* Left side */
 .service__item.service__item--left {
     padding-right: 45px;
     padding-bottom: 45px;
-    border-right: 2px solid rgba(255, 255, 255, 0.02);
     @include mobile(padding-right, 15px);
     @include mobileXS-block {
-        border-right: none;
         padding: 45px 0;
     }
 }
@@ -45,16 +48,18 @@
 }
 
 .service__item.service__item--left ~ .service__item.service__item--left {
-    border-top: 2px solid rgba(255, 255, 255, 0.02);
+    border-top: 2px solid #342B3A;
     padding-top: 45px;
 }
 
 /* Right side */
 .service__item.service__item--right {
     padding: 53px 0 53px 45px;
+    border-left: 2px solid #342B3A;
     @include mobile(padding, 45px 0 45px 15px);
     @include mobileXS-block {
-        border-top: 2px solid rgba(255, 255, 255, 0.02);
+        border-left: none;
+        border-top: 2px solid #342B3A;
         padding: 45px 0;
     }
 }
@@ -71,7 +76,7 @@
 }
 
 .service__item.service__item--right ~ .service__item.service__item--right {
-    border-top: 2px solid rgba(255, 255, 255, 0.02);
+    border-top: 2px solid #342B3A;
 }
 
 .service__checklist {
@@ -100,25 +105,19 @@
     margin-top: 15px;
 }
 
-.service__item--left .service__action {
-    margin-top: 45px;
+.service__item.service__item--right .service__descr {
+    max-width: 323px;
 }
 
-.service__item.service__item--right {
-    display: grid;
-    grid-template-columns: minmax(260px, 323px) minmax(120px, 1fr);
-    grid-gap: 15px;
-    @include mobile-block {
-        grid-template-columns: 1fr;
+.service__item.service__item--left .service__action {
+    margin-top: 45px;
+    @include mobileXS-block {
+        margin-top: 25px;
     }
 }
 
 .service__item.service__item--right .service__action {
-    margin: auto 0 0 auto;
-    @include mobile(margin, 0);
-    @include mobileXS-block {
-        margin-top: 25px;
-    }
+    margin-top: 25px;
 }
 
 .service__item .service__btn {

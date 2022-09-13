@@ -6398,13 +6398,11 @@
 
                                     ?>
                                         <article class="service__item service__item--right">
-                                            <div class="service__inner">
-                                                <h3 class="service__title title title--medium title--white title--w-light">
-                                                    <?php echo $service_item_title; ?>
-                                                </h3>
-                                                <div class="service__descr text text--normal text--white text--w-light">
-                                                    <?php echo $service_item_descr; ?>
-                                                </div>
+                                            <h3 class="service__title title title--medium title--white title--w-light">
+                                                <?php echo $service_item_title; ?>
+                                            </h3>
+                                            <div class="service__descr text text--normal text--white text--w-light">
+                                                <?php echo $service_item_descr; ?>
                                             </div>
                                             <div class="service__action">
                                                 <a href="<?php echo $service_item_link; ?>" class="service__btn link-primary">
