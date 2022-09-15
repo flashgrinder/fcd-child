@@ -31,12 +31,13 @@ document.addEventListener('DOMContentLoaded', function(e) {
     const casesSliderTrue = document.querySelector('.cases-slider');
     const tabsTrue = document.querySelector('.tabs');
     const accordionTrue = document.querySelector('.accordion');
+    const selectTrue = document.querySelector('.js-select');
     
     // containerScrollTrue ? containerScroll.init() : false;
     // progressBarTrue ? progressBar.init() : false;
     burgerMenuTrue ? burgerMenu.init() : false;
     modal.init();
-    slimSelect.init();
+    selectTrue ? slimSelect.init() : false;
     scrollDownTrue ? scrollDown.init() : false;
     mainSliderTrue ? mainSlider.init() : false;
     paralaxjsTrue ? parallaxjs.init() : false;

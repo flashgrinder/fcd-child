@@ -4,7 +4,6 @@
     align-items: center;
     flex-flow: column nowrap;
     -webkit-overflow-scrolling: touch;
-    overflow-y: auto;
     background-color: transparent;
     z-index: 999;
     top: 0;
@@ -16,7 +15,7 @@
     background-color: rgba(21, 17, 27, 0.05);
     backdrop-filter: blur(25px);
     visibility: hidden;
-    overflow-x: hide;
+    overflow-x: hidden;
     overflow-y: auto;
     opacity: 0;
     transition:  visibility .3s ease-in-out, opacity .3s ease-in-out;
@@ -29,6 +28,10 @@
     opacity: 1;
     position: fixed;
     transition-delay: 0s;
+}
+
+.hystmodal__opened {
+    position: static;
 }
 
 .modal__body {
@@ -49,27 +52,12 @@
     }
 }
 
-.modal__wrapper-form {
-    opacity: 1;
-    visibility: visible;
-    transition: visibility .150s ease-in-out, opacity .150s ease-in-out;
-}
-
-.modal__wrapper-form.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-}
-
-.modal__wrapper-success {
-    opacity: 0;
-    visibility: hidden;
-    transition: visibility .150s ease-in-out, opacity .150s ease-in-out;
-}
-
-.modal__wrapper-success.is-show {
-    opacity: 1;
-    visibility: visible;
-    transition: visibility .150s ease-in-out, opacity .150s ease-in-out;
+.modal--success .modal__body {
+    padding: 110px 45px 110px;
+    @include mobileXS-block {
+        padding: 16px 15px 30px;
+        max-width: 100%;
+    }
 }
 
 .modal__close {
@@ -91,21 +79,23 @@
 
 /* Succes */
 .modal__wrapper-success {
-    position: absolute;
+    opacity: 0;
     text-align: center;
+    transition: opacity 1s ease-in-out;
 }
-// .modal__wrapper-success::before {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     background: var(--color-dark-blue);
-// }
 
-.modal__succes-text {
-    margin-top: 90px;
+.modal--success.hystmodal--active .modal__wrapper-success {
+    opacity: 1;
+}
+
+.modal--success.hystmodal--active .modal__success-text {
+    transform: translateY(0);
+}
+
+.modal__success-text {
+    margin-top: 50px;
+    transform: translateY(20px);
+    transition: transform .8s ease-in-out;
 }
 
 .modal__title {
@@ -254,12 +244,24 @@
     color: rgba(224, 224, 224, 0.45);
 }
 
+.modal__input--textarea {
+    max-height: 100px;
+    min-width: 100%;
+    max-width: 455px;
+}
+
+.modal__input--textarea + .modal__name-input {
+    bottom: -5px;
+}
+
 .modal__name-input {
     position: absolute;
     left: 15px;
     bottom: -8px;
     background: var(--color-dark-blue);
     padding: 0 8px;
+    user-select: none;
+    pointer-events: none;
 }
 
 .modal__actions {

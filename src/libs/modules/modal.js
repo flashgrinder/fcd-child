@@ -1,4 +1,5 @@
 import HystModal from 'hystmodal';
+import axios from 'axios';
 
 function init(container = document) {
 
@@ -7,15 +8,30 @@ function init(container = document) {
 
         formTitle.innerHTML = pageTitle;
 
-    let modalForm = document.querySelector('.js-modal-form-wrapper'),
-        modalSuccess = document.querySelector('.js-modal-form-success');
+    let wpcf7Elem = document.querySelectorAll( '.wpcf7-form' );
 
-    let wpcf7Elm = document.querySelectorAll( '.wpcf7' );
+    wpcf7Elem.forEach(function(elem) {
 
-    wpcf7Elm.forEach(function(elem) {
+        const actionUrl = elem.getAttribute("action");
+   
+        elem.addEventListener( 'submit', function( e ) {
+            
+            e.preventDefault();
+            
+            const formData = new FormData(elem);
+            
+            axios({
+                method: 'post',
+                url: actionUrl,
+                data: formData
+            })
+            .then(function (response) {
+                modalsForms.open('.js-modal-success');
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
 
-        elem.addEventListener( 'submit', function( event ) {
-            alert( "Fire!" );
           }, false );
 
     });
@@ -26,13 +42,6 @@ function init(container = document) {
         catchFocus: true,
         waitTransitions: true,
         backscroll: true,
-        afterClose: function(modal){
-            modalForm.classList.remove('is-hidden');
-            modalSuccess.classList.remove('is-show');
-	    },
-        // afterClose: function(modal){
-        //     // modalWrapperShiftBack();
-        // },
     });
         
 }

@@ -4248,7 +4248,6 @@ img {
   align-items: center;
   flex-flow: column nowrap;
   -webkit-overflow-scrolling: touch;
-  overflow-y: auto;
   background-color: transparent;
   z-index: 999;
   top: 0;
@@ -4261,7 +4260,7 @@ img {
   -webkit-backdrop-filter: blur(25px);
           backdrop-filter: blur(25px);
   visibility: hidden;
-  overflow-x: hide;
+  overflow-x: hidden;
   overflow-y: auto;
   opacity: 0;
   transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -4274,6 +4273,10 @@ img {
   opacity: 1;
   position: fixed;
   transition-delay: 0s;
+}
+
+.hystmodal__opened {
+  position: static;
 }
 
 .modal__body {
@@ -4290,27 +4293,8 @@ img {
   border-radius: 10px;
 }
 
-.modal__wrapper-form {
-  opacity: 1;
-  visibility: visible;
-  transition: visibility 0.15s ease-in-out, opacity 0.15s ease-in-out;
-}
-
-.modal__wrapper-form.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-}
-
-.modal__wrapper-success {
-  opacity: 0;
-  visibility: hidden;
-  transition: visibility 0.15s ease-in-out, opacity 0.15s ease-in-out;
-}
-
-.modal__wrapper-success.is-show {
-  opacity: 1;
-  visibility: visible;
-  transition: visibility 0.15s ease-in-out, opacity 0.15s ease-in-out;
+.modal--success .modal__body {
+  padding: 110px 45px 110px;
 }
 
 .modal__close {
@@ -4333,12 +4317,23 @@ img {
 /* Succes */
 
 .modal__wrapper-success {
-  position: absolute;
+  opacity: 0;
   text-align: center;
+  transition: opacity 1s ease-in-out;
 }
 
-.modal__succes-text {
-  margin-top: 90px;
+.modal--success.hystmodal--active .modal__wrapper-success {
+  opacity: 1;
+}
+
+.modal--success.hystmodal--active .modal__success-text {
+  transform: translateY(0);
+}
+
+.modal__success-text {
+  margin-top: 50px;
+  transform: translateY(20px);
+  transition: transform 0.8s ease-in-out;
 }
 
 .modal__title {
@@ -4499,12 +4494,27 @@ img {
   color: rgba(224, 224, 224, 0.45);
 }
 
+.modal__input--textarea {
+  max-height: 100px;
+  min-width: 100%;
+  max-width: 455px;
+}
+
+.modal__input--textarea + .modal__name-input {
+  bottom: -5px;
+}
+
 .modal__name-input {
   position: absolute;
   left: 15px;
   bottom: -8px;
   background: var(--color-dark-blue);
   padding: 0 8px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 .modal__actions {
@@ -5308,6 +5318,11 @@ img {
   }
 
   .modal__body {
+    padding: 16px 15px 30px;
+    max-width: 100%;
+  }
+
+  .modal--success .modal__body {
     padding: 16px 15px 30px;
     max-width: 100%;
   }
