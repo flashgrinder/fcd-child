@@ -2,6 +2,7 @@ import gsap from 'gsap';
 // import containerScroll from '../libs/modules/horizontal-scroll';
 // import progressBar from '../libs/modules/progress-bar';
 import burgerMenu from '../libs/modules/burger-menu';
+import modal from '../libs/modules/modal.js';
 import scrollDown from '../libs/modules/scroll-down';
 import mainSlider from '../libs/modules/main-slider';
 import parallaxjs from '../libs/modules/parallax';
@@ -10,6 +11,7 @@ import partnersSlider from '../libs/modules/partners';
 import casesSlider from '../libs/modules/cases';
 import tabs from '../libs/modules/tabs';
 import accordion from '../libs/modules/accordion';
+import slimSelect from '../libs/modules/slim-select.js';
 
 document.addEventListener('DOMContentLoaded', function(e) {
 
@@ -33,6 +35,8 @@ document.addEventListener('DOMContentLoaded', function(e) {
     // containerScrollTrue ? containerScroll.init() : false;
     // progressBarTrue ? progressBar.init() : false;
     burgerMenuTrue ? burgerMenu.init() : false;
+    modal.init();
+    slimSelect.init();
     scrollDownTrue ? scrollDown.init() : false;
     mainSliderTrue ? mainSlider.init() : false;
     paralaxjsTrue ? parallaxjs.init() : false;
