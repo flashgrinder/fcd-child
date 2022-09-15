@@ -48,6 +48,7 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "hystmodal": "^0.5.1",
