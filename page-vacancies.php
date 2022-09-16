@@ -14,7 +14,7 @@
                         <?php the_excerpt(); ?>
                     </p>
                     <div class="info-block__actions">
-                        <a href="#vacancy" class="info-block__btn button button--primary">
+                        <a href="#vacancies" class="info-block__btn button button--primary">
                             Перейти к списку вакансий
                         </a>
                     </div>
@@ -61,7 +61,7 @@
     <!-- /. Info-block -->
 
     <!-- Vacancy -->
-    <section id="vacancy" class="vacancy block-padding">
+    <section id="vacancies" class="vacancy block-padding">
         <div class="vacancy__body container">
         <?php
 
@@ -109,7 +109,7 @@
                         В настоящий момент вакансий нет, но попытаться можешь ты силы достичь, заявку оставив!
                     </h2>
                     <div class="not-post__action not-post__action--not">
-                        <a href="#modal" class="not-post__button button button--primary">
+                        <a href="#javascript:;" class="not-post__button button button--primary" data-hystmodal="#vacancy">
                             Попытаться
                         </a>
                     </div>

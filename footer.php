@@ -10,28 +10,7 @@
                             Оставьте номер телефона, мы перезвоним и обсудим проект
                         </p>
                     </div>
-                    <form method="post" class="form-page__form invalid" action="">
-                        <div class="form-page__fields">
-                            <div class="form-page__field">
-                                <p class="form-page__field-text text text--small text--light-gray text--w-light">
-                                    Введите номер телефона
-                                </p>
-                                <input type="tel" name="phone" class="form-page__input" placeholder="+7 (999) - 888 - 77 - 66">
-                                <input type="hidden" name="action" value="truephone">
-                                <span class="wpcf7-not-valid-tip" aria-hidden="true">Поле обязательно для заполнения.</span>
-                            </div>
-                            <div class="form-page__actions">
-                                <input type="submit" value="Отправить" class="form-page__btn button button--primary button--form">
-                                <span class="wpcf7-spinner"></span>
-                            </div>
-                        </div>
-                        <p class="form-page__protect text text--small text--white text--w-light">
-                            Ваши данные находятся под защитой
-                        </p>
-                        <div class="wpcf7-response-output form-page__result" aria-hidden="true">
-                            Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.
-                        </div>
-                    </form>
+                    <?php echo do_shortcode( '[contact-form-7 id="679" title="Форма в футере" html_class="form-page__form"]' ); ?>
                 </div>
             </div>
         </section>
@@ -177,45 +156,7 @@
                 <h3 class="modal__title title title--medium title--white title--w-medium center js-service-title">
                     Интернет-магазин
                 </h3>
-                <div role="form" class="wpcf7">
-                    <form class="modal__form wpcf7-form init" action="php/form-send.php" method="post">
-                        <div class="modal__field">
-                            <input type="text" class="modal__input" placeholder="Алексей">
-                            <span class="modal__name-input text text--small text--white text--w-light">
-                                Ваше имя
-                            </span>
-                        </div>
-                        <div class="modal__field">
-                            <input type="tel" class="modal__input" placeholder="+7-999-888-77-66">
-                            <span class="modal__name-input text text--small text--white text--w-light">
-                                Телефон
-                            </span>
-                        </div>
-                        <div class="modal__field">
-                            <input type="email" class="modal__input" placeholder="alexey86@mail.ru">
-                            <span class="modal__name-input text text--small text--white text--w-light">
-                                E-mail
-                            </span>
-                        </div>
-                        <div class="modal__field">
-                            <textarea name="textarea-728" cols="40" rows="10" class="modal__input modal__input--textarea" placeholder="Коротко опишите проект"></textarea>
-                            <span class="modal__name-input text text--small text--white text--w-light">
-                                Комментарий
-                            </span>
-                        </div>
-                        <div class="modal__wrap-policy">
-                            <div class="modal__policy text text--small text--white text--w-light center">
-                                Ваши данные находятся под защитой
-                            </div>
-                            <a href="https://fcdigital.ru/politika-konfidenczialnosti/" class="modal__link-policy text text--small text--w-light center" target="_blank">
-                                Политика конфиденциальности
-                            </a>
-                        </div>
-                        <div class="modal__actions">
-                            <input type="submit" value="Оставить заявку" class="modal__btn button button--primary">
-                        </div>
-                    </form>
-                </div>
+                <?php echo do_shortcode( '[contact-form-7 id="680" title="Форма услуг" html_class="modal__form"]' ); ?>
             </div>
         </div>
     </div>
@@ -230,46 +171,32 @@
                         <path d="M1 1L12 12M12 1L1 12" stroke-width="1.5" stroke-linecap="round"/>
                     </svg>
                 </div>
-                <h3 class="modal__title title title--medium title--white title--w-medium center js-service-title">
+                <h3 class="modal__title title title--medium title--white title--w-medium center">
                     Форма обратной связи
                 </h3>
-                <div role="form" class="wpcf7">
-                    <form class="modal__form wpcf7-form init" action="php/form-send.php" method="post">
-                        <div class="modal__field">
-                            <input type="text" class="modal__input" placeholder="Алексей">
-                            <span class="modal__name-input text text--small text--white text--w-light">
-                                Ваше имя
-                            </span>
-                        </div>
-                        <div class="modal__field">
-                            <input type="tel" class="modal__input" placeholder="+7-999-888-77-66">
-                            <span class="modal__name-input text text--small text--white text--w-light">
-                                Телефон
-                            </span>
-                        </div>
-                        <div class="modal__field">
-                            <input type="email" class="modal__input" placeholder="alexey86@mail.ru">
-                            <span class="modal__name-input text text--small text--white text--w-light">
-                                E-mail
-                            </span>
-                        </div>
-                        <div class="modal__wrap-policy">
-                            <div class="modal__policy text text--small text--white text--w-light center">
-                                Ваши данные находятся под защитой
-                            </div>
-                            <a href="https://fcdigital.ru/politika-konfidenczialnosti/" class="modal__link-policy text text--small text--w-light center" target="_blank">
-                                Политика конфиденциальности
-                            </a>
-                        </div>
-                        <div class="modal__actions">
-                            <input type="submit" value="Оставить заявку" class="modal__btn button button--primary">
-                        </div>
-                    </form>
-                </div>
+                <?php echo do_shortcode( '[contact-form-7 id="680" title="Форма обратной связи" html_class="modal__form"]' ); ?>
             </div>
         </div>
     </div>
     <!-- /. Модалка обратной связи -->
+
+    <!-- Модалка вакансий -->
+    <div class="modal hystmodal" id="vacancy" aria-hidden="true">
+        <div class="modal__wrap hystmodal__wrap">
+            <div class="modal__body hystmodal__window" role="modal window feedback" aria-modal="true">
+                <div class="modal__close" data-hystclose>
+                    <svg class="modal__close-svg" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L12 12M12 1L1 12" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="modal__title title title--medium title--white title--w-medium center">
+                    Отклик на вакансию
+                </h3>
+                <?php echo do_shortcode( '[contact-form-7 id="682" title="Форма отклика на вакансию" html_class="modal__form"]' ); ?>
+            </div>
+        </div>
+    </div>
+    <!-- /. Модалка вакансий -->
 
     <!-- Success -->
     <div class="modal modal--success hystmodal js-modal-success" id="success" aria-hidden="true">

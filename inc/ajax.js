@@ -23,42 +23,42 @@
 
 // });
 
-let form = document.querySelector('.form-page__form');
-let formResult = document.querySelector('.form-page__result');
+// let form = document.querySelector('.form-page__form');
+// let formResult = document.querySelector('.form-page__result');
 
-form.addEventListener('submit', (e) => {
+// form.addEventListener('submit', (e) => {
 
-    e.preventDefault();
+//     e.preventDefault();
 
-    let request = new XMLHttpRequest();
+//     let request = new XMLHttpRequest();
 
-    form.querySelector('.form-page__btn').value = 'Отправка...';
+//     form.querySelector('.form-page__btn').value = 'Отправка...';
 
-    request.open('POST', gosha.ajax_url, true);
+//     request.open('POST', gosha.ajax_url, true);
 
-    request.send(new FormData(form));
+//     request.send(new FormData(form));
 
-    request.addEventListener('load', (e) => {
+//     request.addEventListener('load', (e) => {
         
-        let resp = this.response;
+//         let resp = this.response;
         
-        if (this.status >= 200 && this.status < 400) {
+//         if (this.status >= 200 && this.status < 400) {
 
-            success(this.responseText, this.status);
-            form.querySelector('.form-page__btn').value = 'Готово!';
+//             success(this.responseText, this.status);
+//             form.querySelector('.form-page__btn').value = 'Готово!';
 
-        } else {
+//         } else {
 
-            formResult.innerHTML = 'Ошибка отправки данных!';
-            // error();
+//             formResult.innerHTML = 'Ошибка отправки данных!';
+//             // error();
 
-        }
-    })
+//         }
+//     })
 
-    // request.onerror = function () {
-    //     error();
-    // };
+//     // request.onerror = function () {
+//     //     error();
+//     // };
 
-    request.send();
+//     request.send();
 
-})
+// })

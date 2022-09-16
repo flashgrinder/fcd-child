@@ -46,6 +46,7 @@
   --color-dark-gray: #272237;
   --color-light-gray: #F0F6F7;
   --color-white: #FFFFFF;
+  --color-invalid: rgba(255, 0, 0, 0.50);
   --color-dark-blue: #221828;
   --color-dark: #241B2A;
   --color-dark-gray: #B5B5B5;
@@ -2516,10 +2517,10 @@ img {
 }
 
 .form-page .wpcf7-not-valid-tip {
-  color: rgba(255, 0, 0, 0.45);
+  color: var(--color-invalid);
   position: absolute;
   top: 50%;
-  left: 50%;
+  right: 0;
   transform: translateY(-50%);
   font-size: 12px;
   text-align: center;
@@ -2531,6 +2532,7 @@ img {
 }
 
 .form-page .wpcf7-response-output {
+  display: none;
   color: var(--color-white);
   font-size: 14px;
   font-weight: 300;
@@ -2541,6 +2543,10 @@ img {
   width: 100%;
   text-align: center;
   border-radius: 5px;
+}
+
+.form-page .wpcf7 form.sent .wpcf7-response-output {
+  display: none;
 }
 
 .form-page__actions .wpcf7-spinner {
@@ -4362,6 +4368,10 @@ img {
   margin: 0 auto;
 }
 
+.modal__form.invalid .modal__input.wpcf7-not-valid {
+  border: 1px solid #FF0000;
+}
+
 .modal__field {
   position: relative;
 }
@@ -4515,8 +4525,8 @@ img {
   max-width: 455px;
 }
 
-.modal__input--textarea + .modal__name-input {
-  bottom: -5px;
+.modal__field--textarea > .modal__name-input {
+  bottom: -3px;
 }
 
 .modal__name-input {
@@ -4593,7 +4603,7 @@ img {
   transform: translateY(-50%);
   width: 15px;
   height: 15px;
-  border: 3px solid var(--color-blue);
+  border: 3px solid var(--color-accent-secondary);
   border-top: 3px solid #595959;
   transform-origin: center;
   -webkit-animation: rotate 1s infinite linear backwards;
@@ -4601,7 +4611,8 @@ img {
 }
 
 .modal .wpcf7 form .wpcf7-response-output {
-  font-family: var(--font-roboto);
+  display: none;
+  font-family: var(--font-helvetica-neue-cyr);
   font-size: calc(14px + 2 * ((100vw - 768px) / 256));
   margin: 20px 0 0;
   padding: 15px 1em;
@@ -4635,7 +4646,7 @@ img {
 
 .modal__form .wpcf7-not-valid-tip {
   text-align: center;
-  font-family: var(--font-roboto);
+  font-family: var(--font-helvetica-neue-cyr);
   font-size: 12px;
   margin-top: 5px;
   color: var(--color-invalid);

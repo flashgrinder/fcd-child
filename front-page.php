@@ -311,7 +311,7 @@
                                         </p>
                                     </div>
                                     <div class="screen-entry__actions">
-                                        <a href="#" class="screen-entry__btn screen__btn button button--primary">
+                                        <a href="javascript:;" class="screen-entry__btn screen__btn button button--primary" data-hystmodal="#feedback">
                                             Оставить заявку
                                         </a>
                                     </div>
@@ -1255,7 +1255,7 @@
                                         </p>
                                     </div>
                                     <div class="screen-brand__actions">
-                                        <a href="#" class="screen-brand__btn screen__btn button button--primary">
+                                        <a href="javascript:;" class="screen-brand__btn screen__btn button button--primary" data-hystmodal="#feedback">
                                             Оставить заявку
                                         </a>
                                     </div>
@@ -2450,7 +2450,7 @@
                                         </p>
                                     </div>
                                     <div class="screen-hackerman__actions">
-                                        <a href="#" class="screen-hackerman__btn screen__btn button button--primary">
+                                        <a href="javascript:;" class="screen-hackerman__btn screen__btn button button--primary" data-hystmodal="#feedback">
                                             Оставить заявку
                                         </a>
                                     </div>
@@ -3585,7 +3585,7 @@
                                         </p>
                                     </div>
                                     <div class="screen-marketing__actions">
-                                        <a href="#" class="screen-marketing__btn screen__btn button button--primary">
+                                        <a href="javascript:;" class="screen-marketing__btn screen__btn button button--primary" data-hystmodal="#feedback">
                                             Оставить заявку
                                         </a>
                                     </div>
@@ -6286,7 +6286,7 @@
                                         </p>
                                     </div>
                                     <div class="screen-it__actions">
-                                        <a href="#" class="screen-it__btn screen__btn button button--primary">
+                                        <a href="javascript:;" class="screen-it__btn screen__btn button button--primary" data-hystmodal="#feedback">
                                             Оставить заявку
                                         </a>
                                     </div>

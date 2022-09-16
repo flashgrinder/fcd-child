@@ -14,7 +14,7 @@
                         <?php the_excerpt(); ?>
                     </p>
                     <div class="info-block__actions">
-                        <a href="#modal" class="info-block__btn button button--primary">
+                        <a href="javascript:;" class="info-block__btn button button--primary" data-hystmodal="#feedback">
                             Связаться с нами
                         </a>
                     </div>
@@ -120,7 +120,7 @@
                         Заявку оставив, кейс великолепный, мы можем создать вам!
                     </h2>
                     <div class="not-post__action not-post__action--not">
-                        <a href="#modal" class="not-post__button button button--primary">
+                        <a href="javascript:;" class="not-post__button button button--primary" data-hystmodal="#feedback">
                             Оставить заявку
                         </a>
                     </div>

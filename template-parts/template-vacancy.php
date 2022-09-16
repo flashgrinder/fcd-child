@@ -19,7 +19,7 @@
         </div>
     </div>
     <div class="vacancy__action">
-        <a href="#modal" class="vacancy__button button button--primary">
+        <a href="javascript:;" class="vacancy__button button button--primary" data-hystmodal="#vacancy">
             Откликнуться
         </a>
     </div>

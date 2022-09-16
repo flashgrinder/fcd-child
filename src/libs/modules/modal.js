@@ -1,5 +1,5 @@
 import HystModal from 'hystmodal';
-import axios from 'axios';
+// import axios from 'axios';
 
 function init(container = document) {
 
@@ -8,33 +8,45 @@ function init(container = document) {
 
         formTitle.innerHTML = pageTitle;
 
-    let wpcf7Elem = document.querySelectorAll( '.wpcf7-form' );
+        let wpcf7Elem = document.querySelectorAll( '.wpcf7-form' );
 
-    wpcf7Elem.forEach(function(elem) {
+        wpcf7Elem.forEach(function(elem) {
 
-        const actionUrl = elem.getAttribute("action");
-   
-        elem.addEventListener( 'submit', function( e ) {
-            
-            e.preventDefault();
-            
-            const formData = new FormData(elem);
-            
-            axios({
-                method: 'post',
-                url: actionUrl,
-                data: formData
-            })
-            .then(function (response) {
+            elem.addEventListener( 'wpcf7mailsent', function( e ) {
+                
                 modalsForms.open('.js-modal-success');
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
+                
+                }, false );
 
-          }, false );
+        });
 
-    });
+    // let wpcf7Elem = document.querySelectorAll( '.wpcf7-form' );
+
+    // wpcf7Elem.forEach(function(elem) {
+
+    //     const actionUrl = elem.getAttribute("action");
+   
+    //     elem.addEventListener( 'submit', function( e ) {
+            
+    //         e.preventDefault();
+            
+    //         const formData = new FormData(elem);
+            
+    //         axios({
+    //             method: 'post',
+    //             url: actionUrl,
+    //             data: formData
+    //         })
+    //         .then(function (response) {
+    //             modalsForms.open('.js-modal-success');
+    //         })
+    //         .catch(function (error) {
+    //             console.log(error);
+    //         });
+
+    //       }, false );
+
+    // });
     
 
     const modalsForms = new HystModal({

@@ -92,10 +92,10 @@
 }
 
 .form-page .wpcf7-not-valid-tip {
-    color: rgba(255, 0, 0, 0.45);
+    color: var(--color-invalid);;
     position: absolute;
     top: 50%;
-    left: 50%;
+    right: 0;
     transform: translateY(-50%);
     font-size: 12px;
     text-align: center;
@@ -111,6 +111,7 @@
 }
 
 .form-page .wpcf7-response-output {
+    display: none;
     color: var(--color-white);
     font-size: 14px;
     font-weight: 300;
@@ -119,6 +120,10 @@
     width: 100%;
     text-align: center;
     border-radius: 5px;
+}
+
+.form-page .wpcf7 form.sent .wpcf7-response-output {
+    display: none;
 }
 
 .form-page__actions .wpcf7-spinner {

@@ -13,7 +13,7 @@
                         <?php the_excerpt(); ?>
                     </p>
                     <div class="info-block__actions">
-                        <a href="#modal" class="info-block__btn button button--primary">
+                        <a href="javascript:;" class="info-block__btn button button--primary" data-hystmodal="#feedback">
                             Перезвоните мне
                         </a>
                     </div>
