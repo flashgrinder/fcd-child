@@ -1,49 +1,41 @@
-            <!-- Form-page -->
-            <section class="form-page block-padding">
-                <div class="form-page__body container">
-                    <div class="form-page__inner bg--dark-blue">
-                        <div class="form-page__info">
-                            <h2 class="form-page__heading title title--large title--white title--w-bold title--indent">
-                                Хочу обсудить проект
-                            </h2>
-                            <p class="form-page__descr text text--normal text--white text--w-light">
-                                Оставьте номер телефона, мы перезвоним и обсудим проект
-                            </p>
-                        </div>
-                        <form method="post" class="form-page__form invalid" action="">
-                            <div class="form-page__fields">
-                                <div class="form-page__field">
-                                    <p class="form-page__field-text text text--small text--light-gray text--w-light">
-                                        Введите номер телефона
-                                    </p>
-                                    <input type="tel" name="phone" class="form-page__input" placeholder="+7 (999) - 888 - 77 - 66">
-                                    <input type="hidden" name="action" value="truephone">
-                                    <span class="wpcf7-not-valid-tip" aria-hidden="true">Поле обязательно для заполнения.</span>
-                                </div>
-                                <div class="form-page__actions">
-                                    <input type="submit" value="Отправить" class="form-page__btn button button--primary button--form">
-                                    <span class="wpcf7-spinner"></span>
-                                </div>
-                            </div>
-                            <p class="form-page__protect">
-                                <span class="form-page__icon-protect">
-                                    <svg class="form-page__shield-protect" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.17238 5.44959C9.35266 5.6257 9.35266 5.91124 9.17238 6.08736L6.71025 8.49253C6.52997 8.66864 6.23767 8.66864 6.05738 8.49253L4.82632 7.28994C4.64604 7.11383 4.64604 6.82829 4.82632 6.65217C5.00661 6.47606 5.29891 6.47606 5.47919 6.65217L6.38382 7.53587L8.51951 5.44959C8.69979 5.27347 8.99209 5.27347 9.17238 5.44959Z" fill="white"/>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.23105 2.10382C7.08025 2.0573 6.91845 2.0573 6.76765 2.10382L2.62722 3.38108C2.25926 3.49459 2.03428 3.85679 2.10114 4.22804L2.74983 7.83006C2.98784 9.15163 3.67858 10.3364 4.79155 11.0172C5.20042 11.2673 5.62649 11.5007 6.02343 11.6703C6.43002 11.844 6.76328 11.9317 6.99935 11.9317C7.23542 11.9317 7.56868 11.844 7.97527 11.6703C8.37221 11.5007 8.79828 11.2673 9.20715 11.0172C10.3201 10.3364 11.0109 9.15163 11.2489 7.83007L11.8976 4.22804C11.9644 3.85679 11.7394 3.49459 11.3715 3.38108L7.23105 2.10382ZM6.48962 1.24375C6.82137 1.14141 7.17733 1.14141 7.50908 1.24375L11.6495 2.52101C12.459 2.77073 12.954 3.56757 12.8069 4.38431L12.1582 7.98634C11.8859 9.49838 11.0804 10.9355 9.69716 11.7817C9.26713 12.0447 8.79887 12.3029 8.34517 12.4967C7.90112 12.6864 7.42743 12.8337 6.99935 12.8337C6.57127 12.8337 6.09757 12.6864 5.65353 12.4967C5.19983 12.3029 4.73157 12.0447 4.30154 11.7817C2.91828 10.9355 2.11281 9.49838 1.8405 7.98634L1.1918 4.38431C1.04472 3.56757 1.53967 2.77073 2.34919 2.52101L6.48962 1.24375Z" fill="white"/>
-                                    </svg>
-                                </span>
-                                <span class="form-page__text-protect text text--small text--white text--w-light">
-                                    Ваши данные находятся  под защитой
-                                </span> 
-                            </p>
-                            <div class="wpcf7-response-output form-page__result" aria-hidden="true">
-                                Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.
-                            </div>
-                        </form>
+        <!-- Form-page -->
+        <section class="form-page block-padding">
+            <div class="form-page__body container">
+                <div class="form-page__inner bg--dark-blue">
+                    <div class="form-page__info">
+                        <h2 class="form-page__heading title title--large title--white title--w-bold title--indent">
+                            Хочу обсудить проект
+                        </h2>
+                        <p class="form-page__descr text text--normal text--white text--w-light">
+                            Оставьте номер телефона, мы перезвоним и обсудим проект
+                        </p>
                     </div>
+                    <form method="post" class="form-page__form invalid" action="">
+                        <div class="form-page__fields">
+                            <div class="form-page__field">
+                                <p class="form-page__field-text text text--small text--light-gray text--w-light">
+                                    Введите номер телефона
+                                </p>
+                                <input type="tel" name="phone" class="form-page__input" placeholder="+7 (999) - 888 - 77 - 66">
+                                <input type="hidden" name="action" value="truephone">
+                                <span class="wpcf7-not-valid-tip" aria-hidden="true">Поле обязательно для заполнения.</span>
+                            </div>
+                            <div class="form-page__actions">
+                                <input type="submit" value="Отправить" class="form-page__btn button button--primary button--form">
+                                <span class="wpcf7-spinner"></span>
+                            </div>
+                        </div>
+                        <p class="form-page__protect text text--small text--white text--w-light">
+                            Ваши данные находятся под защитой
+                        </p>
+                        <div class="wpcf7-response-output form-page__result" aria-hidden="true">
+                            Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.
+                        </div>
+                    </form>
                 </div>
-            </section>
-            <!-- /. Form-page -->
+            </div>
+        </section>
+        <!-- /. Form-page -->
 
     </main>
     <!-- /. MAIN -->
@@ -172,6 +164,134 @@
         </div>
     </footer>
     <!-- /. Footer -->
+
+    <!-- Модалка услуг -->
+    <div class="modal hystmodal" id="service" aria-hidden="true">
+        <div class="modal__wrap hystmodal__wrap">
+            <div class="modal__body hystmodal__window" role="modal window service" aria-modal="true">
+                <div class="modal__close" data-hystclose>
+                    <svg class="modal__close-svg" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L12 12M12 1L1 12" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="modal__title title title--medium title--white title--w-medium center js-service-title">
+                    Интернет-магазин
+                </h3>
+                <div role="form" class="wpcf7">
+                    <form class="modal__form wpcf7-form init" action="php/form-send.php" method="post">
+                        <div class="modal__field">
+                            <input type="text" class="modal__input" placeholder="Алексей">
+                            <span class="modal__name-input text text--small text--white text--w-light">
+                                Ваше имя
+                            </span>
+                        </div>
+                        <div class="modal__field">
+                            <input type="tel" class="modal__input" placeholder="+7-999-888-77-66">
+                            <span class="modal__name-input text text--small text--white text--w-light">
+                                Телефон
+                            </span>
+                        </div>
+                        <div class="modal__field">
+                            <input type="email" class="modal__input" placeholder="alexey86@mail.ru">
+                            <span class="modal__name-input text text--small text--white text--w-light">
+                                E-mail
+                            </span>
+                        </div>
+                        <div class="modal__field">
+                            <textarea name="textarea-728" cols="40" rows="10" class="modal__input modal__input--textarea" placeholder="Коротко опишите проект"></textarea>
+                            <span class="modal__name-input text text--small text--white text--w-light">
+                                Комментарий
+                            </span>
+                        </div>
+                        <div class="modal__wrap-policy">
+                            <div class="modal__policy text text--small text--white text--w-light center">
+                                Ваши данные находятся под защитой
+                            </div>
+                            <a href="https://fcdigital.ru/politika-konfidenczialnosti/" class="modal__link-policy text text--small text--w-light center" target="_blank">
+                                Политика конфиденциальности
+                            </a>
+                        </div>
+                        <div class="modal__actions">
+                            <input type="submit" value="Оставить заявку" class="modal__btn button button--primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /. Модалка услуг -->
+
+    <!-- Модалка обратной связи -->
+    <div class="modal hystmodal" id="feedback" aria-hidden="true">
+        <div class="modal__wrap hystmodal__wrap">
+            <div class="modal__body hystmodal__window" role="modal window feedback" aria-modal="true">
+                <div class="modal__close" data-hystclose>
+                    <svg class="modal__close-svg" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L12 12M12 1L1 12" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="modal__title title title--medium title--white title--w-medium center js-service-title">
+                    Форма обратной связи
+                </h3>
+                <div role="form" class="wpcf7">
+                    <form class="modal__form wpcf7-form init" action="php/form-send.php" method="post">
+                        <div class="modal__field">
+                            <input type="text" class="modal__input" placeholder="Алексей">
+                            <span class="modal__name-input text text--small text--white text--w-light">
+                                Ваше имя
+                            </span>
+                        </div>
+                        <div class="modal__field">
+                            <input type="tel" class="modal__input" placeholder="+7-999-888-77-66">
+                            <span class="modal__name-input text text--small text--white text--w-light">
+                                Телефон
+                            </span>
+                        </div>
+                        <div class="modal__field">
+                            <input type="email" class="modal__input" placeholder="alexey86@mail.ru">
+                            <span class="modal__name-input text text--small text--white text--w-light">
+                                E-mail
+                            </span>
+                        </div>
+                        <div class="modal__wrap-policy">
+                            <div class="modal__policy text text--small text--white text--w-light center">
+                                Ваши данные находятся под защитой
+                            </div>
+                            <a href="https://fcdigital.ru/politika-konfidenczialnosti/" class="modal__link-policy text text--small text--w-light center" target="_blank">
+                                Политика конфиденциальности
+                            </a>
+                        </div>
+                        <div class="modal__actions">
+                            <input type="submit" value="Оставить заявку" class="modal__btn button button--primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /. Модалка обратной связи -->
+
+    <!-- Success -->
+    <div class="modal modal--success hystmodal js-modal-success" id="success" aria-hidden="true">
+        <div class="modal__wrap hystmodal__wrap">
+            <div class="modal__body hystmodal__window" role="modal window feedback" aria-modal="true">
+                <div class="modal__close" data-hystclose>
+                    <svg class="modal__close-svg" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L12 12M12 1L1 12" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="modal__wrapper-success">
+                    <div class="modal__success-icon">
+                        <img src="<?php echo STANDART_DIR; ?>img/upload/check-success.svg" alt="Заявка принята" class="modal__success-img">
+                    </div>
+                    <div class="modal__success-text text text--normal text--white text--w-light">
+                        Спасибо, ваша заявка принята!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /. Success -->
 
     <?php wp_footer(); ?>
 
