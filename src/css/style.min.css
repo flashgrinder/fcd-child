@@ -4365,6 +4365,37 @@ img {
   transition: transform 0.8s ease-in-out;
 }
 
+/* Modal Case */
+
+.modal--case .hystmodal__window {
+  margin: 0;
+}
+
+.modal--case .hystmodal__wrap {
+  display: block;
+  flex-shrink: 1;
+}
+
+.modal--case .modal__close {
+  width: 12px;
+  height: 12px;
+}
+
+.modal--case .modal__body {
+  max-width: 1920px;
+}
+
+.modal__picture-case,
+.modal__case-img {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.modal__picture-case {
+  margin-top: -2px;
+}
+
 .modal__title {
   margin-bottom: 25px;
 }

@@ -284,7 +284,7 @@
                                     </div>
                                     <footer class="case-card__footer">
                                         <div class="case-card__action">
-                                            <a href="javascript:;" class="case-card__button button button--primary">
+                                            <a href="javascript:;" class="case-card__button button button--primary" data-hystmodal="#case">
 
                                         Посмотреть кейс
 
@@ -320,7 +320,7 @@
                                     </div>
                                     <footer class="case-card__footer">
                                         <div class="case-card__action">
-                                            <a href="javascript:;" class="case-card__button button button--primary">
+                                            <a href="javascript:;" class="case-card__button button button--primary" data-hystmodal="#case">
 
                                         Посмотреть кейс
 
@@ -356,7 +356,7 @@
                                     </div>
                                     <footer class="case-card__footer">
                                         <div class="case-card__action">
-                                            <a href="javascript:;" class="case-card__button button button--primary">
+                                            <a href="javascript:;" class="case-card__button button button--primary" data-hystmodal="#case">
 
                                         Посмотреть кейс
 
@@ -1380,6 +1380,42 @@
         </div>
     </div>
     <!-- /. Success -->
+
+    <!-- Модалка кейсов -->
+    <div class="modal modal--case hystmodal js-modal-case" id="case" aria-hidden="true">
+        <div class="modal__wrap hystmodal__wrap">
+            <div class="modal__body hystmodal__window" role="modal window feedback" aria-modal="true">
+                <div class="modal__close" data-hystclose>
+                    <svg class="modal__close-svg" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L12 12M12 1L1 12" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h3 class="modal__title title title--pre-medium title--white title--w-light left js-case-title">
+
+                “Patent&Trademark group” Корпоративный сайт 
+
+            </h3>
+                <div class="modal__wrapper-case">
+                    <picture class="modal__picture-case">
+                        <source media="(max-width: 576px)" srcset="img/plugs/case-mobile-1.png">
+                            <source media="(max-width: 1024px)" srcset="img/plugs/case-tablet-1.png">
+                                <img src="img/plugs/case-desctop-1.png" class="modal__case-img" alt="">
+                    </picture>
+                    <picture class="modal__picture-case">
+                        <source media="(max-width: 576px)" srcset="img/plugs/case-mobile-2.png">
+                            <source media="(max-width: 1024px)" srcset="img/plugs/case-tablet-2.png">
+                                <img src="img/plugs/case-desctop-2.png" class="modal__case-img" alt="">
+                    </picture>
+                    <picture class="modal__picture-case">
+                        <source media="(max-width: 576px)" srcset="img/plugs/case-mobile-3.png">
+                            <source media="(max-width: 1024px)" srcset="img/plugs/case-tablet-3.png">
+                                <img src="img/plugs/case-desctop-3.png" class="modal__case-img" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /. Модалка кейсов -->
 
     <script src="js/scripts.min.js"></script>
 </body>
