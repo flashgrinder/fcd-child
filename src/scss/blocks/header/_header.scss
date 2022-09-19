@@ -1,16 +1,25 @@
 .header {
-    position: sticky;
+    position: fixed;
     top: 0;
     padding: 25px 0;
     width: 100%;
     z-index: 500;
     background: var(--color-bg-primary);
     border-bottom: 2px solid rgba(255, 255, 255, 0.02);
+    transition: top .3s ease;
     @include tablet-block {
         position: fixed;
         background: #13111B;
         padding: 15px 0;
     }
+}
+
+.header.is-hide {
+    top: -200px;
+}
+
+.header.is-show {
+    top: 0;
 }
 
 .header__body {

@@ -1971,14 +1971,22 @@ img {
 /* Header */
 
 .header {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   padding: 25px 0;
   width: 100%;
   z-index: 500;
   background: var(--color-bg-primary);
   border-bottom: 2px solid rgba(255, 255, 255, 0.02);
+  transition: top 0.3s ease;
+}
+
+.header.is-hide {
+  top: -200px;
+}
+
+.header.is-show {
+  top: 0;
 }
 
 .header__body {
