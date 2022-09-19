@@ -1,31 +1,54 @@
-function init() {
+let prevScrollpos = window.pageYOffset;
 
-    let prevScrollpos = window.pageYOffset;
+function showHideMenu() {
+    
+    let currentScrollPos = window.pageYOffset,
+        header = document.querySelector('.header');
 
-    window.addEventListener('scroll', () => {
+    if ( currentScrollPos >= 500 ) {
 
-        let currentScrollPos = window.pageYOffset,
-            header = document.querySelector('.header');
+        if( prevScrollpos > currentScrollPos ) {
 
-        if ( currentScrollPos >= 300 ) {
+            header.classList.add('is-show');
+            header.classList.remove('is-hide');
 
-            if( prevScrollpos > currentScrollPos ) {
+        } else {
 
-                header.classList.add('is-show');
-                header.classList.remove('is-hide');
-
-            } else {
-
-                header.classList.add('is-hide');
-                header.classList.remove('is-show');
-
-            }
+            header.classList.add('is-hide');
+            header.classList.remove('is-show');
 
         }
 
-        prevScrollpos = currentScrollPos;
+    }
+    
+    prevScrollpos = currentScrollPos;
 
-    })
+}
+
+function throttle(callee, timeout) {
+
+    let timer = null
+  
+    return function perform(...args) {
+
+      if (timer) return
+  
+      timer = setTimeout(() => {
+
+            callee(...args)
+
+            clearTimeout(timer)
+            timer = null
+        }, timeout)
+
+    }
+}
+
+function init() {
+
+    const throttleShowHideMenu = throttle(showHideMenu, 250);
+
+    window.addEventListener('scroll', throttleShowHideMenu)
 
 }
 
