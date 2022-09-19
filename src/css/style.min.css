@@ -4368,7 +4368,7 @@ img {
 /* Modal Case */
 
 .modal--case .hystmodal__window {
-  margin: 0;
+  margin: 0 auto;
 }
 
 .modal--case .hystmodal__wrap {
