@@ -8,9 +8,9 @@
     //     show_admin_bar( false );
     // }
     // Включаем показ ошибок AJAX
-    if( WP_DEBUG && WP_DEBUG_DISPLAY && (defined('DOING_AJAX') && DOING_AJAX) ){
-        @ ini_set( 'display_errors', 1 );
-    }
+    // if( WP_DEBUG && WP_DEBUG_DISPLAY && (defined('DOING_AJAX') && DOING_AJAX) ){
+    //     @ ini_set( 'display_errors', 1 );
+    // }
 
     /* Actions */
     include_once(__DIR__ . '/inc/actions.php');
