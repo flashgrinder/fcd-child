@@ -100,3 +100,18 @@
         wp_enqueue_script( 'true_ajax_posts' );
         
 	}
+
+    add_action( 'wp_enqueue_scripts', 'ajax_cases_scripts' );
+
+    function ajax_cases_scripts() {
+		wp_register_script( 'true_ajax_case', get_stylesheet_directory_uri() . '/inc/ajax-case.js', ['jquery'], time(), true );
+
+        $data = [
+            'ajax_case_url' => admin_url( 'admin-ajax.php' )
+        ];
+        
+        wp_add_inline_script( 'true_ajax_case', 'const caseUrl = ' . wp_json_encode( $data ), 'before' );
+
+        wp_enqueue_script( 'true_ajax_case' );
+        
+	}
