@@ -46,7 +46,7 @@ function throttle(callee, timeout) {
 
 function init() {
 
-    const throttleShowHideMenu = throttle(showHideMenu, 250);
+    const throttleShowHideMenu = throttle(showHideMenu, 50);
 
     window.addEventListener('scroll', throttleShowHideMenu)
 
