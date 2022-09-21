@@ -1452,7 +1452,9 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "post_type": "",
+                            "post_type": [
+                                "cases"
+                            ],
                             "taxonomy": "",
                             "allow_null": 0,
                             "multiple": 1,
@@ -2299,5 +2301,5 @@
     "active": true,
     "description": "Параметры страницы front-page.php",
     "show_in_rest": 0,
-    "modified": 1662728900
+    "modified": 1663756243
 }

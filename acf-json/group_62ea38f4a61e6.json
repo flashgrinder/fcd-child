@@ -1149,7 +1149,9 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "post_type": "",
+                            "post_type": [
+                                "cases"
+                            ],
                             "taxonomy": "",
                             "allow_null": 0,
                             "multiple": 1,
@@ -1870,5 +1872,5 @@
     "active": true,
     "description": "Параметры страницы single-services.php",
     "show_in_rest": 0,
-    "modified": 1661498787
+    "modified": 1663758641
 }

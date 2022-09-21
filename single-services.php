@@ -1169,7 +1169,6 @@
 
                                         <?php foreach( $cases_slider_items as $cases_slider_item): 
                                             
-                                            $case_permalink = get_permalink( $cases_slider_item->ID );
                                             $case_title = get_the_title( $cases_slider_item->ID );
                                             
                                             ?>
@@ -1179,11 +1178,11 @@
                                                     <header class="case-card__header">
                                                         <div class="case-card__tags">
                                                             <?php 
-                                                                $categories = get_the_category($cases_slider_item->ID);
+                                                                $categories = get_the_terms($cases_slider_item->ID, 'cats_cases');
                                                                 
                                                                 if($categories){
                                                                     foreach($categories as $category) {
-                                                                        echo '<a href="'. get_category_link($category->term_id) . '" class="case-card__tag button button--dark button--tiny">' . $category->cat_name . '</a>';
+                                                                        echo '<a href="javascript:;" class="case-card__tag button button--dark button--tiny">' . $category->name . '</a>';
                                                                     }
                                                                 }
                                                             ?>
@@ -1207,7 +1206,7 @@
                                                     </div>
                                                     <footer class="case-card__footer">
                                                         <div class="case-card__action">
-                                                            <a href="<?php echo esc_url( $case_permalink ); ?>" class="case-card__button button button--primary">
+                                                            <a href="javascript:;" class="case-card__button button button--primary js-case" data-hystmodal="#case" data-id-case="<?php echo $cases_slider_item->ID; ?>">
                                                                 Посмотреть кейс
                                                             </a>
                                                         </div>
