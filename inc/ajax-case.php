@@ -1,50 +1,47 @@
 <?php
 
-if( wp_doing_ajax() ){
-    add_action('wp_ajax_get_make_case', 'get_make_case');
-    add_action('wp_ajax_nopriv_get_make_case', 'get_make_case');
-}
+    if( wp_doing_ajax() ){
+        add_action('wp_ajax_get_make_case', 'get_make_case');
+        add_action('wp_ajax_nopriv_get_make_case', 'get_make_case');
+    }
 
-function get_make_case($caseID) {
+    function get_make_case($caseID) {
 
-    echo(json_encode( array('status'=>'ok','request_vars'=>$_REQUEST) ));
+        $query_data = $_GET;
 
-    $query_data = $_GET;
+        $caseID = ! empty( $query_data[ 'param' ] ) ? $query_data['param'] : false;
+        
+        $args = array(
+            'p' => $caseID,
+            'post_type' => 'cases',
+        );
 
-    $caseID = ! empty( $query_data[ 'param' ] ) ? $query_data['param'] : false;
-    
-    $args = array(
-        'p' => $caseID,
-        'post_type' => 'cases',
-    );
+        $post = new WP_Query($args);
 
-    $post = new WP_Query($args);
+        ?>
 
-    var_dump($caseID);
-    ?>
+        <?php while( $post->have_posts() ) : $post->the_post() ?>
+            <h3 class="modal__title title title--pre-medium title--white title--w-light left js-case-title">
+                <?php the_title(); ?>
+            </h3>
+            <?php if( have_rows('case-content') ): ?>
+                <?php while( have_rows('case-content') ): the_row();
 
-    <?php while( $post->have_posts() ) : $post->the_post() ?>
-        <h3 class="modal__title title title--pre-medium title--white title--w-light left js-case-title">
-            <?php the_title(); ?>
-        </h3>
-        <picture class="modal__picture-case">
-            <source media="(max-width: 576px)" srcset="<?php echo STANDART_DIR; ?>img/plugs/case-mobile-1.png">
-            <source media="(max-width: 1024px)" srcset="<?php echo STANDART_DIR; ?>img/plugs/case-tablet-1.png">
-            <img src="<?php echo STANDART_DIR; ?>img/plugs/case-desctop-1.png" class="modal__case-img" alt="">
-        </picture>
-        <picture class="modal__picture-case">
-            <source media="(max-width: 576px)" srcset="<?php echo STANDART_DIR; ?>img/plugs/case-mobile-2.png">
-            <source media="(max-width: 1024px)" srcset="<?php echo STANDART_DIR; ?>img/plugs/case-tablet-2.png">
-            <img src="<?php echo STANDART_DIR; ?>img/plugs/case-desctop-2.png" class="modal__case-img" alt="">
-        </picture>
-        <picture class="modal__picture-case">
-            <source media="(max-width: 576px)" srcset="<?php echo STANDART_DIR; ?>img/plugs/case-mobile-3.png">
-            <source media="(max-width: 1024px)" srcset="<?php echo STANDART_DIR; ?>img/plugs/case-tablet-3.png">
-            <img src="<?php echo STANDART_DIR; ?>img/plugs/case-desctop-3.png" class="modal__case-img" alt="">
-        </picture>
-    <?php 
-        endwhile;
-    wp_reset_query();
-    wp_die();
+                    $case_content_img_desctop = get_sub_field('case-content_img-desctop');
+                    $case_content_img_tablet = get_sub_field('case-content_img-tablet');
+                    $case_content_img_mobile = get_sub_field('case-content_img-mobile');
 
-} ?>
+                    ?>
+                    <picture class="modal__picture-case">
+                        <source media="(max-width: 576px)" srcset="<?php echo esc_url($case_content_img_mobile['url']); ?>">
+                        <source media="(max-width: 1024px)" srcset="<?php echo esc_url($case_content_img_tablet['url']); ?>">
+                        <img src="<?php echo esc_url($case_content_img_desctop['url']); ?>" class="modal__case-img" alt="<?php echo esc_attr($case_content_img_desctop['alt']); ?>">
+                    </picture>
+                <?php endwhile; ?>
+            <?php endif; ?>
+        <?php 
+            endwhile;
+        wp_reset_query();
+        wp_die();
+
+    } ?>

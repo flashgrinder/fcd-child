@@ -229,25 +229,8 @@
                         <path d="M1 1L12 12M12 1L1 12" stroke-width="1.5" stroke-linecap="round"/>
                     </svg>
                 </div>
-                <!-- <h3 class="modal__title title title--pre-medium title--white title--w-light left js-case-title">
-                    “Patent&Trademark group” Корпоративный сайт 
-                </h3> -->
                 <div class="modal__wrapper-case js-case-container">
-                    <!-- <picture class="modal__picture-case">
-                        <source media="(max-width: 576px)" srcset="<?php echo STANDART_DIR; ?>img/plugs/case-mobile-1.png">
-                        <source media="(max-width: 1024px)" srcset="<?php echo STANDART_DIR; ?>img/plugs/case-tablet-1.png">
-                        <img src="<?php echo STANDART_DIR; ?>img/plugs/case-desctop-1.png" class="modal__case-img" alt="">
-                    </picture>
-                    <picture class="modal__picture-case">
-                        <source media="(max-width: 576px)" srcset="<?php echo STANDART_DIR; ?>img/plugs/case-mobile-2.png">
-                        <source media="(max-width: 1024px)" srcset="<?php echo STANDART_DIR; ?>img/plugs/case-tablet-2.png">
-                        <img src="<?php echo STANDART_DIR; ?>img/plugs/case-desctop-2.png" class="modal__case-img" alt="">
-                    </picture>
-                    <picture class="modal__picture-case">
-                        <source media="(max-width: 576px)" srcset="<?php echo STANDART_DIR; ?>img/plugs/case-mobile-3.png">
-                        <source media="(max-width: 1024px)" srcset="<?php echo STANDART_DIR; ?>img/plugs/case-tablet-3.png">
-                        <img src="<?php echo STANDART_DIR; ?>img/plugs/case-desctop-3.png" class="modal__case-img" alt="">
-                    </picture> -->
+
                 </div>
             </div>
         </div>
