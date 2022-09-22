@@ -54,6 +54,18 @@
     }
 }
 
+@keyframes flicker-load {
+    0% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+
 @keyframes scale-music {
     0% {
         transform: scale(1);
