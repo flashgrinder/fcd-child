@@ -1,0 +1,22 @@
+.breadcrumbs {
+    margin-bottom: 25px;
+}
+
+.breadcrumbs a {
+    @extend .text;
+    @extend .text--white;
+    text-decoration: none;
+    transition: color .150s ease-in-out;
+}
+
+.breadcrumbs a:hover {
+    color: var(--color-accent-secondary);
+}
+
+.breadcrumbs span span > span {
+    margin: 0 5px;
+}
+
+.breadcrumb_last {
+    opacity: .55;
+}

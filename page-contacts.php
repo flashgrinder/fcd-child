@@ -6,6 +6,11 @@
         <div class="info-block__body container">
             <div class="info-block__inner">
                 <div class="info-block__text">
+                    <?php
+                        if ( function_exists('yoast_breadcrumb') ) {
+                            yoast_breadcrumb( '<p id="breadcrumbs" class="breadcrumbs text text--small text--white text--w-light">','</p>' );
+                        }
+                    ?>
                     <h1 class="info-block__heading title title--huge title--white title--w-bold title--indent">
                         <?php the_title(); ?>
                     </h1>

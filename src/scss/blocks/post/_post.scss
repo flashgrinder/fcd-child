@@ -1,3 +1,8 @@
+.post {
+    padding-top: 125px;
+    @include tablet(padding-top, 50px);
+}
+
 .post__pic {
     overflow: hidden;
     border-radius: 10px;;
@@ -33,6 +38,10 @@
 
 .post__cat:hover {
     color: var(--color-accent-secondary);
+}
+
+.post__cat ~ .post__cat {
+    margin-left: 10px;
 }
 
 .post__cat,

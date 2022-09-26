@@ -4,6 +4,11 @@
     <!-- Post -->
     <section class="post block-padding">
         <article class="post__body container">
+            <?php
+                if ( function_exists('yoast_breadcrumb') ) {
+                    yoast_breadcrumb( '<p id="breadcrumbs" class="breadcrumbs text text--small text--white text--w-light">','</p>' );
+                }
+            ?>
             <header class="post__header">
                 <div class="post__pic">
                     <?php
