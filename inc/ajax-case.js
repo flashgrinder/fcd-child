@@ -27,7 +27,9 @@ jQuery(document).ready( function( $ ){
         );
 
         $( document ).ajaxComplete(function() {
-            modalWindow.removeClass('is-load');
+            setTimeout(() => {
+                modalWindow.removeClass('is-load');
+            }, 1500)
         });
     }
 
