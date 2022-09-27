@@ -1,6 +1,7 @@
 import gsap from 'gsap';
 // import containerScroll from '../libs/modules/horizontal-scroll';
 // import progressBar from '../libs/modules/progress-bar';
+import pageTrs from '../libs/modules/transition-page.js';
 import hideShowHeader from '../libs/modules/hide-show-header';
 import burgerMenu from '../libs/modules/burger-menu';
 import modal from '../libs/modules/modal.js';
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
     
     // containerScrollTrue ? containerScroll.init() : false;
     // progressBarTrue ? progressBar.init() : false;
+    pageTrs.init();
     hideShowHeader.init();
     burgerMenuTrue ? burgerMenu.init() : false;
     modal.init();

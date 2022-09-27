@@ -9,10 +9,20 @@
 
 <body class="page bg--primary">
 
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader__screen js-loader-screen">
+            <div class="loader__logo js-loader-logo">
+                <img class="loader__logo-img" src="<?php echo STANDART_DIR; ?>img/logo.svg" alt="Логотип FCDigital">
+            </div>
+        </div>
+    </div>
+    <!-- /. Loader -->
+    <div class="transition-page-wrapper">
     <!-- Header -->
     <header class="header <?php if( is_front_page() ) echo 'header--front-page'; ?>">
         <div class="header__body container">
-            <a href="<?php echo home_url(); ?>" class="header__logo logo">
+            <a href="<?php echo home_url(); ?>" class="header__logo logo js-transition-link">
                 <?php $custom_logo__url = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' ); ?>
                 <?php if( !empty($custom_logo__url[0])) : ?>
                     <img src="<?php echo $custom_logo__url[0]; ?>" alt="Логотип" class="header__logo-img logo__img">
@@ -45,4 +55,4 @@
     <!-- /. Header -->
 
     <!-- MAIN -->
-    <main class="main page__container">
+    <main class="main page__container transition-page-wrapper">
