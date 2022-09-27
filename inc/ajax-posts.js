@@ -1,7 +1,7 @@
 jQuery(document).ready( function( $ ){
 
     // Получение id страницы
-    pageid = $('.news-list').data('pageid');
+    postsContainer = $('.js-posts-container');
 
     // $(window).on('load',function(){
     //     get_posts();
@@ -12,6 +12,7 @@ jQuery(document).ready( function( $ ){
         e.preventDefault();
         if ($('.js-category').not(this).hasClass('is-active')) {
             $('.js-category').removeClass('is-active');
+            postsContainer.addClass('is-load');
         };
         $(this).toggleClass('is-active');
         get_posts();
@@ -68,6 +69,11 @@ jQuery(document).ready( function( $ ){
                 // console.log("Только что, был успешно выполнен ajax-запрос страницы " + blogUrl.ajax_url + ".");
             } 
         );
+
+        $( document ).ajaxComplete(function() {
+            postsContainer.removeClass('is-load');
+        });
+
     }
 
 });

@@ -2332,7 +2332,43 @@ img {
 }
 
 .news-list__items {
+  position: relative;
   margin-top: 25px;
+}
+
+.news-list__items.is-load {
+  opacity: 0.5;
+}
+
+.news-list__items.is-load:before {
+  position: absolute;
+  content: "";
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #15111b;
+  z-index: 9;
+}
+
+.news-list__items.is-load:after {
+  position: absolute;
+  content: "";
+  background: url("../img/logo.svg") no-repeat center;
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -webkit-animation: flicker-load 1.5s infinite linear backwards;
+          animation: flicker-load 1.5s infinite linear backwards;
+  z-index: 10;
 }
 
 .news-list__item ~ .news-list__item {
@@ -3684,11 +3720,47 @@ img {
 }
 
 .cases__items {
+  position: relative;
   margin-top: 25px;
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 0.33333fr));
   grid-gap: 80px 20px;
+}
+
+.cases__items.is-load {
+  opacity: 0.5;
+}
+
+.cases__items.is-load:before {
+  position: absolute;
+  content: "";
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #15111b;
+  z-index: 11;
+}
+
+.cases__items.is-load:after {
+  position: absolute;
+  content: "";
+  background: url("../img/logo.svg") no-repeat center;
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -webkit-animation: flicker-load 1.5s infinite linear backwards;
+          animation: flicker-load 1.5s infinite linear backwards;
+  z-index: 12;
 }
 
 /* Cases-slider */
@@ -4362,7 +4434,6 @@ img {
 
 .modal__body.is-load {
   opacity: 0.9;
-  position: relative;
 }
 
 .modal__body.is-load:before {
@@ -4384,8 +4455,6 @@ img {
   background-size: cover;
   top: 50vh;
   left: 50%;
-  margin-left: -15px;
-  margin-top: -15px;
   width: 80px;
   height: 80px;
   border-radius: 50%;

@@ -7,7 +7,41 @@
 }
 
 .news-list__items {
+    position: relative;
     margin-top: 25px;
+}
+
+.news-list__items.is-load {
+    opacity: 0.5;
+}
+
+.news-list__items.is-load:before {
+    position: absolute;
+    content: '';
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(21, 17, 27, 1);
+    z-index: 9;
+}
+
+.news-list__items.is-load:after {
+    position: absolute;
+    content: '';
+    background: url('../img/logo.svg') no-repeat center;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    animation: flicker-load 1.5s infinite linear backwards;
+    z-index: 10;
 }
 
 .news-list__item ~ .news-list__item{
