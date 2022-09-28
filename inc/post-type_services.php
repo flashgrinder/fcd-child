@@ -1,6 +1,7 @@
 <?php
 
     add_action('init', function(){ 
+
         register_post_type('services', [
             'labels' => [
                 'name'               => 'Услуги',
@@ -25,7 +26,7 @@
             'supports'           => ['title','editor','thumbnail','author','excerpt','custom-fields','page-attributes',],
             'has_archive'        => false,
             'hierarchical'        => true,
-            'rewrite'             => array( 'slug' => '/', 'with_front' => false ),
+            // 'rewrite'             => [ 'slug' => false ,'with_front' => false],
             'query_var'           => true,
             'show_in_nav_menus'   => true,
         ]);

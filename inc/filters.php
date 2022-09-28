@@ -85,7 +85,7 @@
     }, 10, 3);
 
       // Изменить название Записи
-      add_filter('post_type_labels_post', function($labels) {
+    add_filter('post_type_labels_post', function($labels) {
 
         $new = [
                 'name'                  => 'Блог',
