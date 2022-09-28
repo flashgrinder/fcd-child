@@ -22,10 +22,10 @@
             'show_in_menu'       => true,
             'menu_position'      => 4,
             'menu_icon'          => 'dashicons-media-code',
-            'supports'           => ['title','editor','thumbnail','author','excerpt','custom-fields','revisions'],
+            'supports'           => ['title','editor','thumbnail','author','excerpt','custom-fields','page-attributes',],
             'has_archive'        => false,
-            'hierarchical'        => false,
-            'rewrite'             => array('slug' => 'uslugi', 'with_front' => false),
+            'hierarchical'        => true,
+            'rewrite'             => array( 'slug' => '/', 'with_front' => false ),
             'query_var'           => true,
             'show_in_nav_menus'   => true,
         ]);
