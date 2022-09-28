@@ -83,3 +83,34 @@
     
         return $classes;
     }, 10, 3);
+
+      // Изменить название Записи
+      add_filter('post_type_labels_post', function($labels) {
+
+        $new = [
+                'name'                  => 'Блог',
+                'singular_name'         => 'Пост',
+                'add_new'               => 'Добавить пост',
+                'add_new_item'          => 'Добавить пост',
+                'edit_item'             => 'Редактировать пост',
+                'new_item'              => 'Новый пост',
+                'view_item'             => 'Просмотреть пост',
+                'search_items'          => 'Поиск постов',
+                'not_found'             => 'Посты не найдены.',
+                'not_found_in_trash'    => 'Посты в корзине не найдены.',
+                'parent_item_colon'     => '',
+                'all_items'             => 'Все посты',
+                'archives'              => 'Архивы постов',
+                'insert_into_item'      => 'Вставить в пост',
+                'uploaded_to_this_item' => 'Загруженные для этого поста',
+                'featured_image'        => 'Миниатюра поста',
+                'filter_items_list'     => 'Фильтровать список постов',
+                'items_list_navigation' => 'Навигация по списку постов',
+                'items_list'            => 'Список постов',
+                'menu_name'             => 'Блог',
+                'name_admin_bar'        => 'Пост'
+            ];
+
+        return (object) array_merge( (array) $labels, $new );
+
+    });
