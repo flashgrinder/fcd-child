@@ -85,7 +85,7 @@
 
             ?>
             <?php if( $post_list->have_posts() ) : ?>
-                <div class="vacancy__filters">
+                <div class="vacancy__filters js-reveal gs-reveal">
                     <a href="javascript:;" class="vacancy__btn-filter button button--dark button--small js-taxonomy js-category is-active" data-taxonomy="cats_vacancies" data-type="vacancies">
                         Все
                     </a>
@@ -108,7 +108,7 @@
 
                 <?php endwhile; ?>
             <?php else : ?>
-                <div class="not-post">
+                <div class="not-post js-reveal gs-reveal">
                     <img src="<?php echo STANDART_DIR; ?>img/upload/vacancy-yoda-1.png" alt="Вакансии" class="not-post__img">
                     <h2 class="not-post__title title title--medium title--white title--w-light">
                         В настоящий момент вакансий нет, но попытаться можешь ты силы достичь, заявку оставив!
@@ -134,7 +134,7 @@
 
         if( !empty( $popular_services_items ) ): ?>
     <!-- Popular-services -->
-    <section class="popular-services block-padding">
+    <section class="popular-services block-padding js-reveal gs-reveal">
         <div class="popular-services__body container">
             <div class="popular-services__inner bg--dark-blue">
                 <div class="popular-services__info">

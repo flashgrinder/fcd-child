@@ -66,7 +66,7 @@
     <!-- /. Info-block -->
 
     <!-- Page-wysiwyg -->
-    <section class="page-wysiwyg block-padding">
+    <section class="page-wysiwyg block-padding js-reveal gs-reveal">
         <div class="page-wysiwyg__body container">
             <div class="page-wysiwyg__content wysiwyg">
                 <?php the_content(); ?>
@@ -78,7 +78,7 @@
     <!-- Team -->
     <section class="team block-padding">
         <div class="team__body container">
-            <h2 class="team__heading title title--large title--white title--w-bold title--indent-45">
+            <h2 class="team__heading title title--large title--white title--w-bold title--indent-45 js-reveal gs-reveal">
                 Команда
             </h2>
             <div class="team__items">
@@ -90,7 +90,7 @@
                         $team_position = get_sub_field('team_position');
                     
                     ?>
-                    <div class="team__member">
+                    <div class="team__member js-reveal gs-reveal">
                         <div class="team__photo">
                             <?php if( !empty( $team_photo ) ) : ?>
                                 <img src="<?php echo esc_url($team_photo['url']); ?>" alt="<?php echo esc_attr($team_photo['alt']); ?>" class="team__img">
@@ -105,7 +105,7 @@
                     </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
-                <div class="team__member">
+                <div class="team__member js-reveal gs-reveal">
                     <a href="<?php the_field('team_link'); ?>" class="team__photo team__photo--link">
                         <div class="team__svg-wrapper">
                             <svg class="team__svg-plus" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -131,7 +131,7 @@
     <!-- Reviews -->
     <section class="reviews block-padding">
         <div class="reviews__body container">
-            <h2 class="reviews__heading title title--large title--white title--w-bold title--indent-45">
+            <h2 class="reviews__heading title title--large title--white title--w-bold title--indent-45 js-reveal gs-reveal">
                 Отзывы
             </h2>
             <div class="reviews__items">
@@ -151,7 +151,7 @@
                 if( have_posts() ) : 
                     while( have_posts() ) : the_post(); ?>
                     <!-- Review-card -->
-                    <article class="review-card">
+                    <article class="review-card js-reveal gs-reveal">
                         <header class="review-card__header">
                             <div class="review-card__photo">
                             <?php
@@ -200,7 +200,7 @@
 
         if( !empty( $popular_services_items ) ): ?>
     <!-- Popular-services -->
-    <section class="popular-services block-padding">
+    <section class="popular-services block-padding js-reveal gs-reveal">
         <div class="popular-services__body container">
             <div class="popular-services__inner bg--dark-blue">
                 <div class="popular-services__info">

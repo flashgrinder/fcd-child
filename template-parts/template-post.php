@@ -1,4 +1,4 @@
-<article class="news-list__item">
+<article class="news-list__item js-reveal gs-reveal">
     <picture class="news-list__pic">
         <?php
             $default_attr = [

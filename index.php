@@ -66,7 +66,7 @@
     <!-- News-list -->
     <section class="news-list block-padding" id="news" data-pageid="<?php the_ID(); ?>">
         <div class="news-list__body container">
-            <div class="news-list__filter">
+            <div class="news-list__filter js-reveal gs-reveal">
                 <a href="javascript:;" class="news-list__btn-filter button button--dark button--small js-taxonomy js-category is-active" data-taxonomy="category" data-type="post">
                     Все
                 </a>
@@ -112,7 +112,7 @@
 
         if( !empty( $popular_services_items ) ): ?>
     <!-- Popular-services -->
-    <section class="popular-services block-padding">
+    <section class="popular-services block-padding js-reveal gs-reveal">
         <div class="popular-services__body container">
             <div class="popular-services__inner bg--dark-blue">
                 <div class="popular-services__info">

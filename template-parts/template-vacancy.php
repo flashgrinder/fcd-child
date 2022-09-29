@@ -1,4 +1,4 @@
-<article class="vacancy__item">
+<article class="vacancy__item js-reveal gs-reveal">
     <div class="vacancy__info">
         <h3 class="vacancy__title title title--medium title--white title--w-bold">
             <?php the_title(); ?>

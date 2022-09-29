@@ -66,7 +66,7 @@
     <!-- /. Info-block -->
 
     <!-- Page-wysiwyg -->
-    <section class="page-wysiwyg block-padding">
+    <section class="page-wysiwyg block-padding js-reveal gs-reveal">
         <div class="page-wysiwyg__body container">
             <div class="page-wysiwyg__content wysiwyg">
                 <?php the_content(); ?>
@@ -95,7 +95,7 @@
 
             ?>
             <?php if( $post_list->have_posts() ) : ?>
-                <div class="cases__filters">
+                <div class="cases__filters js-reveal gs-reveal">
                     <a href="javascript:;" class="cases__btn-filter button button--dark button--small js-taxonomy js-category is-active" data-taxonomy="cats_cases" data-type="cases">
                         Все
                     </a>
@@ -119,7 +119,7 @@
                     <?php endwhile; ?>
                 </div>
                 <?php else : ?>
-                <div class="not-post">
+                <div class="not-post js-reveal gs-reveal">
                     <img src="<?php echo STANDART_DIR; ?>img/upload/vacancy-yoda-1.png" alt="Вакансии" class="not-post__img">
                     <h2 class="not-post__title title title--medium title--white title--w-light">
                         Заявку оставив, кейс великолепный, мы можем создать вам!
@@ -142,7 +142,7 @@
 
         if( !empty( $popular_services_items ) ): ?>
     <!-- Popular-services -->
-    <section class="popular-services block-padding">
+    <section class="popular-services block-padding js-reveal gs-reveal">
         <div class="popular-services__body container">
             <div class="popular-services__inner bg--dark-blue">
                 <div class="popular-services__info">

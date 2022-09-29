@@ -67,12 +67,12 @@
     <!-- Contacts -->
     <section class="contacts block-padding">
         <div class="contacts__body">
-            <div class="contacts__map">
+            <div class="contacts__map js-reveal gs-reveal">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7243a84a15ad470a895dc326337d440c59318542bf96316d7019632d91bf8664&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
             </div>
             <div class="contacts__inner">
                 <div class="contacts__plunk container">
-                    <div class="contacts__items">
+                    <div class="contacts__items js-reveal gs-reveal">
                         <div class="contacts__info">
                             <div class="contacts__name-info title title--small title--w-light">
                                 <svg class="contacts__svg-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -144,7 +144,7 @@
 
         if( !empty( $popular_services_items ) ): ?>
     <!-- Popular-services -->
-    <section class="popular-services block-padding">
+    <section class="popular-services block-padding js-reveal gs-reveal">
         <div class="popular-services__body container">
             <div class="popular-services__inner bg--dark-blue">
                 <div class="popular-services__info">

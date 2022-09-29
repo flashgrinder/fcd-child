@@ -6324,10 +6324,10 @@
                 <!-- Page-wysiwyg -->
                 <section class="page-wysiwyg block-padding">
                     <div class="page-wysiwyg__body container">
-                        <h2 class="page-wysiwyg__heading title title--large title--white title--w-bold title--indent-45">
+                        <h2 class="page-wysiwyg__heading title title--large title--white title--w-bold title--indent-45 js-reveal gs-reveal">
                             <?php echo get_sub_field('page-wysiwyg_title'); ?>
                         </h2>
-                        <div class="page-wysiwyg__content wysiwyg">
+                        <div class="page-wysiwyg__content wysiwyg js-reveal gs-reveal">
                             <?php the_content(); ?>
                         </div>
                     </div>
@@ -6339,10 +6339,10 @@
                 <!-- Service -->
                 <section class="service block-padding">
                     <div class="service__body container">
-                        <h2 class="service__heading title title--large title--white title--w-bold title--indent-45">
+                        <h2 class="service__heading title title--large title--white title--w-bold title--indent-45 js-reveal gs-reveal">
                             <?php echo get_sub_field('service-block_title'); ?>
                         </h2>
-                        <div class="service__columns">
+                        <div class="service__columns js-reveal gs-reveal">
                             <?php if( have_rows('service-items-left') ): ?>
                                 <div class="service__left-side">
                                 <?php while( have_rows('service-items-left') ): the_row();
@@ -6430,10 +6430,10 @@
                 <!-- Tarifs -->
                 <section class="tarifs block-padding">
                     <div class="tarifs__body container">
-                        <h2 class="tarifs__heading title title--large title--white title--w-bold title--indent-45">
+                        <h2 class="tarifs__heading title title--large title--white title--w-bold title--indent-45 js-reveal gs-reveal">
                             <?php echo get_sub_field('tarifs-block_title'); ?>
                         </h2>
-                        <div class="tarifs__slider">
+                        <div class="tarifs__slider js-reveal gs-reveal">
                             <!-- Slider main container -->
                             <div class="tarifs__swiper-container tarifs__swiper-container--default swiper-container">
                                 <!-- Additional required wrapper -->
@@ -6551,10 +6551,10 @@
                 <!-- Tarifs -->
                 <section class="tarifs block-padding">
                     <div class="tarifs__body container">
-                        <h2 class="tarifs__heading title title--large title--white title--w-bold title--indent-45">
+                        <h2 class="tarifs__heading title title--large title--white title--w-bold title--indent-45 js-reveal gs-reveal">
                             <?php echo get_sub_field('tarifs-tabs_title'); ?>
                         </h2>
-                        <div class="tarifs__tabs tabs">
+                        <div class="tarifs__tabs tabs js-reveal gs-reveal">
                             <?php if( have_rows('tarifs-tabs') ): ?>
                                 <div class="tarifs__tabs-buttons tabs__buttons">
                                 <?php while( have_rows('tarifs-tabs') ): the_row();
@@ -6693,10 +6693,10 @@
                 <!-- Tarifs -->
                 <section class="tarifs block-padding">
                     <div class="tarifs__body container">
-                        <h2 class="tarifs__heading title title--large title--white title--w-bold title--indent-45">
+                        <h2 class="tarifs__heading title title--large title--white title--w-bold title--indent-45 js-reveal gs-reveal">
                             <?php echo get_sub_field('tarifs-service_title'); ?>
                         </h2>
-                        <div class="tarifs__slider">
+                        <div class="tarifs__slider js-reveal gs-reveal">
                             <!-- Slider main container -->
                             <div class="tarifs__swiper-container tarifs__swiper-container--default swiper-container">
                                 <!-- Additional required wrapper -->
@@ -6842,11 +6842,11 @@
                 <!-- Partners -->
                 <section class="partners block-padding">
                     <div class="partners__body container">
-                        <h2 class="partners__heading title title--large title--white title--w-bold title--indent-45">
+                        <h2 class="partners__heading title title--large title--white title--w-bold title--indent-45 js-reveal gs-reveal">
                             <?php echo get_sub_field('partners_title'); ?>
                         </h2>
                     </div>
-                    <div class="partners__outer container-page">
+                    <div class="partners__outer container-page js-reveal gs-reveal">
                         <div class="partners__wrapper-items partners__slider swiper-container">
                             <?php if( have_rows('partners') ): ?>
                                 <div class="partners__items swiper-wrapper">
@@ -6872,7 +6872,7 @@
                 <!-- Reviews -->
                 <section class="reviews block-padding">
                     <div class="reviews__body container">
-                        <h2 class="reviews__heading title title--large title--white title--w-bold title--indent-45">
+                        <h2 class="reviews__heading title title--large title--white title--w-bold title--indent-45 js-reveal gs-reveal">
                             Отзывы
                         </h2>
                         <div class="reviews__items">
@@ -6892,7 +6892,7 @@
                             if( have_posts() ) : 
                                 while( have_posts() ) : the_post(); ?>
                                 <!-- Review-card -->
-                                <article class="review-card">
+                                <article class="review-card js-reveal gs-reveal">
                                     <header class="review-card__header">
                                         <div class="review-card__photo">
                                         <?php
@@ -6941,7 +6941,7 @@
                 <!-- Popular-services -->
                 <section class="popular-services block-padding">
                     <div class="popular-services__body container">
-                        <div class="popular-services__inner bg--dark-blue">
+                        <div class="popular-services__inner bg--dark-blue js-reveal gs-reveal">
                             <div class="popular-services__info">
                                 <h2 class="popular-services__heading title title--large title--white title--w-bold">
                                     <?php echo get_sub_field('popular-services_title'); ?>
@@ -7457,11 +7457,11 @@
                 <!-- Types-sites -->
                 <section class="types-sites block-padding">
                     <div class="types-sites__body container">
-                        <h2 class="types-sites__heading title title--large title--white title--w-bold title--indent-45">
+                        <h2 class="types-sites__heading title title--large title--white title--w-bold title--indent-45 js-reveal gs-reveal">
                             <?php echo get_sub_field('types-sites_title'); ?>
                         </h2>
                         <?php if( have_rows('types-sites') ): ?>
-                        <div class="types-sites__items">
+                        <div class="types-sites__items js-reveal gs-reveal">
                             <?php while( have_rows('types-sites') ): the_row();
 
                                 $type_site_img = get_sub_field('type-site_img');
@@ -7505,10 +7505,10 @@
                 <!-- Cases-slider -->
                 <section class="cases-slider block-padding">
                     <div class="cases-slider__body container">
-                        <h2 class="cases-slider__heading title title--large title--white title--w-bold title--indent-45">
+                        <h2 class="cases-slider__heading title title--large title--white title--w-bold title--indent-45 js-reveal gs-reveal">
                             <?php echo get_sub_field('cases-slider_title'); ?>
                         </h2>
-                        <div class="cases-slider__inner">
+                        <div class="cases-slider__inner js-reveal gs-reveal">
                             <!-- Slider main container -->
                             <div class="cases-slider__swiper-container swiper-container">
                                 <!-- Additional required wrapper -->
@@ -7593,12 +7593,12 @@
                 <!-- Benefits -->
                 <section class="benefits block-padding">
                     <div class="benefits__body container">
-                        <h2 class="benefits__heading title title--large title--white title--w-bold title--indent-45">
+                        <h2 class="benefits__heading title title--large title--white title--w-bold title--indent-45 js-reveal gs-reveal">
                             <?php echo get_sub_field('benefits_title'); ?>
                         </h2>
                         <?php $benefits_col = get_sub_field('benefits_col'); ?>
                         <?php if( have_rows('benefits') ): ?>
-                            <div class="benefits__items <?php echo $benefits_col; ?>">
+                            <div class="benefits__items js-reveal gs-reveal <?php echo $benefits_col; ?>">
                                 <?php while( have_rows('benefits') ): the_row(); 
                                     
                                     $benefits_card_img = get_sub_field('benefits-card_img');
@@ -7634,11 +7634,11 @@
                 <!-- Tasks -->
                 <section class="tasks block-padding">
                     <div class="tasks__body container">
-                        <h2 class="tasks__heading title title--large title--white title--w-bold title--indent-45">
+                        <h2 class="tasks__heading title title--large title--white title--w-bold title--indent-45 js-reveal gs-reveal">
                             <?php echo get_sub_field('tasks-block_title'); ?>
                         </h2>
                         <?php if( have_rows('tasks') ): ?>
-                        <div class="tasks__items">
+                        <div class="tasks__items js-reveal gs-reveal">
                             <?php while( have_rows('tasks') ): the_row(); 
                                         
                                 $tasks_item_num = get_sub_field('tasks-item_num');
@@ -7669,12 +7669,12 @@
                 <!-- Stages -->
                 <section class="stages block-padding">
                     <div class="stages__body container">
-                        <h2 class="stages__heading title title--large title--white title--w-bold title--indent-45">
+                        <h2 class="stages__heading title title--large title--white title--w-bold title--indent-45 js-reveal gs-reveal">
                             <?php echo get_sub_field('stages_title'); ?>
                         </h2>
                         <?php $stages_col = get_sub_field('stages_col'); ?>
                         <?php if( have_rows('stages') ): ?>
-                            <div class="stages__items <?php echo $stages_col; ?>">
+                            <div class="stages__items js-reveal gs-reveal <?php echo $stages_col; ?>">
                             <?php while( have_rows('stages') ): the_row(); 
                                     
                                     $stages_card_title = get_sub_field('stages-card_title');
@@ -7703,11 +7703,11 @@
                 <!-- Accardion -->
                 <section class="accordion block-padding">
                     <div class="accordion__body container">
-                        <h2 class="accordion__heading title title--large title--white title--w-bold title--indent-45">
+                        <h2 class="accordion__heading title title--large title--white title--w-bold title--indent-45 js-reveal gs-reveal">
                             <?php echo get_sub_field('accordion-block_title'); ?>
                         </h2>
                         <?php if( have_rows('accordion') ): ?>
-                            <div class="accordion__items js-accordion">
+                            <div class="accordion__items js-accordion js-reveal gs-reveal">
                             <?php while( have_rows('accordion') ): the_row(); 
                                     
                                     $accordion_title = get_sub_field('accordion_title');
@@ -7740,7 +7740,7 @@
                 <section class="action block-padding">
                     <div class="action__body container">
                         <article class="action__item action__item--bg-gradient">
-                            <div class="action__inner">
+                            <div class="action__inner js-reveal gs-reveal">
                                 <?php
                                 
                                     $action_date = get_sub_field('action_date');
@@ -7796,10 +7796,10 @@
     <!-- News-list -->
     <section class="news-list block-padding" id="news" data-pageid="<?php the_ID(); ?>">
         <div class="news-list__body container">
-            <h2 class="news-list__heading title title--large title--white title--w-bold title--indent-45">
+            <h2 class="news-list__heading title title--large title--white title--w-bold title--indent-45 js-reveal gs-reveal">
                 Блог
             </h2>
-            <div class="news-list__filter">
+            <div class="news-list__filter js-reveal gs-reveal">
                 <a href="javascript:;" class="news-list__btn-filter button button--dark button--small js-taxonomy js-category is-active" data-taxonomy="category" data-type="post">
                     Все
                 </a>
@@ -7837,7 +7837,7 @@
                 <?php  endif; ?>
                 <?php wp_reset_query(); ?>
             </div>
-            <div class="news-list__action">
+            <div class="news-list__action js-reveal gs-reveal">
                 <a href="<?php echo home_url("/blog"); ?>" class="news-list__more-btn button button--primary">
                     Читать больше
                 </a>

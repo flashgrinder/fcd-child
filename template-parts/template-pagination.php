@@ -1,5 +1,5 @@
 <!-- Pagination -->
-<nav class="pagination">
+<nav class="pagination js-reveal gs-reveal">
     <div class="pagination__inner">
         <?php   
             echo paginate_links(

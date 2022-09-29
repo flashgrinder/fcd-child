@@ -61,7 +61,7 @@
     <!-- News-list -->
     <section class="news-list block-padding" id="news" data-pageid="<?php the_ID(); ?>">
         <div class="news-list__body container">
-            <div class="news-list__filter">
+            <div class="news-list__filter js-reveal gs-reveal">
                 <?php 
                     $categories = get_terms(['taxonomy' => 'category']);
                     

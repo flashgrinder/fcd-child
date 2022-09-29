@@ -1,5 +1,5 @@
 <!-- Case-card -->
-<article class="case-card">
+<article class="case-card js-reveal gs-reveal">
     <header class="case-card__header">
         <div class="case-card__tags">
             <?php 

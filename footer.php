@@ -1,7 +1,7 @@
         <!-- Form-page -->
         <section class="form-page block-padding">
             <div class="form-page__body container">
-                <div class="form-page__inner bg--dark-blue">
+                <div class="form-page__inner bg--dark-blue js-reveal gs-reveal">
                     <div class="form-page__info">
                         <h2 class="form-page__heading title title--large title--white title--w-bold title--indent">
                             Хочу обсудить проект
@@ -21,7 +21,7 @@
     
     <!-- Footer -->
     <footer class="footer bg--dark-blue">
-        <div class="footer__decor">
+        <div class="footer__decor js-reveal gs-reveal">
             <svg class="footer__svg-decor" width="679" height="679" viewBox="0 0 679 679" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.03">
                     <path d="M339.517 324.544V664.392L165.859 494.468L306.555 356.797L339.517 324.544Z" fill="white" fill-opacity="0.45" />
@@ -31,7 +31,7 @@
             </svg>
         </div>
         <div class="footer__body container">
-            <div class="footer__row">
+            <div class="footer__row js-reveal gs-reveal">
                 <a href="<?php echo home_url(); ?>" class="footer__logo-wrap">
                     <div class="footer__logo logo">
                     <?php $custom_logo__url = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' ); ?>
@@ -62,7 +62,7 @@
                     </div>
                 </form>
             </div>
-            <div class="footer__columns">
+            <div class="footer__columns js-reveal gs-reveal">
                 <div class="footer__column footer__column--one">
                     <h3 class="footer__title-col title title--medium title--white title--w-bold">
                         Меню

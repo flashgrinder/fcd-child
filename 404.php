@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
     <!-- Page-404 -->
-    <section class="page-404">
+    <section class="page-404 js-reveal gs-reveal">
         <div class="page-404__outer parallax-container">
             <div class="page-404__pic ">
                 <img src="<?php echo STANDART_DIR; ?>img/404/404-bg.svg" class="page-404__img page-404__img--bg parallax-js" data-speed-x="5" data-speed-y="5" alt="">
