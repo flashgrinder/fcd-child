@@ -303,3 +303,14 @@
         transform: translate(0, 0px);
     }
 }
+
+.gs-reveal {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out .2s, visibility 0.5s ease-in-out .2s;
+    will-change: opacity, visibility;
+    &.is-revealed {
+        opacity: 1;
+        visibility: visible;
+    }
+}
