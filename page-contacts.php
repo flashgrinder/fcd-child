@@ -85,8 +85,8 @@
                                 </svg>
                                 Мобильный телефон:
                             </div>
-                            <a href="tel:+79648799537" class="contacts__data contacts__data--link title title--pre-medium title--white title--w-light">
-                                +7 964 879 9537
+                            <a href="tel:+79279191140" class="contacts__data contacts__data--link title title--pre-medium title--white title--w-light">
+                                +7-927-919-11-40
                             </a>
                         </div>
                         <div class="contacts__info">
@@ -114,7 +114,7 @@
                                 Адрес:
                             </div>
                             <address class="contacts__data title title--pre-medium title--white title--w-light">
-                                Саратов, Чернышевского 153
+                                Саратов, Чернышевского 153 оф 217
                             </address>
                         </div>
                         <div class="contacts__info">
