@@ -76,6 +76,7 @@
         left: auto;
         max-height: 0;
         transition: visibility .150s ease-in, opacity .2s ease-in-out, max-height .150s ease-in-out, padding .150s ease-in-out, margin-top .150s ease-in-out;
+        transform: translate(0);
     }
 }
 
