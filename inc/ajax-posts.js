@@ -64,9 +64,9 @@ jQuery(document).ready( function( $ ){
         };
         
         jQuery.get( blogUrl.ajax_url, data, function( response ) {
-                // console.log( 'Получено с сервера: ' + response );
                 $('.js-posts-container').html(response);
-                // console.log("Только что, был успешно выполнен ajax-запрос страницы " + blogUrl.ajax_url + ".");
+                const container = document.querySelector('.js-posts-container');
+                window.revealInit(container);
             } 
         );
 
