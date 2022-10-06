@@ -57,7 +57,7 @@
 }
 
 .modal__body.is-load:before {
-    position: absolute;
+    position: fixed;
     content: '';
     top: 0;
     right: 0;
@@ -68,7 +68,7 @@
 }
 
 .modal__body.is-load:after {
-    position: absolute;
+    position: fixed;
     content: '';
     background: url('../img/logo.svg') no-repeat center;
     background-size: cover;
@@ -93,8 +93,8 @@
     position: absolute;
     right: 15px;
     top: 15px;
-    width: 10px;
-    height: 10px;
+    // width: 10px;
+    // height: 10px;
     cursor: pointer;
 }
 
@@ -143,8 +143,38 @@
 }
 
 .modal--case .modal__body {
+    display: block;
     max-width: 1920px;
     min-height: 100vh;
+    height: 100%;
+    @include mobile-block {
+        padding: 16px 0 0;
+    }
+}
+
+.modal__wrapper-case {
+    height: 100%;
+}
+
+.modal--case .modal__close {
+    position: fixed;
+    right: 20px;
+    top: 15px;
+    @include mobile-block {
+        top: 12px;
+        background: var(--color-dark);
+        padding: 8px;
+        width: 28px;
+        height: 28px;
+        border-radius: 3px;
+    }
+}
+
+.modal--case .modal__title {
+    @include mobile-block {
+        margin-bottom: 10px;
+        padding-right: 50px;
+    }
 }
 
 .modal__picture-case,
