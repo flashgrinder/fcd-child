@@ -4293,7 +4293,7 @@ img {
 .service__descr,
 .service__checklist,
 .service__action {
-  opacity: 0.5;
+  opacity: 0.7;
   transition: opacity 0.15s ease-in-out;
 }
 
@@ -5394,6 +5394,13 @@ img {
   .service__columns {
     -ms-grid-columns: minmax(300px, 0.3fr) minmax(300px, 1fr);
     grid-template-columns: minmax(300px, 0.3fr) minmax(300px, 1fr);
+  }
+
+  .service__title,
+  .service__descr,
+  .service__checklist,
+  .service__action {
+    opacity: 1;
   }
 
   .service__item.service__item--left {

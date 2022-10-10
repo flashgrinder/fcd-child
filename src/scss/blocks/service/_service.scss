@@ -20,8 +20,9 @@
 .service__descr,
 .service__checklist,
 .service__action {
-    opacity: .5;
+    opacity: .7;
     transition: opacity .150s ease-in-out;
+    @include mobile(opacity, 1);
 }
 
 /* Left side */
