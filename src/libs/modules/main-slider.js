@@ -13,6 +13,14 @@ function init() {
             nextEl: '.main-slider__swiper-button-next',
             prevEl: '.main-slider__swiper-button-prev'
         },
+        breakpoints: {
+            320: {
+                speed: 1500,
+            },
+            768: {
+                speed: 2500,
+            }
+        }
     });
 
 }
