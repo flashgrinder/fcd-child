@@ -41,7 +41,7 @@
     add_filter( 'nav_menu_link_attributes', function( $atts, $item, $args ) {
         
         if($args->theme_location === 'header-menu') {
-            $atts['class'] = 'menu__link header__menu-link';
+            $atts['class'] = 'menu__link header__menu-link js-transition-link';
         }
         
         return $atts;
@@ -52,7 +52,7 @@
     add_filter( 'nav_menu_link_attributes', function( $atts, $item, $args ) {
         
         if($args->theme_location === 'footer-menu-1' || $args->theme_location === 'footer-menu-2' || $args->theme_location === 'footer-menu-3' || $args->theme_location === 'footer-menu-4' || $args->theme_location === 'footer-menu-5') {
-            $atts['class'] = 'menu__link footer__menu-link';
+            $atts['class'] = 'menu__link footer__menu-link js-transition-link';
         }
         
         return $atts;
