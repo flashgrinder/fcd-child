@@ -298,6 +298,7 @@
                                 </clipPath>
                                 </defs>
                             </svg>
+                            <img src="<?php echo STANDART_DIR; ?>img/screen/img-1.svg" alt="" class="screen__img-mobile" loading="lazy">
                         </div>
                         <div class="screen-entry__body screen__body">
                             <div class="screen-entry__wrapper container">
@@ -1241,7 +1242,8 @@
                                 <rect width="397.82" height="708.062" fill="white" transform="translate(1433.04 239.578)"/>
                                 </clipPath>
                                 </defs>
-                            </svg>                
+                            </svg>
+                            <img src="<?php echo STANDART_DIR; ?>img/screen/img-2.svg" alt="" class="screen__img-mobile" loading="lazy">            
                         </div>
                         <div class="screen-brand__body screen__body">
                             <div class="screen-brand__wrapper container">
@@ -2437,6 +2439,7 @@
                                 </clipPath>
                                 </defs>
                             </svg>
+                            <img src="<?php echo STANDART_DIR; ?>img/screen/img-3.svg" alt="" class="screen__img-mobile" loading="lazy">
                         </div>
                         <div class="screen-hackerman__body screen__body">
                             <div class="screen-hackerman__wrapper container">
@@ -3571,7 +3574,8 @@
                                 <rect width="314.471" height="439" fill="white" transform="translate(1586.33 561)"/>
                                 </clipPath>
                                 </defs>
-                            </svg>      
+                            </svg>
+                            <img src="<?php echo STANDART_DIR; ?>img/screen/img-4.svg" alt="" class="screen__img-mobile" loading="lazy">
                         </div>
                         <div class="screen-marketing__body screen__body">
                             <div class="screen-marketing__wrapper container">
@@ -6272,7 +6276,8 @@
                                 <rect width="489.61" height="564.605" fill="white" transform="translate(1046.4 411.905)"/>
                                 </clipPath>
                                 </defs>
-                            </svg>  
+                            </svg>
+                            <img src="<?php echo STANDART_DIR; ?>img/screen/img-5.svg" alt="" class="screen__img-mobile" loading="lazy">
                         </div>
                         <div class="screen-it__body screen__body">
                             <div class="screen-it__wrapper container">

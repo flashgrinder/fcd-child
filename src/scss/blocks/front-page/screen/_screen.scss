@@ -16,6 +16,14 @@
     @include tablet-block {
         width: 100%;
         height: auto;
+        display: none;
+    }
+}
+
+.screen__img-mobile {
+    display: none;
+    @include tablet-block {
+        display: block;
     }
 }
 
