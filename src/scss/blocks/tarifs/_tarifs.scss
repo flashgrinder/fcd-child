@@ -61,7 +61,8 @@
         left: -20px;
     }
     @include mobileXS-block {
-        left: 0;
+        padding: 9px 12px 9px 10px;
+        left: -10px;
     }
 }
 
@@ -73,7 +74,8 @@
         right: -20px;
     }
     @include mobileXS-block {
-        right: 0;
+        padding: 9px 10px 9px 12px;
+        right: -10px;
     }
 }
 
