@@ -42,7 +42,7 @@
                 <?php the_excerpt(); ?>
             </p>
         </div>
-        <a href="<?php the_permalink(); ?>" class="news-list__more link-secondary">
+        <a href="<?php the_permalink(); ?>" class="news-list__more link-secondary js-transition-link">
             <span class="news-list__more-text">
                 Читать полностью
             </span> 
