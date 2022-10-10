@@ -72,6 +72,7 @@
         left: -20px;
     }
     @include mobile-block {
+        padding: 9px 12px 9px 10px;
         left: 0;
     }
 }
@@ -87,6 +88,7 @@
         right: -20px;
     }
     @include mobile-block {
+        padding: 9px 10px 9px 12px;
         right: 0;
     }
 }

@@ -5347,10 +5347,12 @@ img {
   }
 
   .cases-slider__swiper-button-prev {
+    padding: 9px 12px 9px 10px;
     left: 0;
   }
 
   .cases-slider__swiper-button-next {
+    padding: 9px 10px 9px 12px;
     right: 0;
   }
 
