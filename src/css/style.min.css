@@ -5241,6 +5241,146 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .a-screen-entry__layer--fairy-cat {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-brand__layer--hand {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-brand__layer--papper {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-marketing__layer--big-clock-hand {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-marketing__layer--small-clock-hand {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-marketing__layer--light {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-marketing__layer--eye {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-marketing__layer--heart-one {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-marketing__layer--add-friend {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-marketing__layer--heart-two {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-marketing__layer--message {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-marketing__layer--heart-three {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-hackerman__layer--had {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-hackerman__layer--column {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-hackerman__layer--plate {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-it__layer--light-one {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-it__layer--light-two {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-it__layer--light-three {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-it__layer--light-four {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-it__layer--light-five {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-it__layer--light-six {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-it__layer--light-seven {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-it__layer--light-printer {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-it__layer--deathstar {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-it__layer--had {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-it__layer--eye {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-it__layer--monitor {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .a-screen-it__layer--word {
+    -webkit-animation: none;
+            animation: none;
+  }
+
   .container {
     padding-left: 15px;
     padding-right: 15px;

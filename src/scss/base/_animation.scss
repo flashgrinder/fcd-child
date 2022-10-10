@@ -158,138 +158,166 @@
     transform-box: fill-box;
     transform-origin: left 50%;
     animation: wiggle-hand 1.5s ease-in-out infinite alternate backwards;
+    @include mobile(animation, none);
 }
 
 .a-screen-brand__layer--hand {
     transform-box: fill-box;
     transform-origin: bottom;
     animation: wiggle-hand 1.5s ease-in-out infinite alternate backwards;
+    @include mobile(animation, none);
 }
 
 .a-screen-brand__layer--papper {
     transform-box: fill-box;
     transform-origin: top center;
     animation: wiggle-papper 3s ease-in-out infinite alternate backwards;
+    @include mobile(animation, none);
 }
 
 .a-screen-marketing__layer--big-clock-hand {
     transform-box: fill-box;
     transform-origin: 14%;
     animation: rotate 14s linear infinite;
+    @include mobile(animation, none);
 }
 
 .a-screen-marketing__layer--small-clock-hand {
     transform-box: fill-box;
     transform-origin: 5% 100%;
     animation: rotate 20s linear infinite;
+    @include mobile(animation, none);
 }
 
 .a-screen-marketing__layer--light {
     animation: flicker .6s ease infinite alternate;
+    @include mobile(animation, none);
 }
 
 .a-screen-marketing__layer--eye {
     transform-box: fill-box;
     transform-origin: center;
     animation: move-eye 2s ease-in-out infinite alternate backwards;
+    @include mobile(animation, none);
 }
 
 .a-screen-marketing__layer--heart-one {
     transform-box: fill-box;
     transform-origin: center;
     animation: flight-up 2s linear infinite forwards;
+    @include mobile(animation, none);
 }
 
 .a-screen-marketing__layer--add-friend {
     transform-box: fill-box;
     transform-origin: center;
     animation: flight-up 4s linear infinite forwards;
+    @include mobile(animation, none);
 }
 
 .a-screen-marketing__layer--heart-two {
     transform-box: fill-box;
     transform-origin: center;
     animation: flight-up 3s linear infinite forwards;
+    @include mobile(animation, none);
 }
 
 .a-screen-marketing__layer--message {
     transform-box: fill-box;
     transform-origin: center;
     animation: flight-up 4s linear infinite forwards;
+    @include mobile(animation, none);
 }
 
 .a-screen-marketing__layer--heart-three {
     transform-box: fill-box;
     transform-origin: center;
     animation: flight-up 3s linear infinite forwards;
+    @include mobile(animation, none);
 }
 
 .a-screen-hackerman__layer--had {
     transform-box: fill-box;
     transform-origin: 5% 100%;
     animation: wiggle-hand .7s ease-in-out infinite alternate backwards;
+    @include mobile(animation, none);
 }
 
 .a-screen-hackerman__layer--column {
     transform-box: fill-box;
     transform-origin: center;
     animation: scale-music .5s ease-in infinite;
+    @include mobile(animation, none);
 }
 
 .a-screen-hackerman__layer--plate {
     animation: flicker-plate 3s linear infinite forwards;
+    @include mobile(animation, none);
 }
 
 .a-screen-it__layer--light-one {
     animation: flicker .5s ease infinite alternate;
+    @include mobile(animation, none);
 }
 .a-screen-it__layer--light-two {
     animation: flicker .8s ease infinite alternate;
+    @include mobile(animation, none);
 }
 .a-screen-it__layer--light-three {
     animation: flicker 1s ease infinite alternate;
+    @include mobile(animation, none);
 }
 .a-screen-it__layer--light-four {
     animation: flicker .9s ease infinite alternate;
+    @include mobile(animation, none);
 }
 .a-screen-it__layer--light-five {
     animation: flicker .4s ease infinite alternate;
+    @include mobile(animation, none);
 }
 .a-screen-it__layer--light-six {
     animation: flicker 1.3s ease infinite alternate;
+    @include mobile(animation, none);
 }
 .a-screen-it__layer--light-seven {
     animation: flicker .3s ease infinite alternate;
+    @include mobile(animation, none);
 }
 
 .a-screen-it__layer--light-printer {
     animation: flicker .5s ease infinite alternate;
+    @include mobile(animation, none);
 }
 
 .a-screen-it__layer--deathstar {
     transform-box: fill-box;
     transform-origin: center;
     animation: rotate 6s linear infinite;
+    @include mobile(animation, none);
 }
 
 .a-screen-it__layer--had {
     transform-box: fill-box;
     transform-origin: 15% 50%;
     animation: wiggle-papper 2s ease-in-out infinite alternate backwards;
+    @include mobile(animation, none);
 }
 
 .a-screen-it__layer--eye {
     transform-box: fill-box;
     transform-origin: center;
     animation: move-eye 2s ease-in-out infinite alternate backwards;
+    @include mobile(animation, none);
 }
 
 .a-screen-it__layer--monitor {
     animation: change-color-monitor 2s ease infinite alternate backwards;
+    @include mobile(animation, none);
 }
 
 .a-screen-it__layer--word {
     animation: change-color-word 2s ease infinite alternate backwards;
+    @include mobile(animation, none);
 }
 
 @keyframes scroll_down_btn-animation {
