@@ -2,10 +2,15 @@
     position: relative;
 }
 
+.main-slider__swiper-wrapper.swiper-wrapper {
+    height: 100% !important;
+}
+
 .main-slider__inner {
     position: absolute;
     width: 100%;
     bottom: 45px;
+    @include tablet(position, static);
 }
 
 .main-slider__swiper-slide.swiper-slide {

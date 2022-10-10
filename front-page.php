@@ -2443,7 +2443,7 @@
                                 <div class="screen-hackerman__inner screen__inner">
                                     <div class="screen-hackerman__text">
                                         <h2 class="screen-hackerman__heading screen__heading title title--huge title--white title--w-bold">
-                                            Разработка <br> веб-сайта
+                                            Разработка веб-сайта
                                         </h2>
                                         <p class="screen-hackerman__descr screen__descr text text--large text--white text--w-light">
                                             Создадим сайт любой сложности под ваши задачи. От лендинга до полноценного корпоративного сайта или интернет-магазина.
@@ -3578,7 +3578,7 @@
                                 <div class="screen-marketing__inner screen__inner">
                                     <div class="screen-marketing__text">
                                         <h2 class="screen-marketing__heading screen__heading title title--huge title--white title--w-bold">
-                                            Цифровой Маркетинг
+                                            Цифровой маркетинг
                                         </h2>
                                         <p class="screen-marketing__descr screen__descr text text--large text--white text--w-light">
                                             Продвигаем ваши товары и услуг с помощью цифровых технологий. О вашем бренда должен узнать каждым.
@@ -6297,19 +6297,19 @@
                     <!-- /. Screen-it -->
                 </div>
             </div>
-        </div>
-        <div class="main-slider__inner">
-            <div class="main-slider__nav-wrapper container">
-                <div class="main-slider__slider-nav">
-                    <div class="main-slider__swiper-button-prev main-slider__slider-arrow">
-                        <svg class="main-slider__slider-arrow-svg" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 1L1.82588 4.75671C1.3845 5.15395 1.3845 5.84605 1.82588 6.24329L6 10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div class="main-slider__swiper-button-next main-slider__slider-arrow">
-                        <svg class="main-slider__slider-arrow-svg" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L5.17412 4.75671C5.6155 5.15395 5.6155 5.84605 5.17412 6.24329L1 10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>                            
+            <div class="main-slider__inner">
+                <div class="main-slider__nav-wrapper container">
+                    <div class="main-slider__slider-nav">
+                        <div class="main-slider__swiper-button-prev main-slider__slider-arrow">
+                            <svg class="main-slider__slider-arrow-svg" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 1L1.82588 4.75671C1.3845 5.15395 1.3845 5.84605 1.82588 6.24329L6 10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="main-slider__swiper-button-next main-slider__slider-arrow">
+                            <svg class="main-slider__slider-arrow-svg" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5.17412 4.75671C5.6155 5.15395 5.6155 5.84605 5.17412 6.24329L1 10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                        </div>
                     </div>
                 </div>
             </div>
