@@ -7,7 +7,7 @@ function init() {
     const casesSlider = new Swiper(".cases-slider__swiper-container", {
         slidesPerView: 1,
         autoHeight: true,
-        loop: true,
+        loop: false,
         navigation: {
             nextEl: '.cases-slider__swiper-button-next',
             prevEl: '.cases-slider__swiper-button-prev'
