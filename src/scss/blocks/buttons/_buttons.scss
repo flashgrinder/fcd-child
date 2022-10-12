@@ -88,7 +88,6 @@
 
 /* Button primary */
 .button--primary {
-    border: 1px solid transparent;
     color: var(--color-white);
     transition: color .300s, border .300s, background .300s;
 }
@@ -106,17 +105,14 @@
 }
 
 .button--primary:hover::before,
-.button--primary:focus::before,
 .button--primary:target::before {
     width: 0%;
 }
 
 .button--primary:hover,
-.button--primary:focus,
 .button--primary:target {
     color: var(--color-accent-secondary);
     background: var(--color-white);
-    border: 1px solid var(--color-white);
 }
 
 .button--primary:active {
@@ -130,7 +126,7 @@
 
 /* Button primary form */
 .button--primary.button--form {
-    background: var(--color-accent-gradient);
+    background: var(--color-accent-secondary);
     border: 1px solid transparent;
     color: var(--color-white);
     transition: color .300s, border .300s, background .300s;
