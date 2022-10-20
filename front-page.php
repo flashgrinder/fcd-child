@@ -6521,7 +6521,7 @@
                                                 </div>
                                                 <footer class="tarif-card__footer">
                                                     <div class="tarif-card__action">
-                                                        <a href="javascript:;" class="tarif-card__button button button--primary">
+                                                        <a href="javascript:;" class="tarif-card__button button button--primary" data-hystmodal="#service">
                                                             Оставить заявку
                                                         </a>
                                                     </div>
@@ -6658,7 +6658,7 @@
                                                                 </div>
                                                                 <footer class="tarif-card__footer">
                                                                     <div class="tarif-card__action">
-                                                                        <a href="javascript:;" class="tarif-card__button button button--primary">
+                                                                        <a href="javascript:;" class="tarif-card__button button button--primary" data-hystmodal="#service">
                                                                             Оставить заявку
                                                                         </a>
                                                                     </div>
@@ -6799,7 +6799,7 @@
                                                 <?php if( $tarifs_slider_hide_show && in_array('tarifs-service_popup', $tarifs_slider_hide_show) ) : ?>
                                                 <footer class="tarif-card__footer">
                                                     <div class="tarif-card__action">
-                                                        <a href="#modal" class="tarif-card__more link-primary">
+                                                        <a href="javascript:;" class="tarif-card__more link-primary" data-hystmodal="#service">
                                                             <span class="tarif-card__more-text link-primary__text">
                                                                 Заказать
                                                             </span> 
