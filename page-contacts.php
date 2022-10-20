@@ -128,8 +128,8 @@
                             <div class="contacts__name-info title title--small title--w-light">
                                 E-mail:
                             </div>
-                            <a href="mailto:manager@fcdigital.ru" class="contacts__data contacts__data--link title title--pre-medium title--white title--w-light">
-                                manager@fcdigital.ru
+                            <a href="mailto:mail@fcdigital.ru" class="contacts__data contacts__data--link title title--pre-medium title--white title--w-light">
+                                mail@fcdigital.ru
                             </a>
                         </div>
                     </div>
