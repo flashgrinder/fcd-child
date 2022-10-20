@@ -144,7 +144,7 @@
                     <div class="popular-services__items">
                     <?php if( $popular_services_items): ?>
                         <?php foreach( $popular_services_items as $popular_service_item): ?>
-                            <a href="<?php echo get_permalink($popular_service_item->ID); ?>" class="popular-services__item button button--dark button--small">
+                            <a href="<?php echo get_permalink($popular_service_item->ID); ?>" class="popular-services__item button button--dark button--small js-transition-link">
                                 <?php echo get_the_title($popular_service_item->ID); ?>
                             </a>
                         <?php endforeach; ?>

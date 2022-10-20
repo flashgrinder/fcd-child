@@ -431,7 +431,7 @@
                                                 <?php if( $tarifs_slider_hide_show && in_array('tarifs-service_link', $tarifs_slider_hide_show) ) : ?>
                                                 <footer class="tarif-card__footer">
                                                     <div class="tarif-card__action">
-                                                        <a href="<?php echo $tarifs_slider_link; ?>" class="tarif-card__more link-primary">
+                                                        <a href="<?php echo $tarifs_slider_link; ?>" class="tarif-card__more link-primary js-transition-link">
                                                             <span class="tarif-card__more-text link-primary__text">
                                                                 Узнать подробнее
                                                             </span> 
@@ -612,7 +612,7 @@
                                         
                                         ?>
                                         <?php setup_postdata($popular_service_item); ?>
-                                            <a href="<?php echo esc_url( $popular_service_permalink ); ?>" class="popular-services__item button button--dark button--small">
+                                            <a href="<?php echo esc_url( $popular_service_permalink ); ?>" class="popular-services__item button button--dark button--small js-transition-link">
                                                 <?php echo esc_html( $popular_service_title ); ?>
                                             </a>
                                     <?php endforeach; ?>
@@ -1137,7 +1137,7 @@
                                             <?php echo $type_site_descr; ?>
                                         </p>
                                         <div class="types-sites__card-action">
-                                            <a href="<?php echo $type_site_link['url']; ?>" class="types-sites__card-btn button button--primary button--icon">
+                                            <a href="<?php echo $type_site_link['url']; ?>" class="types-sites__card-btn button button--primary button--icon js-transition-link">
                                                 Перейти
                                                 <svg class="button__icon-white" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path class="button__icon-white-fill" d="M1.5 5.25C1.08579 5.25 0.75 5.58579 0.75 6C0.75 6.41421 1.08579 6.75 1.5 6.75V5.25ZM17.0303 6.53033C17.3232 6.23744 17.3232 5.76256 17.0303 5.46967L12.2574 0.696699C11.9645 0.403806 11.4896 0.403806 11.1967 0.696699C10.9038 0.989593 10.9038 1.46447 11.1967 1.75736L15.4393 6L11.1967 10.2426C10.9038 10.5355 10.9038 11.0104 11.1967 11.3033C11.4896 11.5962 11.9645 11.5962 12.2574 11.3033L17.0303 6.53033ZM1.5 6.75H16.5V5.25H1.5V6.75Z"/>
