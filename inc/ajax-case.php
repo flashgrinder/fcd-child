@@ -34,7 +34,6 @@
                     ?>
                     <picture class="modal__picture-case">
                         <source media="(max-width: 576px)" srcset="<?php echo esc_url($case_content_img_mobile['url']); ?>">
-                        <source media="(min-width: 576px)" srcset="<?php echo esc_url($case_content_img_tablet['url']); ?>">
                         <source media="(max-width: 1024px)" srcset="<?php echo esc_url($case_content_img_tablet['url']); ?>">
                         <img src="<?php echo esc_url($case_content_img_desctop['url']); ?>" class="modal__case-img" alt="<?php echo esc_attr($case_content_img_desctop['alt']); ?>">
                     </picture>
