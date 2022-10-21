@@ -185,10 +185,6 @@
     width: 100%;
 }
 
-.modal__case-img {
-    @include tablet(display, none);
-}
-
 .modal__title {
     margin-bottom: 25px;
 }

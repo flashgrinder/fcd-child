@@ -5202,10 +5202,6 @@ img {
     -ms-grid-columns: minmax(250px, 1fr) 40px minmax(250px, 1fr);
     grid-template-columns: repeat(2, minmax(250px, 1fr));
   }
-
-  .modal__case-img {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 992px) {
