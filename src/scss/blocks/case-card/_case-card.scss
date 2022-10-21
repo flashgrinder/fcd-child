@@ -3,6 +3,8 @@
     border-radius: 10px;
     background: var(--color-dark-blue);
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .case-card__tags {
