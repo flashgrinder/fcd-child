@@ -46,7 +46,7 @@
                         <br>Digital
                     </div>
                 </a>
-                <form class="footer__search-form search-form" role="search" method="get" id="searchform" action="./">
+                <form class="footer__search-form search-form hidden" role="search" method="get" id="searchform" action="./">
                     <div class="search-form__field">
                         <input class="footer__search-form-input search-form__input" type="search" value="" name="s" id="s" placeholder="Что ищем?">
                         <span class="search-form__icon">
