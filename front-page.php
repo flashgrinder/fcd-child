@@ -305,10 +305,10 @@
                                 <div class="screen-entry__inner screen__inner">
                                     <div class="screen-entry__text">
                                         <h2 class="screen-entry__heading screen__heading title title--huge title--white title--w-bold">
-                                            Digital-агентство
+                                            <? the_field('slide-1_title'); ?>
                                         </h2>
                                         <p class="screen-entry__descr screen__descr text text--large text--white text--w-light">
-                                            Графический и веб-дизайн. Создание сайтов, продвижение в поисковых системах. SEO-оптимизация, SMM-сопровождение, IT-аутсорсинг.
+                                            <? the_field('slide-1_descr'); ?>
                                         </p>
                                     </div>
                                     <div class="screen-entry__actions">
@@ -1250,10 +1250,10 @@
                                 <div class="screen-brand__inner screen__inner">
                                     <div class="screen-brand__text">
                                         <h2 class="screen-brand__heading screen__heading title title--huge title--white title--w-bold">
-                                            Графический дизайн
+                                            <? the_field('slide-2_title'); ?>
                                         </h2>
                                         <p class="screen-brand__descr screen__descr text text--large text--white text--w-light">
-                                            Разработаем уникальный бренд-дизайна компании. Первое впечатление о вашей компании должно оставаться запоминающимся.
+                                            <? the_field('slide-2_descr'); ?>
                                         </p>
                                     </div>
                                     <div class="screen-brand__actions">
@@ -2446,10 +2446,10 @@
                                 <div class="screen-hackerman__inner screen__inner">
                                     <div class="screen-hackerman__text">
                                         <h2 class="screen-hackerman__heading screen__heading title title--huge title--white title--w-bold">
-                                            Разработка веб-сайта
+                                            <? the_field('slide-3_title'); ?>
                                         </h2>
                                         <p class="screen-hackerman__descr screen__descr text text--large text--white text--w-light">
-                                            Создадим сайт любой сложности под ваши задачи. От лендинга до полноценного корпоративного сайта или интернет-магазина.
+                                            <? the_field('slide-3_descr'); ?>
                                         </p>
                                     </div>
                                     <div class="screen-hackerman__actions">
@@ -3582,10 +3582,10 @@
                                 <div class="screen-marketing__inner screen__inner">
                                     <div class="screen-marketing__text">
                                         <h2 class="screen-marketing__heading screen__heading title title--huge title--white title--w-bold">
-                                            Цифровой маркетинг
+                                            <? the_field('slide-4_title'); ?>
                                         </h2>
                                         <p class="screen-marketing__descr screen__descr text text--large text--white text--w-light">
-                                            Продвигаем ваши товары и услуг с помощью цифровых технологий. О вашем бренда должен узнать каждым.
+                                            <? the_field('slide-4_descr'); ?>
                                         </p>
                                     </div>
                                     <div class="screen-marketing__actions">
@@ -6284,10 +6284,10 @@
                                 <div class="screen-it__inner screen__inner">
                                     <div class="screen-it__text">
                                         <h2 class="screen-it__heading screen__heading title title--huge title--white title--w-bold">
-                                            IT аутсорсинг
+                                            <? the_field('slide-5_title'); ?>
                                         </h2>
                                         <p class="screen-it__descr screen__descr text text--large text--white text--w-light">
-                                            Администрирование ИТ-инфраструктуры вашей компании. Высокое качество сервиса по выгодной стоимости и оперативное решение задач.
+                                            <? the_field('slide-5_descr'); ?>
                                         </p>
                                     </div>
                                     <div class="screen-it__actions">
