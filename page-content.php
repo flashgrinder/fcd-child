@@ -1,6 +1,6 @@
 <?php /* Template Name: Контентная страница */?>
 <?php get_header(); ?>
-
+<? phpinfo(); ?>
 <?php the_post(); ?>
     <!-- Info-block -->
     <section class="info-block">
