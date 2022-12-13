@@ -6329,9 +6329,9 @@
                 <!-- Page-wysiwyg -->
                 <section class="page-wysiwyg block-padding">
                     <div class="page-wysiwyg__body container">
-                        <h2 class="page-wysiwyg__heading title title--large title--white title--w-bold title--indent-45 js-reveal gs-reveal">
+                        <h1 class="page-wysiwyg__heading title title--large title--white title--w-bold title--indent-45 js-reveal gs-reveal">
                             <?php echo get_sub_field('page-wysiwyg_title'); ?>
-                        </h2>
+                        </h1>
                         <div class="page-wysiwyg__content wysiwyg js-reveal gs-reveal">
                             <?php the_content(); ?>
                         </div>
