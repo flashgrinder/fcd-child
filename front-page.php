@@ -321,7 +321,7 @@
                         </div>
                     </section>
                     <!-- /. Screen-entry -->
-                </div>
+                </div> 
                 <div class="main-slider__swiper-slide swiper-slide">
                     <!-- Screen-brand -->
                     <section class="screen-brand screen js-screen-brand">
