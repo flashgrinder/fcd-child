@@ -16,11 +16,11 @@
             'post_type' => 'cases',
         );
 
-        $post = new WP_Query($args);
+        $post_case = new WP_Query($args);
 
         ?>
 
-        <?php while( $post->have_posts() ) : $post->the_post() ?>
+        <?php while( $post_case->have_posts() ) : $post_case->the_post() ?>
             <h3 class="modal__title title title--pre-medium title--white title--w-light left js-case-title">
                 <?php the_title(); ?>
             </h3>
