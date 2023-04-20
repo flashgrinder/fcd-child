@@ -6,6 +6,7 @@
             "key": "field_62ea28404f696",
             "label": "Должность",
             "name": "review_position",
+            "aria-label": "",
             "type": "text",
             "instructions": "Укажите должность.",
             "required": 0,
@@ -25,6 +26,7 @@
             "key": "field_62ea288f4f697",
             "label": "Текст отзыва",
             "name": "review_text",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "Укажите не очень длинный текст.",
             "required": 0,
@@ -44,8 +46,9 @@
             "key": "field_62ea29b26a9ae",
             "label": "Ссылка на кейс",
             "name": "review_case",
-            "type": "url",
-            "instructions": "Укажите ссылку на кейс.",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "Укажите ссылку на кейс. Если не указывать, кнопка отображаться не будет.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -53,8 +56,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": ""
+            "return_format": "array"
         }
     ],
     "location": [
@@ -75,5 +77,5 @@
     "active": true,
     "description": "Параметры  post-type_reviews.php",
     "show_in_rest": 0,
-    "modified": 1661496926
+    "modified": 1681978575
 }
