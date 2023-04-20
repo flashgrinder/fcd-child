@@ -31,7 +31,7 @@
     </div>
     <footer class="case-card__footer">
         <div class="case-card__action">
-            <a href="javascript:;" class="case-card__button button button--primary js-case" data-hystmodal="#case" data-id-case="<?php echo the_ID(); ?>">
+            <a href="<?php the_permalink(); ?>" class="case-card__button button button--primary js-transition-link">
                 Посмотреть кейс
             </a>
         </div>

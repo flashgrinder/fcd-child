@@ -13,13 +13,13 @@
 }
 
 .case-card__tag.button--dark {
-    color: var(--color-accent-secondary);
+    color: var(--color-dark-gray);
     opacity: 1;
 }
 
 .case-card__tag.button--dark:hover {
-    color: var(--color-dark-gray);
-    opacity: 1;
+    color: var(--color-white);
+    background: var(--color-accent-secondary);
 }
 
 .case-card__pic {

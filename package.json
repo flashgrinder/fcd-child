@@ -1,5 +1,5 @@
 {
-  "name": "fcd",
+  "name": "fcd-child",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -71,10 +71,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flashgrinder/fcd.git"
+    "url": "git+https://github.com/flashgrinder/fcd-child.git"
   },
   "bugs": {
-    "url": "https://github.com/flashgrinder/fcd/issues"
+    "url": "https://github.com/flashgrinder/fcd-child/issues"
   },
-  "homepage": "https://github.com/flashgrinder/fcd#readme"
+  "homepage": "https://github.com/flashgrinder/fcd-child#readme"
 }

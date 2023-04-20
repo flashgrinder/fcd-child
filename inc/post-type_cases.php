@@ -16,16 +16,18 @@
                 'parent_item_colon'  => '',
                 'menu_name'          => 'Кейсы'
             ],
-            'public'             => false,
+            'public'             => true,
             'show_ui'            => true,
             'show_in_rest'       => true,
+            'show_in_menu'       => true,
             'menu_position'      => 5,
             'menu_icon'          => 'dashicons-embed-photo',
-            'supports'           => ['title', 'thumbnail','author','custom-fields','revisions'],
+            'supports'           => ['title', 'thumbnail','author','custom-fields','revisions', 'editor'],
             'has_archive'        => false,
-            'hierarchical'        => false,
-            'rewrite'             => array('slug' => 'cases', 'with_front' => false),
-            'query_var'           => true
+            'hierarchical'        => true,
+            'rewrite'             => array('slug' => false, 'with_front' => false),
+            'query_var'           => true,
+            'show_in_nav_menus'   => true,
         ]);
     
-    });
+    }, 999);
