@@ -7530,7 +7530,7 @@
                                         <?php foreach( $cases_slider_items as $cases_slider_item): 
                                             
                                             $case_title = get_the_title( $cases_slider_item->ID );
-//                                            $case_link = get_premalink( $cases_slider_item->ID );
+                                            $case_permalink = get_permalink( $cases_slider_item->ID );
 
                                             ?>
                                             <div class="cases-slider__swiper-slide swiper-slide">
@@ -7567,7 +7567,7 @@
                                                     </div>
                                                     <footer class="case-card__footer">
                                                         <div class="case-card__action">
-                                                            <a href="javascript:;" class="case-card__button button button--primary js-case" data-hystmodal="#case" data-id-case="<?php echo $cases_slider_item->ID; ?>">
+                                                            <a href="<?php echo esc_url($case_permalink); ?>" class="case-card__button button button--primary" data-id-case="<?php echo $cases_slider_item->ID; ?>">
                                                                 Посмотреть кейс
                                                             </a>
                                                         </div>

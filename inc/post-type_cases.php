@@ -25,7 +25,7 @@
             'supports'           => ['title', 'thumbnail','author','custom-fields','revisions', 'editor'],
             'has_archive'        => false,
             'hierarchical'        => true,
-            'rewrite'             => array('slug' => false, 'with_front' => false),
+            'rewrite'             => array('slug' => 'nashi-kejsy', 'with_front' => false),
             'query_var'           => true,
             'show_in_nav_menus'   => true,
         ]);
