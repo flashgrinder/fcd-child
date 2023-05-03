@@ -1178,6 +1178,7 @@
                                         <?php foreach( $cases_slider_items as $cases_slider_item): 
                                             
                                             $case_title = get_the_title( $cases_slider_item->ID );
+                                            $case_link = get_the_premalink( $cases_slider_item->ID );
                                             
                                             ?>
                                             <div class="cases-slider__swiper-slide swiper-slide">
@@ -1214,7 +1215,7 @@
                                                     </div>
                                                     <footer class="case-card__footer">
                                                         <div class="case-card__action">
-                                                            <a href="<?php the_permalink(); ?>" class="case-card__button button button--primary" data-id-case="<?php echo $cases_slider_item->ID; ?>">
+                                                            <a href="<?php echo $case_link; ?>" class="case-card__button button button--primary" data-id-case="<?php echo $cases_slider_item->ID; ?>">
                                                                 Посмотреть кейс
                                                             </a>
                                                         </div>
