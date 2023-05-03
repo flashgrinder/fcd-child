@@ -1215,7 +1215,7 @@
                                                     </div>
                                                     <footer class="case-card__footer">
                                                         <div class="case-card__action">
-                                                            <a href="<?php echo $case_link; ?>" class="case-card__button button button--primary" data-id-case="<?php echo $cases_slider_item->ID; ?>">
+                                                            <a href="<?php echo esc_url($case_link); ?>" class="case-card__button button button--primary" data-id-case="<?php echo $cases_slider_item->ID; ?>">
                                                                 Посмотреть кейс
                                                             </a>
                                                         </div>
