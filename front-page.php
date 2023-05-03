@@ -7530,7 +7530,7 @@
                                         <?php foreach( $cases_slider_items as $cases_slider_item): 
                                             
                                             $case_title = get_the_title( $cases_slider_item->ID );
-                                            $case_link = get_the_premalink( $cases_slider_item->ID );
+                                            $case_link = get_premalink( $cases_slider_item->ID );
 
                                             ?>
                                             <div class="cases-slider__swiper-slide swiper-slide">
